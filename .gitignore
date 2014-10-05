@@ -1,0 +1,4 @@
+.build*
+
+.sass-cache
+!lib/client/scss/config.rb
