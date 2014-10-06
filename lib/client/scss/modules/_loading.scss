@@ -1,4 +1,17 @@
+
 .loading-module {
     height: 70px;
     position: relative;
+}
+
+#login-buttons .loading {
+    display: none;
+}
+
+#loading, .loading-page {
+    height: 300px;
+}
+
+#spinner {
+    margin: 100px 0;
 }

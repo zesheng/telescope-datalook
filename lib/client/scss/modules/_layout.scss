@@ -34,3 +34,8 @@ body {
         overflow-y: hidden;
     }
 }
+
+.grid-module, .at-form {
+    margin-bottom: $grid-margin;
+    padding: $grid-padding;
+}

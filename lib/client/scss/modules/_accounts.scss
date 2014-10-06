@@ -1,5 +1,6 @@
 .at-oauth {
     text-align: center;
+
     .at-social-btn {
         margin: 0 auto 15px auto;
     }
@@ -13,7 +14,7 @@
 
     &:before, &:after {
         display: block;
-        content:" ";
+        content: " ";
         border-bottom: 1px solid #ddd;
         width: 100%;
         position: absolute;

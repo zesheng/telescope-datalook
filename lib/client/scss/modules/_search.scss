@@ -1,0 +1,19 @@
+.search-date-header {
+    background: $lightest-grey;
+
+    th {
+        @include cf;
+    }
+
+    .search-date {
+        display: block;
+        float: left;
+        font-weight: bold;
+    }
+
+    .search-count {
+        font-size: 13px;
+        display: block;
+        float: right;
+    }
+}

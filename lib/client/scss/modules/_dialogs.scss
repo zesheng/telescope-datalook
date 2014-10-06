@@ -1,11 +1,12 @@
 
 .dialog {
+    margin-bottom: $grid-margin;
+
     h2 {
         text-align: center;
         padding-bottom: $grid-padding;
         margin-bottom: $grid-margin;
     }
-    margin-bottom: $grid-margin;
 }
 
 .footer-notice {
