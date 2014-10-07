@@ -11,6 +11,7 @@
 // Global Styles (forms, typography, etc.)
 
 @import "global/forms",
+        "global/layout",
         "global/links",
         "global/main",
         "global/markdown",
@@ -28,7 +29,6 @@
         "modules/errors",
         "modules/header",
         "modules/icons",
-        "modules/layout",
         "modules/loading",
         "modules/mobile_nav",
         "modules/notifications",
