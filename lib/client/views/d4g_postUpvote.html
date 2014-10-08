@@ -1,0 +1,8 @@
+<template name="d4g_postUpvote">
+  <div class="post-rank"><span>{{oneBasedRank}}</span></div>
+  {{#if upvoted}}
+    <span class="upvote-link voted"><i class="icon-star-full"></i><span>{{i18n "Upvoted"}}</span></span>
+  {{else}}
+    <a class="upvote-link not-voted" href="#"><i class="icon-star-empty"></i><span>{{i18n "Upvote"}}</span></a>
+  {{/if}}
+</template>

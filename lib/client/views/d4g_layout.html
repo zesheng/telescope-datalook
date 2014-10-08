@@ -1,0 +1,19 @@
+<template name="d4g_layout">
+  {{> UI.dynamic template=css}}
+  <div class="outer-wrapper {{currentPage}}">
+    {{> UI.dynamic template=mobile_nav}}
+    <div class="inner-wrapper template-{{pageName}}">
+      {{> UI.dynamic template=nav}}
+      {{> UI.dynamic template=error}}
+      {{#each heroModules}}
+        {{> UI.dynamic template=getTemplate}}
+      {{/each}}
+      <div class="content-wrapper">
+        {{> yield}}
+      </div>
+      {{> UI.dynamic template=footer}}
+      <div class="overlay hidden"></div>
+    </div>
+    {{{extraCode}}}
+  </div>
+</template>
