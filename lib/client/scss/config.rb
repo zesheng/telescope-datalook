@@ -1,3 +1,5 @@
+require 'susy'
+require 'breakpoint'
 require 'compass-notify'
 
 css_dir = "../css"

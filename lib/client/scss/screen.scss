@@ -1,14 +1,19 @@
+// Libs
 @import "compass/reset",
-        "compass/css3";
+        "compass/css3",
+        "susy",
+        "breakpoint";
 
-// Includes
+
+// Vars and helpers
 
 @import "settings",
         "helpers/breakpoints",
         "helpers/colors",
         "helpers/mixins";
 
-// Global Styles (forms, typography, etc.)
+
+// Global
 
 @import "global/forms",
         "global/layout",
@@ -19,7 +24,8 @@
         "global/typesettings",
         "global/typography";
 
-// Specific Styles (header, posts, etc.)
+
+// Specific modules
 
 @import "modules/accounts",
         "modules/comments",
