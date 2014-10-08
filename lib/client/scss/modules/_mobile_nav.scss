@@ -61,6 +61,11 @@ $mobile-nav-width: 200px;
 }
 
 .mobile-menu {
+    margin-left: 0;
+
+    li {
+        list-style: none;
+    }
 
     .header-module, .header-submodule {
         display: block;

@@ -4,6 +4,7 @@ $grid-padding: 15px;
 
 $small-break: 40em;
 $medium-break: 50em;
+$large-break: 70em;
 
 @mixin small() {
     @media screen and (max-width: $small-break) {
@@ -31,6 +32,12 @@ $medium-break: 50em;
 
 @mixin large() {
     @media screen and (min-width: $medium-break) {
+        @content;
+    }
+}
+
+@mixin x-large() {
+    @media screen and (min-width: $large-break) {
         @content;
     }
 }

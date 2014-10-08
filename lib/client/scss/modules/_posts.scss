@@ -40,6 +40,10 @@
             @include medium-large {
                 @include flex-shrink(0);
             }
+
+            &.post-upvote {
+                margin-right: 15px;
+            }
         }
     }
 
@@ -131,21 +135,19 @@
         position: relative;
         width: 36px;
         height: 36px;
-        padding: 6px;
+        padding-right: 7px;
         display: block;
         text-align: center;
 
         i {
             display: block;
-            border-radius: 50%;
-            border: 1px solid rgba($brand-primary, 0.3);
-            font-size: 10px;
+            font-size: 26px;
             height: 100%;
             width: 100%;
             text-align: center;
             color: rgba($brand-primary, 0.8);
             text-shadow: 0px 1px 0px white;
-            line-height: 2.2;
+            line-height: 1;
 
             &.icon-check {
                 display: none;
@@ -200,8 +202,6 @@
 }
 
 .posts-wrapper {
-    // @extend .has-shadow;
-    // border-radius: 3px;
     padding: 0;
 }
 
@@ -282,13 +282,16 @@
 
 .post-heading {
     margin-bottom: 3px;
-    line-height: 1.2;
+    line-height: 1;
+    text-transform: none;
 
     @include small {
         line-height: 1.5;
     }
 
     .post-title {
+        font-weight: bold;
+
         @include small {
             font-size: 15px;
         }
@@ -297,10 +300,8 @@
             font-size: 18px;
         }
 
-        font-weight:normal;
-
         &:visited {
-            color: $grey;
+            color: lighten($text, 20%);
         }
     }
 
