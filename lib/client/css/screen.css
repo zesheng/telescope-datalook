@@ -137,14 +137,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*================ FLEXBOX =================*/
-/* line 2, ../scss/global/_forms.scss */
+/* line 3, ../scss/global/_forms.scss */
 form.form-block, .accounts-dialog.form-block {
   background: #e7eff2;
   border-radius: 3px;
   margin-bottom: 10px;
   padding: 10px;
 }
-/* line 9, ../scss/global/_forms.scss */
+/* line 10, ../scss/global/_forms.scss */
 form > div, .accounts-dialog > div {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
@@ -159,59 +159,59 @@ form > div:before, form > div:after, .accounts-dialog > div:before, .accounts-di
 form > div:after, .accounts-dialog > div:after {
   clear: both;
 }
-/* line 12, ../scss/global/_forms.scss */
-form .control-group, form .form-group, form .at-input, .accounts-dialog .control-group, .accounts-dialog .form-group, .accounts-dialog .at-input {
+/* line 14, ../scss/global/_forms.scss */
+form .control-group, form .form-group, .accounts-dialog .control-group, .accounts-dialog .form-group {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
   *zoom: 1;
   margin-bottom: 15px;
 }
 /* line 4, ../scss/helpers/_mixins.scss */
-form .control-group:before, form .control-group:after, form .form-group:before, form .form-group:after, form .at-input:before, form .at-input:after, .accounts-dialog .control-group:before, .accounts-dialog .control-group:after, .accounts-dialog .form-group:before, .accounts-dialog .form-group:after, .accounts-dialog .at-input:before, .accounts-dialog .at-input:after {
+form .control-group:before, form .control-group:after, form .form-group:before, form .form-group:after, .accounts-dialog .control-group:before, .accounts-dialog .control-group:after, .accounts-dialog .form-group:before, .accounts-dialog .form-group:after {
   content: "";
   display: table;
 }
 /* line 8, ../scss/helpers/_mixins.scss */
-form .control-group:after, form .form-group:after, form .at-input:after, .accounts-dialog .control-group:after, .accounts-dialog .form-group:after, .accounts-dialog .at-input:after {
+form .control-group:after, form .form-group:after, .accounts-dialog .control-group:after, .accounts-dialog .form-group:after {
   clear: both;
 }
-/* line 15, ../scss/global/_forms.scss */
-form .control-group > label, form .form-group > label, form .at-input > label, .accounts-dialog .control-group > label, .accounts-dialog .form-group > label, .accounts-dialog .at-input > label {
+/* line 18, ../scss/global/_forms.scss */
+form .control-group > label, form .form-group > label, .accounts-dialog .control-group > label, .accounts-dialog .form-group > label {
   font-weight: bold;
   display: block;
 }
 @media screen and (max-width: 40em) {
-  /* line 15, ../scss/global/_forms.scss */
-  form .control-group > label, form .form-group > label, form .at-input > label, .accounts-dialog .control-group > label, .accounts-dialog .form-group > label, .accounts-dialog .at-input > label {
+  /* line 18, ../scss/global/_forms.scss */
+  form .control-group > label, form .form-group > label, .accounts-dialog .control-group > label, .accounts-dialog .form-group > label {
     margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 15, ../scss/global/_forms.scss */
-  form .control-group > label, form .form-group > label, form .at-input > label, .accounts-dialog .control-group > label, .accounts-dialog .form-group > label, .accounts-dialog .at-input > label {
+  /* line 18, ../scss/global/_forms.scss */
+  form .control-group > label, form .form-group > label, .accounts-dialog .control-group > label, .accounts-dialog .form-group > label {
     float: left;
     margin-right: 10px;
   }
 }
-/* line 26, ../scss/global/_forms.scss */
-form .control-group .controls, form .form-group .controls, form .at-input .controls, .accounts-dialog .control-group .controls, .accounts-dialog .form-group .controls, .accounts-dialog .at-input .controls {
+/* line 31, ../scss/global/_forms.scss */
+form .control-group .controls, form .form-group .controls, .accounts-dialog .control-group .controls, .accounts-dialog .form-group .controls {
   position: relative;
 }
 @media screen and (min-width: 40em) {
-  /* line 26, ../scss/global/_forms.scss */
-  form .control-group .controls, form .form-group .controls, form .at-input .controls, .accounts-dialog .control-group .controls, .accounts-dialog .form-group .controls, .accounts-dialog .at-input .controls {
+  /* line 31, ../scss/global/_forms.scss */
+  form .control-group .controls, form .form-group .controls, .accounts-dialog .control-group .controls, .accounts-dialog .form-group .controls {
     margin-left: 200px;
   }
 }
-/* line 31, ../scss/global/_forms.scss */
-form .control-group .controls .inline-link, form .form-group .controls .inline-link, form .at-input .controls .inline-link, .accounts-dialog .control-group .controls .inline-link, .accounts-dialog .form-group .controls .inline-link, .accounts-dialog .at-input .controls .inline-link {
+/* line 38, ../scss/global/_forms.scss */
+form .control-group .controls .inline-link, form .form-group .controls .inline-link, .accounts-dialog .control-group .controls .inline-link, .accounts-dialog .form-group .controls .inline-link {
   position: absolute;
   display: block;
   top: 2px;
   right: 8px;
 }
-/* line 36, ../scss/global/_forms.scss */
-form .control-group .controls .inline-link.loading, form .form-group .controls .inline-link.loading, form .at-input .controls .inline-link.loading, .accounts-dialog .control-group .controls .inline-link.loading, .accounts-dialog .form-group .controls .inline-link.loading, .accounts-dialog .at-input .controls .inline-link.loading {
+/* line 44, ../scss/global/_forms.scss */
+form .control-group .controls .inline-link.loading, form .form-group .controls .inline-link.loading, .accounts-dialog .control-group .controls .inline-link.loading, .accounts-dialog .form-group .controls .inline-link.loading {
   background: url(/img/loading.gif) center center no-repeat;
   height: 22px;
   width: 18px;
@@ -219,31 +219,31 @@ form .control-group .controls .inline-link.loading, form .form-group .controls .
   text-shadow: none;
   color: transparent;
 }
-/* line 43, ../scss/global/_forms.scss */
-form .control-group .controls label, form .form-group .controls label, form .at-input .controls label, .accounts-dialog .control-group .controls label, .accounts-dialog .form-group .controls label, .accounts-dialog .at-input .controls label {
+/* line 52, ../scss/global/_forms.scss */
+form .control-group .controls label, form .form-group .controls label, .accounts-dialog .control-group .controls label, .accounts-dialog .form-group .controls label {
   display: block;
   margin-bottom: 5px;
 }
-/* line 47, ../scss/global/_forms.scss */
-form .control-group .controls label.inline, form .form-group .controls label.inline, form .at-input .controls label.inline, .accounts-dialog .control-group .controls label.inline, .accounts-dialog .form-group .controls label.inline, .accounts-dialog .at-input .controls label.inline {
+/* line 57, ../scss/global/_forms.scss */
+form .control-group .controls label.inline, form .form-group .controls label.inline, .accounts-dialog .control-group .controls label.inline, .accounts-dialog .form-group .controls label.inline {
   display: inline-block;
   margin-bottom: 0;
 }
-/* line 52, ../scss/global/_forms.scss */
-form .control-group.inline, form .form-group.inline, form .at-input.inline, .accounts-dialog .control-group.inline, .accounts-dialog .form-group.inline, .accounts-dialog .at-input.inline {
+/* line 63, ../scss/global/_forms.scss */
+form .control-group.inline, form .form-group.inline, .accounts-dialog .control-group.inline, .accounts-dialog .form-group.inline {
   margin-bottom: 10px;
 }
-/* line 53, ../scss/global/_forms.scss */
-form .control-group.inline .controls, form .form-group.inline .controls, form .at-input.inline .controls, .accounts-dialog .control-group.inline .controls, .accounts-dialog .form-group.inline .controls, .accounts-dialog .at-input.inline .controls {
+/* line 66, ../scss/global/_forms.scss */
+form .control-group.inline .controls, form .form-group.inline .controls, .accounts-dialog .control-group.inline .controls, .accounts-dialog .form-group.inline .controls {
   margin-left: 0px;
   width: 80%;
   float: left;
 }
-/* line 58, ../scss/global/_forms.scss */
-form .control-group.inline .submit, form .form-group.inline .submit, form .at-input.inline .submit, .accounts-dialog .control-group.inline .submit, .accounts-dialog .form-group.inline .submit, .accounts-dialog .at-input.inline .submit {
+/* line 72, ../scss/global/_forms.scss */
+form .control-group.inline .submit, form .form-group.inline .submit, .accounts-dialog .control-group.inline .submit, .accounts-dialog .form-group.inline .submit {
   float: right;
 }
-/* line 64, ../scss/global/_forms.scss */
+/* line 78, ../scss/global/_forms.scss */
 form .form-actions, form .form-group, .accounts-dialog .form-actions, .accounts-dialog .form-group {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
@@ -258,17 +258,29 @@ form .form-actions:before, form .form-actions:after, form .form-group:before, fo
 form .form-actions:after, form .form-group:after, .accounts-dialog .form-actions:after, .accounts-dialog .form-group:after {
   clear: both;
 }
-/* line 66, ../scss/global/_forms.scss */
+/* line 81, ../scss/global/_forms.scss */
 form .form-actions a, form .form-group a, .accounts-dialog .form-actions a, .accounts-dialog .form-group a {
   float: left;
   display: block;
 }
-/* line 70, ../scss/global/_forms.scss */
+/* line 86, ../scss/global/_forms.scss */
 form .form-actions .button, form .form-actions .btn, form .form-group .button, form .form-group .btn, .accounts-dialog .form-actions .button, .accounts-dialog .form-actions .btn, .accounts-dialog .form-group .button, .accounts-dialog .form-group .btn {
   float: right;
 }
-/* line 74, ../scss/global/_forms.scss */
-form input[type="text"], form input[type="password"], form input[type="number"], form input[type="email"], form textarea, form .login-form input, form input.form-control, .accounts-dialog input[type="text"], .accounts-dialog input[type="password"], .accounts-dialog input[type="number"], .accounts-dialog input[type="email"], .accounts-dialog textarea, .accounts-dialog .login-form input, .accounts-dialog input.form-control {
+/* line 91, ../scss/global/_forms.scss */
+form textarea,
+form .login-form input,
+form input.form-control,
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form input[type="email"], .accounts-dialog textarea,
+.accounts-dialog .login-form input,
+.accounts-dialog input.form-control,
+.accounts-dialog input[type="text"],
+.accounts-dialog input[type="password"],
+.accounts-dialog input[type="number"],
+.accounts-dialog input[type="email"] {
   display: block;
   padding: 5px 6px;
   width: 100%;
@@ -279,47 +291,79 @@ form input[type="text"], form input[type="password"], form input[type="number"],
   /* Firefox, other Gecko */
   box-sizing: border-box;
   /* Opera/IE 8+ */
-  border: 1px solid #b5b0b0;
-  -moz-transition: border-color 500ms;
-  -o-transition: border-color 500ms;
-  -webkit-transition: border-color 500ms;
-  transition: border-color 500ms;
+  border: 1px solid #B3B3B3;
+  -moz-transition: border-color, 700ms;
+  -o-transition: border-color, 700ms;
+  -webkit-transition: border-color, 700ms;
+  transition: border-color, 700ms;
 }
-/* line 83, ../scss/global/_forms.scss */
-form input[type="text"]:focus, form input[type="password"]:focus, form input[type="number"]:focus, form input[type="email"]:focus, form textarea:focus, form .login-form input:focus, form input.form-control:focus, .accounts-dialog input[type="text"]:focus, .accounts-dialog input[type="password"]:focus, .accounts-dialog input[type="number"]:focus, .accounts-dialog input[type="email"]:focus, .accounts-dialog textarea:focus, .accounts-dialog .login-form input:focus, .accounts-dialog input.form-control:focus {
+/* line 107, ../scss/global/_forms.scss */
+form textarea:focus,
+form .login-form input:focus,
+form input.form-control:focus,
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="number"]:focus,
+form input[type="email"]:focus, .accounts-dialog textarea:focus,
+.accounts-dialog .login-form input:focus,
+.accounts-dialog input.form-control:focus,
+.accounts-dialog input[type="text"]:focus,
+.accounts-dialog input[type="password"]:focus,
+.accounts-dialog input[type="number"]:focus,
+.accounts-dialog input[type="email"]:focus {
   outline: none;
   border-color: #8CC2DA;
-  -moz-box-shadow: 0px 0px 5px 0px rgba(140, 194, 218, 0.3);
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(140, 194, 218, 0.3);
-  box-shadow: 0px 0px 5px 0px rgba(140, 194, 218, 0.3);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(140, 194, 218, 0.3);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(140, 194, 218, 0.3);
+  box-shadow: 0px 0px 5px 1px rgba(140, 194, 218, 0.3);
 }
-/* line 88, ../scss/global/_forms.scss */
-form input[type="text"][type="number"], form input[type="password"][type="number"], form input[type="number"][type="number"], form input[type="email"][type="number"], form textarea[type="number"], form .login-form input[type="number"], form input.form-control[type="number"], .accounts-dialog input[type="text"][type="number"], .accounts-dialog input[type="password"][type="number"], .accounts-dialog input[type="number"][type="number"], .accounts-dialog input[type="email"][type="number"], .accounts-dialog textarea[type="number"], .accounts-dialog .login-form input[type="number"], .accounts-dialog input.form-control[type="number"] {
+/* line 113, ../scss/global/_forms.scss */
+form textarea[type="number"],
+form .login-form input[type="number"],
+form input.form-control[type="number"],
+form input[type="text"][type="number"],
+form input[type="password"][type="number"],
+form input[type="number"][type="number"],
+form input[type="email"][type="number"], .accounts-dialog textarea[type="number"],
+.accounts-dialog .login-form input[type="number"],
+.accounts-dialog input.form-control[type="number"],
+.accounts-dialog input[type="text"][type="number"],
+.accounts-dialog input[type="password"][type="number"],
+.accounts-dialog input[type="number"][type="number"],
+.accounts-dialog input[type="email"][type="number"] {
   width: 30%;
 }
-/* line 92, ../scss/global/_forms.scss */
-form input[type="text"], form input[type="password"], form input[type="number"], form .login-form input, .accounts-dialog input[type="text"], .accounts-dialog input[type="password"], .accounts-dialog input[type="number"], .accounts-dialog .login-form input {
-  height: 30px;
+/* line 118, ../scss/global/_forms.scss */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form .login-form input, .accounts-dialog input[type="text"],
+.accounts-dialog input[type="email"],
+.accounts-dialog input[type="password"],
+.accounts-dialog input[type="number"],
+.accounts-dialog .login-form input {
+  height: 38px;
   line-height: 20px;
 }
-/* line 96, ../scss/global/_forms.scss */
+/* line 127, ../scss/global/_forms.scss */
 form input[disabled='disabled'], .accounts-dialog input[disabled='disabled'] {
   color: #b3c1c6;
   background: #e7eff2;
 }
-/* line 100, ../scss/global/_forms.scss */
+/* line 132, ../scss/global/_forms.scss */
 form textarea, .accounts-dialog textarea {
   min-height: 100px;
   line-height: 1.4;
 }
-/* line 104, ../scss/global/_forms.scss */
+/* line 137, ../scss/global/_forms.scss */
 form .note, .accounts-dialog .note {
   padding: 5px 0;
   color: #b3c1c6;
   font-size: 80%;
 }
 
-/* line 110, ../scss/global/_forms.scss */
+/* line 144, ../scss/global/_forms.scss */
 input[type="submit"], button, .button, .btn {
   -webkit-appearance: none;
   border-radius: 3px;
@@ -336,37 +380,37 @@ input[type="submit"], button, .button, .btn {
   margin: 0;
   font-weight: normal;
 }
-/* line 127, ../scss/global/_forms.scss */
+/* line 162, ../scss/global/_forms.scss */
 input[type="submit"].disabled, button.disabled, .button.disabled, .btn.disabled {
   background: #dfdbdb;
   pointer-events: none;
 }
-/* line 131, ../scss/global/_forms.scss */
+/* line 167, ../scss/global/_forms.scss */
 input[type="submit"]:link, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:visited, button:link, button:hover, button:active, button:visited, .button:link, .button:hover, .button:active, .button:visited, .btn:link, .btn:hover, .btn:active, .btn:visited {
   color: white;
 }
-/* line 134, ../scss/global/_forms.scss */
+/* line 171, ../scss/global/_forms.scss */
 input[type="submit"].inline, button.inline, .button.inline, .btn.inline {
   display: inline-block;
 }
 
-/* line 138, ../scss/global/_forms.scss */
+/* line 176, ../scss/global/_forms.scss */
 input[type="search"] {
   font-size: 14px;
 }
 
-/* line 141, ../scss/global/_forms.scss */
+/* line 180, ../scss/global/_forms.scss */
 .twitter-signup {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #dfdbdb;
 }
-/* line 145, ../scss/global/_forms.scss */
+/* line 185, ../scss/global/_forms.scss */
 .twitter-signup .twitter-button {
   background: #00aced;
 }
 
-/* line 149, ../scss/global/_forms.scss */
+/* line 190, ../scss/global/_forms.scss */
 .category-slug {
   font-size: 12px;
   float: left;
@@ -374,7 +418,7 @@ input[type="search"] {
   display: block;
 }
 
-/* line 155, ../scss/global/_forms.scss */
+/* line 197, ../scss/global/_forms.scss */
 .ui-autocomplete {
   background: white;
   width: 200px !important;
@@ -385,35 +429,35 @@ input[type="search"] {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
-/* line 162, ../scss/global/_forms.scss */
+/* line 205, ../scss/global/_forms.scss */
 .help-block {
   color: #b3c1c6;
   margin-bottom: 15px;
 }
 
-/* line 166, ../scss/global/_forms.scss */
+/* line 210, ../scss/global/_forms.scss */
 #editor > iframe {
   border: 1px solid #B5B0B0;
 }
 
-/* line 169, ../scss/global/_forms.scss */
+/* line 214, ../scss/global/_forms.scss */
 .comment-field {
   margin-bottom: 10px;
 }
 
-/* line 172, ../scss/global/_forms.scss */
+/* line 218, ../scss/global/_forms.scss */
 .fieldset-heading {
   padding-bottom: 5px;
   margin-bottom: 15px;
   border-bottom: 1px solid #B5B0B0;
 }
 
-/* line 177, ../scss/global/_forms.scss */
+/* line 224, ../scss/global/_forms.scss */
 fieldset {
   margin-bottom: 30px;
 }
 
-/* line 180, ../scss/global/_forms.scss */
+/* line 228, ../scss/global/_forms.scss */
 .instructions-block {
   margin-top: 5px;
   display: block;
@@ -890,22 +934,33 @@ html, body, input, button {
 }
 
 /* line 1, ../scss/modules/_accounts.scss */
+.at-form {
+  max-width: 380px;
+  padding: 30px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 9, ../scss/modules/_accounts.scss */
 .at-oauth {
   text-align: center;
 }
-/* line 4, ../scss/modules/_accounts.scss */
+/* line 12, ../scss/modules/_accounts.scss */
 .at-oauth .at-social-btn {
   margin: 0 auto 15px auto;
 }
 
-/* line 9, ../scss/modules/_accounts.scss */
+/* line 17, ../scss/modules/_accounts.scss */
 .at-sep {
   text-align: center;
   position: relative;
   overflow: hidden;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #B3B3B3;
 }
-/* line 15, ../scss/modules/_accounts.scss */
+/* line 25, ../scss/modules/_accounts.scss */
 .at-sep:before, .at-sep:after {
   display: block;
   content: " ";
@@ -914,45 +969,85 @@ html, body, input, button {
   position: absolute;
   top: 48%;
 }
-/* line 24, ../scss/modules/_accounts.scss */
+/* line 34, ../scss/modules/_accounts.scss */
 .at-sep:before {
   left: -55%;
 }
-/* line 28, ../scss/modules/_accounts.scss */
+/* line 38, ../scss/modules/_accounts.scss */
 .at-sep:after {
   right: -55%;
 }
 
-/* line 34, ../scss/modules/_accounts.scss */
-.at-input label {
-  margin-bottom: 5px;
+/* line 43, ../scss/modules/_accounts.scss */
+.at-pwd-form {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+}
+/* line 4, ../scss/helpers/_mixins.scss */
+.at-pwd-form:before, .at-pwd-form:after {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/helpers/_mixins.scss */
+.at-pwd-form:after {
+  clear: both;
 }
 
-/* line 39, ../scss/modules/_accounts.scss */
+/* line 47, ../scss/modules/_accounts.scss */
+.at-input {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  *zoom: 1;
+  margin-bottom: 20px;
+}
+/* line 4, ../scss/helpers/_mixins.scss */
+.at-input:before, .at-input:after {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/helpers/_mixins.scss */
+.at-input:after {
+  clear: both;
+}
+/* line 51, ../scss/modules/_accounts.scss */
+.at-input label {
+  display: none;
+}
+
+/* line 56, ../scss/modules/_accounts.scss */
 #at-forgotPwd {
   font-size: 13px;
   float: right;
   margin-top: -8px;
+  margin-bottom: 25px;
 }
 
-/* line 45, ../scss/modules/_accounts.scss */
+/* line 63, ../scss/modules/_accounts.scss */
 #at-btn {
-  margin: 0 auto;
+  float: right;
 }
 
-/* line 49, ../scss/modules/_accounts.scss */
+/* line 67, ../scss/modules/_accounts.scss */
 .at-title {
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
   padding-bottom: 5px;
   text-align: center;
 }
+/* line 73, ../scss/modules/_accounts.scss */
+.at-title h3 {
+  text-transform: none;
+}
 
-/* line 56, ../scss/modules/_accounts.scss */
+/* line 78, ../scss/modules/_accounts.scss */
 .at-signup-link, .at-signin-link {
   border-top: 1px solid #ddd;
-  margin-top: 15px;
+  margin-top: 40px;
   padding-top: 15px;
+}
+/* line 83, ../scss/modules/_accounts.scss */
+.at-signup-link p, .at-signin-link p {
   text-align: center;
 }
 
