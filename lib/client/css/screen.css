@@ -1051,6 +1051,11 @@ html, body, input, button {
   text-align: center;
 }
 
+/* line 88, ../scss/modules/_accounts.scss */
+.at-error {
+  color: red;
+}
+
 /* line 2, ../scss/modules/_buttons.scss */
 .button-bar {
   max-width: 1000px;
