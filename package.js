@@ -4,7 +4,8 @@ Package.onUse(function (api) {
 
   api.use([
     'templating',
-    'ui'
+    'ui',
+    'bengott:avatar'
     ], 'client');
 
   api.use([
@@ -32,6 +33,7 @@ Package.onUse(function (api) {
     path.join(asset_path, 'fonts', 'icomoon.woff'),
 
     // Templates
+    'lib/client/config/avatar.js',
     'lib/client/views/custom_templates.js',
     'lib/client/views/d4g_layout.html',
     'lib/client/views/d4g_nav.html',
