@@ -46,4 +46,11 @@ Package.onUse(function (api) {
   ], 'client');
 
 
+  /*
+  *  Server
+  */
+  api.addFiles([
+    'lib/server/seed.js'
+  ], 'server');
+
 });
