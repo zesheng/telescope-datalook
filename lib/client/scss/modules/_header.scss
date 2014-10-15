@@ -86,6 +86,10 @@ $mobile-header-height: 50px;
         &:last-child {
             @include last;
         }
+
+        @include small {
+            width: 100%;
+        }
     }
 
     .logo {
