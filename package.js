@@ -32,6 +32,9 @@ Package.onUse(function (api) {
     path.join(asset_path, 'fonts', 'icomoon.svg'),
     path.join(asset_path, 'fonts', 'icomoon.woff'),
 
+    // Helpers
+    'lib/client/helpers/spacebars.js',
+
     // Templates
     'lib/client/config/avatar.js',
     'lib/client/views/custom_templates.js',
