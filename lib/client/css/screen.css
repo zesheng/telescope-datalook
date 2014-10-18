@@ -2629,24 +2629,34 @@ li.comment {
   border-radius: 3px;
 }
 
-/* line 4, ../scss/modules/_profile.scss */
+/* line 5, ../scss/modules/_profile.scss */
+.template-d4g_user_edit .content-wrapper,
 .template-d4g_user_profile .content-wrapper {
   background: #fff;
   -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
   padding: 1em 3em 3em 3em;
+  margin-bottom: 4em;
 }
-/* line 10, ../scss/modules/_profile.scss */
+/* line 12, ../scss/modules/_profile.scss */
+.template-d4g_user_edit hr,
+.template-d4g_user_profile hr {
+  margin: 4em 0 2.5em 0;
+  color: #B3B3B3;
+  border-top-color: #B3B3B3;
+}
+
+/* line 21, ../scss/modules/_profile.scss */
 .template-d4g_user_profile .edit-profile {
   float: right;
-  margin-top: 1em;
+  margin-top: 1.5em;
 }
-/* line 14, ../scss/modules/_profile.scss */
+/* line 25, ../scss/modules/_profile.scss */
 .template-d4g_user_profile .edit-profile a {
   font-weight: 400;
   padding: 7px;
-  border: 2px solid #52a3c7;
+  border: 2px solid #65aece;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -2655,11 +2665,21 @@ li.comment {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-/* line 25, ../scss/modules/_profile.scss */
+/* line 36, ../scss/modules/_profile.scss */
 .template-d4g_user_profile .profile .avatar {
+  margin-top: -20px;
   width: 150px;
   height: 150px;
   margin-bottom: 2em;
+}
+
+/* line 48, ../scss/modules/_profile.scss */
+.template-d4g_user_edit .pw-change {
+  margin-bottom: 2em;
+}
+/* line 51, ../scss/modules/_profile.scss */
+.template-d4g_user_edit .pw-change h4 {
+  text-decoration: underline;
 }
 
 /* line 1, ../scss/modules/_search.scss */

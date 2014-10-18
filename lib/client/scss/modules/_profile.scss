@@ -1,20 +1,31 @@
 
+.template-d4g_user_edit,
 .template-d4g_user_profile {
 
     .content-wrapper {
         background: #fff;
         @include box-shadow(0 1px 1px 1px rgba(black, 0.15) );
         padding: 1em 3em 3em 3em;
+        margin-bottom: 4em;
     }
+
+    hr {
+        margin: 4em 0 2.5em 0;
+        color: $text-light;
+        border-top-color: $text-light;
+    }
+}
+
+.template-d4g_user_profile {
 
     .edit-profile {
         float: right;
-        margin-top: 1em;
+        margin-top: 1.5em;
 
         a {
             font-weight: 400;
             padding: 7px;
-            border: 2px solid darken($brand-primary, 15%);
+            border: 2px solid darken($brand-primary, 10%);
             @include border-radius(3px);
             @include transition(all .5s);
         }
@@ -23,11 +34,22 @@
     .profile {
 
         .avatar {
+            margin-top: -20px;
             width: 150px;
             height: 150px;
             margin-bottom: 2em;
         }
     }
+}
 
 
+.template-d4g_user_edit {
+
+    .pw-change {
+        margin-bottom: 2em;
+
+        h4 {
+            text-decoration: underline;
+        }
+    }
 }
