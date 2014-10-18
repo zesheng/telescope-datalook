@@ -43,7 +43,8 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_postUpvote.html',
     'lib/client/views/d4g_hero.html',
     'lib/client/views/d4g_hero.js',
-    'lib/client/views/d4g_button_bar.html'
+    'lib/client/views/d4g_button_bar.html',
+    'lib/client/views/d4g_user_profile.html'
   ], 'client');
 
 
