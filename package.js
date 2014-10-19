@@ -37,6 +37,7 @@ Package.onUse(function (api) {
 
     // Templates
     'lib/client/config/avatar.js',
+    'lib/client/views/main.html',
     'lib/client/views/custom_templates.js',
     'lib/client/views/d4g_atForm.js',
     'lib/client/views/d4g_layout.html',
