@@ -1,11 +1,14 @@
 <template name="d4g_hero">
   {{#if isHomePage}}
-  <div class="hero-wrap">
-    <div class="hero">
-      <a href="{{pathFor 'post_submit'}}" title="Post a project">
-        <img src="https://dataforgood.s3.amazonaws.com/tele-image.jpg" alt="Data For Good">
-      </a>
-    </div>
-  </div>
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="copy">
+          <h1>Share data-driven projects<br> for social good.</h1>
+          <a class="button" href="{{pathFor 'post_submit'}}" title="Post a project">
+            Post a Project!
+          </a>
+        </div>
+      </div>
+    </section>
   {{/if}}
 </template>

@@ -1,7 +1,40 @@
 
-.hero-wrap {
+.hero {
+    background-image: url(https://dataforgood.s3.amazonaws.com/images/hero-background.jpg);
+    @include background-size(cover);
+    background-repeat: no-repeat;
+    background-position: center center;
+    // background-attachment: fixed;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    display: block;
 
-    img {
+    .hero-inner {
+        position: relative;
+        min-height: 500px;
+    }
+
+    .copy {
+        position: absolute;
+        top: 40%;
+        margin-top: -5em;
+        height: 10em;
+        color: #fff;
         width: 100%;
+
+        h1 {
+            padding: 0px 20px;
+            font-weight: 400;
+            line-height: 1.2;
+            text-transform: none;
+        }
+
+        .button {
+            font-size: 1.8em;
+            font-weight: 300;
+            margin: 2em auto 2em auto;
+            @include border-radius(0px);
+        }
     }
 }
