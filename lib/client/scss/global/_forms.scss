@@ -102,7 +102,6 @@ form, .accounts-dialog {
         @include border-box;
         border: 1px solid $text-light;
         @include transition(border-color, 700ms);
-        // @include box-shadow(inset 0px 0px 0px 1px black(0.2));
 
         &:focus {
             outline: none;
