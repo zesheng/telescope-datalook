@@ -32,11 +32,13 @@ Package.onUse(function (api) {
     path.join(asset_path, 'fonts', 'icomoon.svg'),
     path.join(asset_path, 'fonts', 'icomoon.woff'),
 
+    // Config
+    'lib/client/config/avatar.js',
+
     // Helpers
     'lib/client/helpers/spacebars.js',
 
     // Templates
-    'lib/client/config/avatar.js',
     'lib/client/views/main.html',
     'lib/client/views/custom_templates.js',
     'lib/client/views/d4g_atForm.js',
@@ -59,5 +61,11 @@ Package.onUse(function (api) {
   api.addFiles([
     'lib/server/seed.js'
   ], 'server');
+
+
+  /*
+  *  Client & Server
+  */
+
 
 });
