@@ -4,7 +4,6 @@
     @include background-size(cover);
     background-repeat: no-repeat;
     background-position: center center;
-    // background-attachment: fixed;
     text-align: center;
     position: relative;
     width: 100%;
@@ -36,5 +35,31 @@
             margin: 2em auto 2em auto;
             @include border-radius(0px);
         }
+    }
+}
+
+.sort-links {
+    @include container(1000px);
+    padding-left: 23px;
+    margin-top: 30px;
+    margin-bottom: -5px;
+    @include cf;
+
+    span {
+        padding-right: 3em;
+
+        a {
+            color: $text-medium;
+            @include transition(color .7s);
+
+            &:hover {
+                color: darken($brand-primary, 10%);
+            }
+        }
+    }
+
+    .categories-popover {
+        float: right;
+        padding-right: 23px;
     }
 }

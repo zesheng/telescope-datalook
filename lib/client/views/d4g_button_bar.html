@@ -1,10 +1,26 @@
 <template name="d4g_button_bar">
   {{#if isHomePage}}
-    <div class="button-bar">
-      <span><a href="/top"><button>Top</button></a></span>
-      <span><a href="/new"><button>New</button></a></span>
-      <span><a href="/best"><button>Most Starred</button></a></span>
-      <span><a href="/digest"><button>Digest</button></a></span>
+    <div class="sort-links">
+      <span><a href="/top">Top</a></span>
+      <span><a href="/new">New</a></span>
+      <span><a href="/best">Most Starred</a></span>
+      <span><a href="/digest">Digest</a></span>
+
+      <div class="categories-popover">
+        <a class="drop-target">Categories</a>
+        <div class="drop-content">
+            <ul>
+                {{# each categories}}
+                  <li>
+                    <span>
+                      <a href="{{categoryLink}}">{{name}}</a>
+                    </span>
+                  </li>
+                {{/each}}
+            </ul>
+        </div>
+      </div>
+
     </div>
   {{/if}}
 </template>
