@@ -32,6 +32,9 @@ Package.onUse(function (api) {
     path.join(asset_path, 'fonts', 'icomoon.svg'),
     path.join(asset_path, 'fonts', 'icomoon.woff'),
 
+    // Vendor
+    'lib/client/vendor/drop.js',
+
     // Config
     'lib/client/config/avatar.js',
 
@@ -46,6 +49,8 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_nav.html',
     'lib/client/views/d4g_search.html',
     'lib/client/views/d4g_userMenu.html',
+    'lib/client/views/d4g_categories_menu.html',
+    'lib/client/views/d4g_categories_menu.js',
     'lib/client/views/d4g_postUpvote.html',
     'lib/client/views/d4g_hero.html',
     'lib/client/views/d4g_button_bar.html',

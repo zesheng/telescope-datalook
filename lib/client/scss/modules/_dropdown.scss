@@ -59,3 +59,306 @@
         }
     }
 }
+
+/*
+*  Standard Menu Dropdowns (bounce popover with arrows)
+*/
+
+.drop-element.drop-theme-arrows-bounce {
+    max-width: 100%;
+    max-height: 100%;
+    @include transform(translateZ(0));
+    @include transition(opacity .1s);
+    opacity: 0;
+
+    .drop-content {
+        position: relative;
+        font-family: inherit;
+        background: #fff;
+        color: #444;
+        padding: 1em;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+        -moz-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+        filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+        @include transition(transform 0.3s cubic-bezier(0, 0, 0.265, 1.55));
+        @include transform(scale(0) translateZ(0));
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-color: transparent;
+            border-width: 12px;
+            border-style: solid;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0 1em 0 1em;
+            margin: 0;
+        }
+    }
+
+    &.drop-open {
+        display: none;
+    }
+
+    &.drop-open-transitionend {
+        display: block;
+    }
+
+    &.drop-after-open {
+        @include transition(none);
+        opacity: 1;
+
+        .drop-content {
+            @include transform(scale(1) translateZ(0));
+        }
+    }
+
+    &.drop-element-attached-bottom.drop-element-attached-center .drop-content {
+        margin-bottom: 12px;
+
+        &:before {
+            top: 100%;
+            left: 50%;
+            margin-left: -12px;
+            border-top-color: #fff;
+        }
+    }
+
+    &.drop-element-attached-top.drop-element-attached-center .drop-content {
+        margin-top: 12px;
+
+        &:before {
+            bottom: 100%;
+            left: 50%;
+            margin-left: -12px;
+            border-bottom-color: #fff;
+        }
+    }
+
+    &.drop-element-attached-right.drop-element-attached-middle .drop-content {
+        margin-right: 12px;
+
+        &:before {
+            left: 100%;
+            top: 50%;
+            margin-top: -12px;
+            border-left-color: #fff;
+        }
+    }
+
+    &.drop-element-attached-left.drop-element-attached-middle .drop-content {
+        margin-left: 12px;
+
+        &:before {
+            right: 100%;
+            top: 50%;
+            margin-top: -12px;
+            border-right-color: #fff;
+        }
+    }
+
+    &.drop-element-attached-top {
+
+        &.drop-element-attached-left.drop-target-attached-bottom .drop-content {
+            margin-top: 12px;
+
+            &:before {
+                bottom: 100%;
+                left: 12px;
+                border-bottom-color: #fff;
+            }
+        }
+
+        &.drop-element-attached-right.drop-target-attached-bottom .drop-content {
+            margin-top: 12px;
+
+            &:before {
+                bottom: 100%;
+                right: 12px;
+                border-bottom-color: #fff;
+            }
+        }
+    }
+
+    &.drop-element-attached-bottom {
+
+        &.drop-element-attached-left.drop-target-attached-top .drop-content {
+            margin-bottom: 12px;
+
+            &:before {
+                top: 100%;
+                left: 12px;
+                border-top-color: #fff;
+            }
+        }
+
+        &.drop-element-attached-right.drop-target-attached-top .drop-content {
+            margin-bottom: 12px;
+
+            &:before {
+                top: 100%;
+                right: 12px;
+                border-top-color: #fff;
+            }
+        }
+    }
+
+    &.drop-element-attached-top {
+
+        &.drop-element-attached-right.drop-target-attached-left .drop-content {
+            margin-right: 12px;
+
+            &:before {
+                top: 12px;
+                left: 100%;
+                border-left-color: #fff;
+            }
+        }
+
+        &.drop-element-attached-left.drop-target-attached-right .drop-content {
+            margin-left: 12px;
+
+            &:before {
+                top: 12px;
+                right: 100%;
+                border-right-color: #fff;
+            }
+        }
+    }
+
+    &.drop-element-attached-bottom {
+        &.drop-element-attached-right.drop-target-attached-left .drop-content {
+            margin-right: 12px;
+
+            &:before {
+                bottom: 12px;
+                left: 100%;
+                border-left-color: #fff;
+            }
+        }
+        &.drop-element-attached-left.drop-target-attached-right .drop-content {
+            margin-left: 12px;
+
+            &:before {
+                bottom: 12px;
+                right: 100%;
+                border-right-color: #fff;
+            }
+        }
+    }
+
+    &.drop-element-attached-bottom.drop-element-attached-center .drop-content {
+        -webkit-transform-origin: 50% calc(100% + 12px);
+        -moz-transform-origin: 50% calc(100% + 12px);
+        -ms-transform-origin: 50% calc(100% + 12px);
+        -o-transform-origin: 50% calc(100% + 12px);
+        transform-origin: 50% calc(100% + 12px);
+    }
+
+    &.drop-element-attached-top.drop-element-attached-center .drop-content {
+        -webkit-transform-origin: 50% -12px;
+        -moz-transform-origin: 50% -12px;
+        -ms-transform-origin: 50% -12px;
+        -o-transform-origin: 50% -12px;
+        transform-origin: 50% -12px;
+    }
+
+    &.drop-element-attached-right.drop-element-attached-middle .drop-content {
+        -webkit-transform-origin: calc(100% + 12px) 50%;
+        -moz-transform-origin: calc(100% + 12px) 50%;
+        -ms-transform-origin: calc(100% + 12px) 50%;
+        -o-transform-origin: calc(100% + 12px) 50%;
+        transform-origin: calc(100% + 12px) 50%;
+    }
+
+    &.drop-element-attached-left.drop-element-attached-middle .drop-content {
+        -webkit-transform-origin: -12px 50%;
+        -moz-transform-origin: -12px 50%;
+        -ms-transform-origin: -12px 50%;
+        -o-transform-origin: -12px 50%;
+        transform-origin: -12px 50%;
+    }
+
+    &.drop-element-attached-top {
+
+        &.drop-element-attached-left.drop-target-attached-bottom .drop-content {
+            -webkit-transform-origin: 0 -12px;
+            -moz-transform-origin: 0 -12px;
+            -ms-transform-origin: 0 -12px;
+            -o-transform-origin: 0 -12px;
+            transform-origin: 0 -12px;
+        }
+
+        &.drop-element-attached-right.drop-target-attached-bottom .drop-content {
+            -webkit-transform-origin: 100% -12px;
+            -moz-transform-origin: 100% -12px;
+            -ms-transform-origin: 100% -12px;
+            -o-transform-origin: 100% -12px;
+            transform-origin: 100% -12px;
+        }
+    }
+
+    &.drop-element-attached-bottom {
+
+        &.drop-element-attached-left.drop-target-attached-top .drop-content {
+            -webkit-transform-origin: 0 calc(100% + 12px);
+            -moz-transform-origin: 0 calc(100% + 12px);
+            -ms-transform-origin: 0 calc(100% + 12px);
+            -o-transform-origin: 0 calc(100% + 12px);
+            transform-origin: 0 calc(100% + 12px);
+        }
+
+        &.drop-element-attached-right.drop-target-attached-top .drop-content {
+            -webkit-transform-origin: 100% calc(100% + 12px);
+            -moz-transform-origin: 100% calc(100% + 12px);
+            -ms-transform-origin: 100% calc(100% + 12px);
+            -o-transform-origin: 100% calc(100% + 12px);
+            transform-origin: 100% calc(100% + 12px);
+        }
+    }
+
+    &.drop-element-attached-top {
+
+        &.drop-element-attached-right.drop-target-attached-left .drop-content {
+            -webkit-transform-origin: calc(100% + 12px) 0;
+            -moz-transform-origin: calc(100% + 12px) 0;
+            -ms-transform-origin: calc(100% + 12px) 0;
+            -o-transform-origin: calc(100% + 12px) 0;
+            transform-origin: calc(100% + 12px) 0;
+        }
+
+        &.drop-element-attached-left.drop-target-attached-right .drop-content {
+            -webkit-transform-origin: -12px 0;
+            -moz-transform-origin: -12px 0;
+            -ms-transform-origin: -12px 0;
+            -o-transform-origin: -12px 0;
+            transform-origin: -12px 0;
+        }
+    }
+
+    &.drop-element-attached-bottom {
+
+        &.drop-element-attached-right.drop-target-attached-left .drop-content {
+            -webkit-transform-origin: calc(100% + 12px) 100%;
+            -moz-transform-origin: calc(100% + 12px) 100%;
+            -ms-transform-origin: calc(100% + 12px) 100%;
+            -o-transform-origin: calc(100% + 12px) 100%;
+            transform-origin: calc(100% + 12px) 100%;
+        }
+
+        &.drop-element-attached-left.drop-target-attached-right .drop-content {
+            -webkit-transform-origin: -12px 100%;
+            -moz-transform-origin: -12px 100%;
+            -ms-transform-origin: -12px 100%;
+            -o-transform-origin: -12px 100%;
+            transform-origin: -12px 100%;
+        }
+    }
+}
