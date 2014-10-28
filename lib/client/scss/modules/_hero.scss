@@ -114,6 +114,10 @@
     span {
         padding-right: 3em;
 
+        @include small {
+            padding-right: 2em;
+        }
+
         a {
             color: $text-medium;
             @include transition(color .7s);
@@ -127,5 +131,14 @@
     .categories-popover {
         float: right;
         padding-right: 23px;
+
+        & > a {
+            color: $text-medium;
+        }
+
+        @include small {
+            display: none;
+        }
+
     }
 }
