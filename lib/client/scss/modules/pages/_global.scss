@@ -1,0 +1,60 @@
+
+%static-page {
+
+    .content-wrapper {
+        @extend %content-container;
+        padding-top: 2em;
+    }
+
+    section {
+        margin-bottom: 3em;
+
+        &:first-of-type {
+            margin-top: 2.5em;
+        }
+    }
+
+    h2 {
+        padding-bottom: .3em;
+        border-bottom: 1px solid $text-light;
+    }
+
+    h2, h3 {
+        text-transform: none;
+    }
+
+    p, ul {
+        font-size: 1.1em;
+        text-align: justify;
+
+        @include small {
+            text-align: left;
+        }
+    }
+
+    li {
+        margin-bottom: emRhythm(2);
+    }
+
+    a {
+        color: $brand-primary;
+        @include transition(color .7s);
+
+        &:hover {
+            color: darken($brand-primary, 20%);
+        }
+    }
+
+    figcaption {
+        margin: 0 auto 2em auto;
+        max-width: 70%;
+
+        @include small {
+            max-width: 100%;
+        }
+    }
+
+    hr {
+        border-top-color: $text-light;
+    }
+}
