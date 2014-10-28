@@ -132,9 +132,10 @@ $mobile-header-height: 50px;
             max-height: 40px;
 
             @include small {
-                margin-top: 40px;
+                margin-top: 60px;
                 margin-left: auto;
                 margin-right: auto;
+                padding-left: 45px;
             }
         }
     }
