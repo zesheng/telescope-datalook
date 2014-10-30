@@ -4,10 +4,14 @@
       <a class="view dropdown-top-level" href="/">{{name}}</a>
       <div class="dropdown-menu">
         <ul role="menu" aria-labelledby="dLabel">
+          {{#if isAdmin}}
           <li><a href="#">{{i18n "Notifications"}}</a></li>
+          {{/if}}
           <li><a href="{{profileUrl}}">{{i18n "View My Profile"}}</a></li>
           <li><a href="/account">{{i18n "Edit Account"}}</a></li>
           {{#if isAdmin}}
+          <li><a href="{{pathFor 'all-users'}}">{{i18n "Users"}}</a></li>
+          <li><a href="{{pathFor 'categories'}}">{{i18n "Categories"}}</a></li>
           <li><a href="{{pathFor 'settings'}}">{{i18n "Settings"}}</a></li>
           <li><a href="{{pathFor 'searchLogs'}}">{{i18n "Search Logs"}}</a></li>
           {{/if}}
