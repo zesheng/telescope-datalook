@@ -2168,7 +2168,7 @@ li.comment {
 /* line 130, ../scss/modules/_header.scss */
 .header .logo-image img {
   display: block;
-  max-height: 40px;
+  max-width: 270px;
 }
 @media screen and (max-width: 40em) {
   /* line 130, ../scss/modules/_header.scss */
@@ -3717,15 +3717,15 @@ a.mt-share-inline-square-sm {
   border-top-color: #B3B3B3;
 }
 
-/* line 5, ../scss/modules/pages/_about.scss */
-.template-about img {
+/* line 7, ../scss/modules/pages/_about.scss */
+.template-about figure img {
   display: block;
   margin: 2em auto 1em auto;
   max-width: 70%;
 }
 @media screen and (max-width: 40em) {
-  /* line 5, ../scss/modules/pages/_about.scss */
-  .template-about img {
+  /* line 7, ../scss/modules/pages/_about.scss */
+  .template-about figure img {
     max-width: 100%;
   }
 }
