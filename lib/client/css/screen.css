@@ -2319,7 +2319,7 @@ li.comment {
 .hero .copy h1 {
   padding: 0px 20px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 0.9;
   text-transform: none;
 }
 /* line 32, ../scss/modules/_hero.scss */
