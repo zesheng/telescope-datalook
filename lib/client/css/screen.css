@@ -2345,7 +2345,7 @@ li.comment {
   text-decoration: none;
 }
 
-/* line 57, ../scss/modules/_hero.scss */
+/* line 54, ../scss/modules/_hero.scss */
 .link-effect a {
   padding: 10px 0 0 0;
   color: #fff;
@@ -2357,7 +2357,7 @@ li.comment {
   -webkit-transition-delay: 0.2s, 0.2s, 0.2s;
   transition: background 0.5s ease 0.2s, padding 0.5s ease 0.2s, border-bottom 0.5s ease 0.2s;
 }
-/* line 64, ../scss/modules/_hero.scss */
+/* line 61, ../scss/modules/_hero.scss */
 .link-effect a::before, .link-effect a::after {
   position: absolute;
   left: 0;
@@ -2375,7 +2375,7 @@ li.comment {
   -webkit-transform: translateY(-10px);
   transform: translateY(-10px);
 }
-/* line 77, ../scss/modules/_hero.scss */
+/* line 74, ../scss/modules/_hero.scss */
 .link-effect a::before {
   top: 0;
   -moz-transform: translateY(-10px);
@@ -2387,7 +2387,7 @@ li.comment {
   -webkit-transform: rotate(50deg);
   transform: rotate(50deg);
 }
-/* line 83, ../scss/modules/_hero.scss */
+/* line 80, ../scss/modules/_hero.scss */
 .link-effect a::after {
   bottom: 0;
   -moz-transform: translateY(10px);
@@ -2399,13 +2399,13 @@ li.comment {
   -webkit-transform: rotate(-50deg);
   transform: rotate(-50deg);
 }
-/* line 89, ../scss/modules/_hero.scss */
+/* line 86, ../scss/modules/_hero.scss */
 .link-effect a:hover, .link-effect a:focus {
   background: #8CC2DA;
   padding: 10px;
   border-bottom: none;
 }
-/* line 96, ../scss/modules/_hero.scss */
+/* line 93, ../scss/modules/_hero.scss */
 .link-effect a:hover::before, .link-effect a:focus::before, .link-effect a:hover::after, .link-effect a:focus::after {
   opacity: 1;
   background: #8CC2DA;
@@ -2419,7 +2419,7 @@ li.comment {
   transform: rotate(0deg);
 }
 
-/* line 107, ../scss/modules/_hero.scss */
+/* line 104, ../scss/modules/_hero.scss */
 .sort-links {
   max-width: 1000px;
   margin-left: auto;
@@ -2446,17 +2446,17 @@ li.comment {
 .sort-links:after {
   clear: both;
 }
-/* line 114, ../scss/modules/_hero.scss */
+/* line 111, ../scss/modules/_hero.scss */
 .sort-links span {
   padding-right: 3em;
 }
 @media screen and (max-width: 40em) {
-  /* line 114, ../scss/modules/_hero.scss */
+  /* line 111, ../scss/modules/_hero.scss */
   .sort-links span {
     padding-right: 2em;
   }
 }
-/* line 121, ../scss/modules/_hero.scss */
+/* line 118, ../scss/modules/_hero.scss */
 .sort-links span a {
   color: #6F6F6F;
   -moz-transition: color 0.7s;
@@ -2464,21 +2464,22 @@ li.comment {
   -webkit-transition: color 0.7s;
   transition: color 0.7s;
 }
-/* line 125, ../scss/modules/_hero.scss */
+/* line 122, ../scss/modules/_hero.scss */
 .sort-links span a:hover {
   color: #65aece;
 }
-/* line 131, ../scss/modules/_hero.scss */
+/* line 128, ../scss/modules/_hero.scss */
 .sort-links .categories-popover {
   float: right;
   padding-right: 23px;
 }
-/* line 135, ../scss/modules/_hero.scss */
+/* line 132, ../scss/modules/_hero.scss */
 .sort-links .categories-popover > a {
   color: #6F6F6F;
+  cursor: pointer;
 }
 @media screen and (max-width: 40em) {
-  /* line 131, ../scss/modules/_hero.scss */
+  /* line 128, ../scss/modules/_hero.scss */
   .sort-links .categories-popover {
     display: none;
   }

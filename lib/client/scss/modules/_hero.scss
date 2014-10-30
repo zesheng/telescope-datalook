@@ -131,6 +131,7 @@
 
         & > a {
             color: $text-medium;
+            cursor: pointer;
         }
 
         @include small {
