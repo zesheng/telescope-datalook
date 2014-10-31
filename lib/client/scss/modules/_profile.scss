@@ -36,6 +36,7 @@
             width: 150px;
             height: 150px;
             margin-bottom: 2em;
+            @include border-radius(2px);
         }
     }
 }

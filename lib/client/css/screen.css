@@ -2168,7 +2168,7 @@ li.comment {
 /* line 130, ../scss/modules/_header.scss */
 .header .logo-image img {
   display: block;
-  max-width: 270px;
+  max-width: 250px;
 }
 @media screen and (max-width: 40em) {
   /* line 130, ../scss/modules/_header.scss */
@@ -3386,13 +3386,16 @@ li.comment {
   width: 150px;
   height: 150px;
   margin-bottom: 2em;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
 }
 
-/* line 46, ../scss/modules/_profile.scss */
+/* line 47, ../scss/modules/_profile.scss */
 .template-d4g_user_edit .pw-change {
   margin-bottom: 2em;
 }
-/* line 49, ../scss/modules/_profile.scss */
+/* line 50, ../scss/modules/_profile.scss */
 .template-d4g_user_edit .pw-change h4 {
   text-decoration: underline;
 }
@@ -3621,9 +3624,9 @@ a.mt-share-inline-square-sm {
   width: 30px;
   background-size: 30px 30px;
   display: block;
-  -moz-border-radius: 30px;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
 
 /* line 17, ../scss/modules/_users.scss */
