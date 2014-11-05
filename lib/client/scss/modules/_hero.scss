@@ -131,6 +131,7 @@
     .categories-popover {
         float: right;
         padding-right: 23px;
+        z-index: 101;
 
         & > a {
             color: $text-medium;
@@ -142,4 +143,8 @@
         }
 
     }
+}
+
+.categories-content {
+    z-index: 99;
 }
