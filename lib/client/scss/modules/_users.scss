@@ -40,3 +40,28 @@
         float: right;
     }
 }
+
+
+/*
+*  Profile edit page
+*/
+
+.template-d4g_user_edit {
+
+    .control-group {
+
+        > label {
+
+            @include medium-large {
+                float: left;
+            }
+        }
+
+        .controls, .note {
+
+            @include medium-large {
+                margin-left: 200px;
+            }
+        }
+    }
+}

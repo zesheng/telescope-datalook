@@ -1,0 +1,18 @@
+.template-settings {
+
+    .form-group {
+
+        > label {
+
+            @include medium-large {
+                float: left;
+            }
+        }
+        .controls {
+
+            @include medium-large {
+                margin-left: 200px;
+            }
+        }
+    }
+}

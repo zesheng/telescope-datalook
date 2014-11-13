@@ -546,3 +546,104 @@
 .module {
     border-radius: 3px;
 }
+
+/*
+*  Post submit/edit pages
+*/
+.template-d4g_post_submit,
+.template-d4g_post_edit {
+
+    .content-wrapper {
+        max-width: 700px;
+        padding: 3em 0;
+    }
+
+    .grid-block {
+        background: none;
+        @include box-shadow(none);
+    }
+
+    h2 {
+        text-transform: none;
+        text-align: center;
+
+        @include small-medium {
+            @include setType(4, $ms-up3);
+        }
+    }
+
+    .control-group {
+        margin-bottom: 2.5em;
+
+        > label {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding-left: 1em;
+        }
+
+        .helper-text {
+            font-size: .65em;
+            font-weight: normal;
+            color: $text-light;
+            margin-left: .5em;
+
+            a {
+                color: $text-light;
+                font-weight: normal;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .categories-field {
+
+        .control-label {
+            border-bottom: 1px solid $text-light;
+            margin: 1.5em -0.1em 1em -0.2em;
+            padding-left: 0.7em;
+            padding-bottom: 0.2em;
+        }
+    }
+
+    .post-created-meta {
+
+        h4 {
+            font-size: 1.4em;
+            text-transform: none;
+            margin: 1.5em 1em 0.5em 0;
+        }
+    }
+
+    .form-actions {
+        margin-top: 5em;
+
+        .delete-link {
+            display: block;
+            padding: 7px 12px;
+            background: $danger;
+            color: #fff;
+            font-weight: normal;
+            @include transition(background 0.7s);
+
+            &:hover {
+                background: darken($danger, 10%);
+            }
+
+            @include small {
+                margin: 1em auto;
+            }
+        }
+
+        .button {
+
+            @include small {
+                padding: 10px 85px;
+                float: none;
+                margin: 1em auto;
+            }
+        }
+    }
+}
