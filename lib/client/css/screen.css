@@ -2297,10 +2297,11 @@ li.comment {
 }
 /* line 12, ../scss/modules/_hero.scss */
 .hero .hero-inner {
+  background: rgba(0, 0, 0, 0.1);
   position: relative;
   min-height: 500px;
 }
-/* line 17, ../scss/modules/_hero.scss */
+/* line 18, ../scss/modules/_hero.scss */
 .hero .copy {
   position: absolute;
   top: 40%;
@@ -2309,10 +2310,12 @@ li.comment {
   color: #fff;
   width: 100%;
 }
-/* line 25, ../scss/modules/_hero.scss */
+/* line 26, ../scss/modules/_hero.scss */
 .hero .copy h1 {
   padding: 0px 20px;
   line-height: 0.9;
+  font-size: 3em;
+  line-height: 0.5;
 }
 /* line 32, ../scss/modules/_hero.scss */
 .hero .copy h3 {
