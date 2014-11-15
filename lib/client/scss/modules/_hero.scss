@@ -25,6 +25,7 @@
         h1 {
             padding: 0px 20px;
             line-height: 0.9;
+            @include setType($base-line-multi, 3em);
         }
 
         h3 {
