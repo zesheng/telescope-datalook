@@ -2313,9 +2313,8 @@ li.comment {
 /* line 26, ../scss/modules/_hero.scss */
 .hero .copy h1 {
   padding: 0px 20px;
-  line-height: 0.9;
+  line-height: 1;
   font-size: 3em;
-  line-height: 0.5;
 }
 /* line 32, ../scss/modules/_hero.scss */
 .hero .copy h3 {
