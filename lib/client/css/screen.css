@@ -2265,18 +2265,23 @@ li.comment {
 }
 
 /* line 230, ../scss/modules/_header.scss */
+.dropdown-menu li {
+  text-align: center;
+}
+
+/* line 234, ../scss/modules/_header.scss */
 .has-dropdown .user-menu .dropdown-menu {
   left: auto;
   right: 10px;
 }
 
-/* line 235, ../scss/modules/_header.scss */
+/* line 239, ../scss/modules/_header.scss */
 .has-dropdown .notifications-menu .dropdown-menu {
   left: auto;
   right: 10px;
 }
 
-/* line 240, ../scss/modules/_header.scss */
+/* line 244, ../scss/modules/_header.scss */
 .newsletter-dismiss {
   line-height: 30px !important;
 }
