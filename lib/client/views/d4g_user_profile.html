@@ -2,30 +2,30 @@
   {{#with user}}
     <div class="edit-profile">
       {{#if canEditProfile}}
-        <a class="inline" href="/users/{{slug}}/edit">{{i18n "Edit profile"}}</a>
+        <a class="inline" href="/users/{{slug}}/edit">{{_ "edit_profile"}}</a>
       {{/if}}
     </div>
     <div class="profile">
       <table>
         <tr>
-          <td colspan="2">{{>avatar user=this class="large circle"}}</td>
+          <td colspan="2">{{> avatar user=this size="large"}}</td>
         </tr>
         {{#if isAdmin}}
           <tr>
-            <td>{{i18n "ID"}}: </td>
+            <td>{{_ "id"}}: </td>
             <td>{{_id}}</td>
           </tr>
         {{/if}}
         <tr>
-          <td>{{i18n "Name:"}}</td>
+          <td>{{_ "name"}}</td>
           <td>{{profile.name}}</td>
         </tr>
         <tr>
-          <td>{{i18n "Member since"}}:</td>
-          <td>{{formattedDatetime this.createdAt}}</td>
+          <td>{{_ "member_since"}}:</td>
+          <td>{{createdAtFormatted}}</td>
         </tr>
         <tr>
-          <td>{{i18n "Bio:"}}</td>
+          <td>{{_ "bio"}}</td>
           <td>{{profile.bio}}</td>
         </tr>
         {{#if getTwitterName}}
@@ -36,22 +36,22 @@
         {{/if}}
         {{#if getGitHubName}}
           <tr>
-            <td>{{i18n "GitHub"}}:</td>
+            <td>{{_ "github"}}:</td>
             <td><a href="http://github.com/{{getGitHubName}}">{{getGitHubName}}</a></td>
           </tr>
         {{/if}}
         {{#if profile.site}}
           <tr>
-            <td>{{i18n "Site"}}:</td>
+            <td>{{_ "site"}}:</td>
             <td><a href="{{profile.site}}">{{profile.site}}</a></td>
           </tr>
         {{/if}}
       </table>
       {{#if canInvite}}
         {{#if inviteCount}}
-          <a class="button inline invite-link" href="#">{{i18n "Invite"}} ({{inviteCount}} {{i18n "left"}})</a>
+          <a class="button inline invite-link" href="#">{{_ "invite"}} ({{inviteCount}} {{_ "left"}})</a>
         {{else}}
-          <a class="button inline disabled" href="#">{{i18n "Invite (none left)"}}</a>
+          <a class="button inline disabled" href="#">{{_ "invite_none_left"}}</a>
         {{/if}}
       {{/if}}
     </div>
