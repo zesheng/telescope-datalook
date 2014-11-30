@@ -488,50 +488,50 @@
 
 @include small {
     .posts {
-        padding:0;
+        padding: 0;
 
         .post-rank {
-            display:none;
+            display: none;
         }
     }
 
     .post {
 
         .post-content {
-            margin-right:50px;
-            margin-right:0px;
+            margin-right: 50px;
+            margin-right: 0px;
 
             .upvote-link {
-                width:30px;
+                width: 30px;
             }
 
             .post-info {
-                padding:13px 0;
+                padding: 13px 0;
             }
 
             .post-heading {
 
                 .post-title {
-                    display:block;
-                    margin-bottom:4px;
+                    display: block;
+                    margin-bottom: 4px;
                 }
 
                 .post-domain {
-                    display:block;
-                    margin-bottom:4px;
-                    font-size:13px;
+                    display: block;
+                    margin-bottom: 4px;
+                    font-size: 13px;
                 }
             }
 
             .post-meta {
-                font-size:11px;
+                font-size: 11px;
 
                 .unit {
-                    font-size:0;
+                    font-size: 0;
 
                     &:after {
-                        font-size:12px;
-                        content:"pts ";
+                        font-size: 12px;
+                        content: "pts ";
                     }
                 }
             }
