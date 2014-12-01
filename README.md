@@ -7,7 +7,7 @@ This package is intended to be added to [Telescope][1] to create the styling and
 This package/site is currently under heavy development.  If you're reading this, it's likely because you're one of the fine people working on it.  So I'll get right to it.
 
 ### Telescope Core
-The clone of Telescope [in my Guthub account][3] will be kept up to date with [the official upstream version][4] published by [Sacha Greif][5].  The master branch in my Telescope repo will always be equal to the master branch on the upstream repo.  The [data-for-good branch][6] is the production branch for dataforgood.io and data-for-good-dev is the staging/testing branch (this branch doesn't currently exist - coming soon).
+The clone of Telescope [in my Guthub account][3] will be kept up to date with [the official upstream version][4] published by [Sacha Greif][5].  The master branch in my Telescope repo will always be equal to the master branch on the upstream repo.  The [datalook branch][6] is the production branch for dataforgood.io and data-for-good-dev is the staging/testing branch (this branch doesn't currently exist - coming soon).
 
 ---
 
@@ -100,7 +100,7 @@ This should be enough to get started with custom styling.  As soon as I finish b
 [3]: https://github.com/jshimko/Telescope
 [4]: https://github.com/TelescopeJS/Telescope
 [5]: https://github.com/SachaG
-[6]: https://github.com/jshimko/Telescope/tree/data-for-good
+[6]: https://github.com/jshimko/Telescope/tree/datalook
 [7]: http://compass-style.org/
 [8]: http://susy.oddbird.net/
 [9]: http://breakpoint-sass.com/
