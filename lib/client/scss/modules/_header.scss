@@ -133,6 +133,7 @@ $mobile-header-height: 50px;
             margin-bottom: -10px;
 
             @include small {
+                max-width: 230px;
                 margin-bottom: 0;
             }
 

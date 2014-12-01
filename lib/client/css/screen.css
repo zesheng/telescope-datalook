@@ -2168,6 +2168,7 @@ li.comment {
 @media screen and (max-width: 40em) {
   /* line 130, ../scss/modules/_header.scss */
   .header .logo-image img {
+    max-width: 230px;
     margin-bottom: 0;
   }
 }
