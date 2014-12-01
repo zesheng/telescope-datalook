@@ -1,5 +1,5 @@
-# DataForGood.io
-This package is intended to be added to [Telescope][1] to create the styling and functionality seen on [dataforgood.io][2].  
+# DataLook.io
+This package is intended to be added to [Telescope][1] to create the styling and functionality seen on [datalook.io][2].  
 
 ---
 
@@ -96,7 +96,7 @@ This should be enough to get started with custom styling.  As soon as I finish b
 
 
 [1]: http://telesc.pe
-[2]: http://dataforgood.co
+[2]: http://datalook.io
 [3]: https://github.com/jshimko/Telescope
 [4]: https://github.com/TelescopeJS/Telescope
 [5]: https://github.com/SachaG
