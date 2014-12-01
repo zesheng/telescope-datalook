@@ -192,10 +192,6 @@ $mobile-header-height: 50px;
                     @include box-shadow(rgba($brand-primary, 0.3) 0 0 7px 1px inset);
                 }
             }
-
-            .search-clear {
-                display: none;
-            }
         }
     }
 }
