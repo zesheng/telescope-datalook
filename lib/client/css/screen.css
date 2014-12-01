@@ -2476,7 +2476,7 @@ li.comment {
 @media screen and (max-width: 40em) {
   /* line 124, ../scss/modules/_hero.scss */
   .sort-links span {
-    padding-right: 2em;
+    padding-right: 1.5em;
   }
 }
 /* line 131, ../scss/modules/_hero.scss */
