@@ -13,8 +13,11 @@ Package.onUse(function (api) {
     'telescope-base',
     'telescope-search',
     'telescope-tags',
+    'iron:router',
     'meteorhacks:fast-render@1.0.0',
-    'meteorhacks:subs-manager@1.1.0'
+    'meteorhacks:subs-manager@1.1.0',
+    'percolatestudio:segment.io',
+    'jeremy:velocity-animate'
     ], ['client', 'server']);
 
 
