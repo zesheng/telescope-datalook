@@ -1,0 +1,11 @@
+<template name="d4g_postContent">
+  <div class="post-info">
+    <h3 class="post-heading">{{> postTitle}}</h3>
+    {{> d4g_post_tagline}}
+    <div class="post-meta">
+      {{#each postMeta}}
+        {{> UI.dynamic template=getTemplate data=..}}
+      {{/each}}
+    </div>
+  </div>
+</template>

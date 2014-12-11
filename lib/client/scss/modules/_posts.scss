@@ -259,6 +259,10 @@
     padding: $grid-padding - 5px 0;
 }
 
+.post-tagline {
+    margin-bottom: .3em;
+}
+
 .post-content {
     min-height: $grid-unit - 30px;
 
@@ -572,7 +576,7 @@
         }
     }
 
-    .control-group {
+    .control-group, .form-group {
         margin-bottom: 2.5em;
 
         > label {

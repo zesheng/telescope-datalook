@@ -2181,31 +2181,31 @@ li.comment {
     padding-left: 45px;
   }
 }
-/* line 148, ../scss/modules/_header.scss */
+/* line 149, ../scss/modules/_header.scss */
 .header .secondary-nav {
   z-index: 20;
   position: relative;
   text-align: center;
 }
 @media screen and (min-width: 40em) and (max-width: 50em) {
-  /* line 148, ../scss/modules/_header.scss */
+  /* line 149, ../scss/modules/_header.scss */
   .header .secondary-nav {
     text-align: inherit;
     float: right;
   }
 }
-/* line 159, ../scss/modules/_header.scss */
+/* line 160, ../scss/modules/_header.scss */
 .header .search {
   position: relative;
 }
-/* line 162, ../scss/modules/_header.scss */
+/* line 163, ../scss/modules/_header.scss */
 .header .search span.search-icon {
   font-size: 20px;
   display: block;
   float: left;
   margin: 0 10px 0 0;
 }
-/* line 169, ../scss/modules/_header.scss */
+/* line 170, ../scss/modules/_header.scss */
 .header .search .search-field {
   font-size: 14px;
   padding: 7px 12px;
@@ -2217,38 +2217,34 @@ li.comment {
   -moz-transition: 0.5s all;
   background: rgba(0, 0, 0, 0.05);
 }
-/* line 180, ../scss/modules/_header.scss */
+/* line 181, ../scss/modules/_header.scss */
 .header .search .search-field:focus {
   outline: none;
 }
-/* line 187, ../scss/modules/_header.scss */
+/* line 188, ../scss/modules/_header.scss */
 .header .search.empty .search-field {
   background: rgba(0, 0, 0, 0.03);
 }
-/* line 190, ../scss/modules/_header.scss */
+/* line 191, ../scss/modules/_header.scss */
 .header .search.empty .search-field:focus {
   background: white;
   -moz-box-shadow: rgba(140, 194, 218, 0.3) 0 0 7px 1px inset;
   -webkit-box-shadow: rgba(140, 194, 218, 0.3) 0 0 7px 1px inset;
   box-shadow: rgba(140, 194, 218, 0.3) 0 0 7px 1px inset;
 }
-/* line 196, ../scss/modules/_header.scss */
-.header .search.empty .search-clear {
-  display: none;
-}
 
-/* line 203, ../scss/modules/_header.scss */
+/* line 200, ../scss/modules/_header.scss */
 .header-module, .header-submodule {
   display: block;
   margin-right: 20px;
 }
 
-/* line 209, ../scss/modules/_header.scss */
+/* line 206, ../scss/modules/_header.scss */
 .header-module:last-child {
   margin-right: 0px;
 }
 
-/* line 214, ../scss/modules/_header.scss */
+/* line 211, ../scss/modules/_header.scss */
 .mobile-menu-button {
   position: absolute;
   display: inline-block;
@@ -2257,39 +2253,39 @@ li.comment {
   z-index: 100;
   font-size: 2em;
 }
-/* line 222, ../scss/modules/_header.scss */
+/* line 219, ../scss/modules/_header.scss */
 .mobile-menu-button:focus {
   outline: none;
 }
 
-/* line 227, ../scss/modules/_header.scss */
+/* line 224, ../scss/modules/_header.scss */
 .account-link {
   display: inline-block;
 }
 
-/* line 231, ../scss/modules/_header.scss */
+/* line 228, ../scss/modules/_header.scss */
 .sign-in {
   margin-right: 10px;
 }
 
-/* line 235, ../scss/modules/_header.scss */
+/* line 232, ../scss/modules/_header.scss */
 .dropdown-menu li {
   text-align: center;
 }
 
-/* line 239, ../scss/modules/_header.scss */
+/* line 236, ../scss/modules/_header.scss */
 .has-dropdown .user-menu .dropdown-menu {
   left: auto;
   right: 10px;
 }
 
-/* line 244, ../scss/modules/_header.scss */
+/* line 241, ../scss/modules/_header.scss */
 .has-dropdown .notifications-menu .dropdown-menu {
   left: auto;
   right: 10px;
 }
 
-/* line 249, ../scss/modules/_header.scss */
+/* line 246, ../scss/modules/_header.scss */
 .newsletter-dismiss {
   line-height: 30px !important;
 }
@@ -2758,25 +2754,26 @@ li.comment {
 }
 /* line 117, ../scss/modules/_mobile_nav.scss */
 .mobile-menu .dropdown-menu {
+  display: none;
   background: #333;
 }
-/* line 120, ../scss/modules/_mobile_nav.scss */
+/* line 121, ../scss/modules/_mobile_nav.scss */
 .mobile-menu .dropdown-menu li {
   padding: 10px;
   margin-bottom: 0;
   border-top: 1px rgba(255, 255, 255, 0.2) solid;
 }
-/* line 127, ../scss/modules/_mobile_nav.scss */
+/* line 128, ../scss/modules/_mobile_nav.scss */
 .mobile-menu .submit {
   margin: 10px;
 }
 
-/* line 132, ../scss/modules/_mobile_nav.scss */
+/* line 133, ../scss/modules/_mobile_nav.scss */
 .mobile-submit {
   padding: 10px;
   border-bottom: 1px rgba(255, 255, 255, 0.2) solid;
 }
-/* line 136, ../scss/modules/_mobile_nav.scss */
+/* line 137, ../scss/modules/_mobile_nav.scss */
 .mobile-submit .button {
   max-width: none;
 }
@@ -3420,32 +3417,37 @@ li.comment {
   }
 }
 /* line 579, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group,
-.template-d4g_post_edit .control-group {
+.template-d4g_post_submit .control-group, .template-d4g_post_submit .form-group,
+.template-d4g_post_edit .control-group,
+.template-d4g_post_edit .form-group {
   margin-bottom: 2.5em;
 }
 /* line 582, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group > label,
-.template-d4g_post_edit .control-group > label {
+.template-d4g_post_submit .control-group > label, .template-d4g_post_submit .form-group > label,
+.template-d4g_post_edit .control-group > label,
+.template-d4g_post_edit .form-group > label {
   font-size: 1.4em;
   font-weight: bold;
 }
 /* line 587, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group input[type="text"],
-.template-d4g_post_edit .control-group input[type="text"] {
+.template-d4g_post_submit .control-group input[type="text"], .template-d4g_post_submit .form-group input[type="text"],
+.template-d4g_post_edit .control-group input[type="text"],
+.template-d4g_post_edit .form-group input[type="text"] {
   padding-left: 1em;
 }
 /* line 591, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group .helper-text,
-.template-d4g_post_edit .control-group .helper-text {
+.template-d4g_post_submit .control-group .helper-text, .template-d4g_post_submit .form-group .helper-text,
+.template-d4g_post_edit .control-group .helper-text,
+.template-d4g_post_edit .form-group .helper-text {
   font-size: .65em;
   font-weight: normal;
   color: #B3B3B3;
   margin-left: .5em;
 }
 /* line 597, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group .helper-text a,
-.template-d4g_post_edit .control-group .helper-text a {
+.template-d4g_post_submit .control-group .helper-text a, .template-d4g_post_submit .form-group .helper-text a,
+.template-d4g_post_edit .control-group .helper-text a,
+.template-d4g_post_edit .form-group .helper-text a {
   color: #B3B3B3;
   font-weight: normal;
   text-decoration: underline;
