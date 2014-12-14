@@ -5,4 +5,8 @@
     @extend .grid-block;
     margin-bottom: $grid-margin;
     text-align: center;
+
+    &.success-message {
+        background: $success;
+    }
 }
