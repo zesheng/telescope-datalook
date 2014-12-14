@@ -71,7 +71,10 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_hero.html',
     'lib/client/views/d4g_button_bar.html',
     'lib/client/views/d4g_user_profile.html',
+    'lib/client/views/d4g_userInfo.html',
+    'lib/client/views/d4g_userInfo.js',
     'lib/client/views/d4g_user_edit.html',
+    'lib/client/views/d4g_user_edit.js',
 
     // Pages
     'lib/client/views/pages/about.html',

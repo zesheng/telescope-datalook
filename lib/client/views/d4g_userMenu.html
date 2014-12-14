@@ -8,7 +8,7 @@
           <li><a href="#">Notifications</a></li>
           {{/if}}
           <li><a href="{{profileUrl}}">View My Profile</a></li>
-          <li><a href="/account">Edit Account</a></li>
+          <li><a href="{{userEditUrl}}">Edit Account</a></li>
           {{#if isAdmin}}
           <li><a href="{{pathFor 'all-users'}}">Users</a></li>
           <li><a href="{{pathFor 'categories'}}">Categories</a></li>
