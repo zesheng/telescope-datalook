@@ -1435,247 +1435,9 @@ li.comment {
 }
 
 /*
- *  Custom Drop.js styles - https://github.com/HubSpot/drop
- */
-/* line 70, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-target {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  color: #6F6F6F;
-}
-/* line 83, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element {
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -moz-transition: opacity 360ms;
-  -o-transition: opacity 360ms;
-  -webkit-transition: opacity 360ms;
-  transition: opacity 360ms;
-  opacity: 0.999;
-  width: 177px;
-}
-/* line 89, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-open {
-  display: none;
-}
-/* line 93, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-open-transitionend {
-  display: block;
-}
-/* line 97, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-after-open {
-  -moz-transition: none;
-  -o-transition: none;
-  -webkit-transition: none;
-  transition: none;
-  opacity: 1;
-}
-/* line 102, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content {
-  overflow: hidden;
-  position: relative;
-}
-/* line 106, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content ul {
-  position: relative;
-  display: block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-/* line 113, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content ul li {
-  position: relative;
-  display: block;
-}
-/* line 117, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content ul li span {
-  -moz-user-select: -moz-none;
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  width: 100%;
-  background: #fff;
-  line-height: 40px;
-  height: 40px;
-  padding: 0 30px 0 30px;
-  display: block;
-  color: inherit;
-  cursor: pointer;
-  text-align: center;
-  -webkit-backface-visibility: hidden;
-  -webkit-touch-callout: none;
-  -moz-transition: background 0.7s;
-  -o-transition: background 0.7s;
-  -webkit-transition: background 0.7s;
-  transition: background 0.7s;
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-/* line 133, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content ul li span:hover {
-  background: #d8e9f5;
-}
-/* line 138, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content ul li:nth-child(1) span {
-  -moz-transform: translate3d(0, -60px, 0);
-  -ms-transform: translate3d(0, -60px, 0);
-  -webkit-transform: translate3d(0, -60px, 0);
-  transform: translate3d(0, -60px, 0);
-  -moz-transition: -moz-transform 240ms ease 0ms;
-  -o-transition: -o-transform 240ms ease 0ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 0ms;
-  transition: transform 240ms ease 0ms;
-}
-/* line 143, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content ul li:nth-child(2) span {
-  -moz-transform: translate3d(0, -120px, 0);
-  -ms-transform: translate3d(0, -120px, 0);
-  -webkit-transform: translate3d(0, -120px, 0);
-  transform: translate3d(0, -120px, 0);
-  -moz-transition: -moz-transform 240ms ease 60ms;
-  -o-transition: -o-transform 240ms ease 60ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 60ms;
-  transition: transform 240ms ease 60ms;
-}
-/* line 148, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element .drop-content ul li:nth-child(3) span {
-  -moz-transform: translate3d(0, -180px, 0);
-  -ms-transform: translate3d(0, -180px, 0);
-  -webkit-transform: translate3d(0, -180px, 0);
-  transform: translate3d(0, -180px, 0);
-  -moz-transition: -moz-transform 240ms ease 120ms;
-  -o-transition: -o-transform 240ms ease 120ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 120ms;
-  transition: transform 240ms ease 120ms;
-}
-/* line 158, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-after-open .drop-content ul li:nth-child(1) span {
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -moz-transition: -moz-transform 240ms ease 120ms;
-  -o-transition: -o-transform 240ms ease 120ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 120ms;
-  transition: transform 240ms ease 120ms;
-}
-/* line 163, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-after-open .drop-content ul li:nth-child(2) span {
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -moz-transition: -moz-transform 240ms ease 60ms;
-  -o-transition: -o-transform 240ms ease 60ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 60ms;
-  transition: transform 240ms ease 60ms;
-}
-/* line 168, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-after-open .drop-content ul li:nth-child(3) span {
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -moz-transition: -moz-transform 240ms ease 0ms;
-  -o-transition: -o-transform 240ms ease 0ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 0ms;
-  transition: transform 240ms ease 0ms;
-}
-/* line 178, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-element-attached-bottom .drop-content ul li:nth-child(1) span {
-  -moz-transform: translate3d(0, 180px, 0);
-  -ms-transform: translate3d(0, 180px, 0);
-  -webkit-transform: translate3d(0, 180px, 0);
-  transform: translate3d(0, 180px, 0);
-  -moz-transition: -moz-transform 240ms ease 120ms;
-  -o-transition: -o-transform 240ms ease 120ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 120ms;
-  transition: transform 240ms ease 120ms;
-}
-/* line 183, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-element-attached-bottom .drop-content ul li:nth-child(2) span {
-  -moz-transform: translate3d(0, 120px, 0);
-  -ms-transform: translate3d(0, 120px, 0);
-  -webkit-transform: translate3d(0, 120px, 0);
-  transform: translate3d(0, 120px, 0);
-  -moz-transition: -moz-transform 240ms ease 60ms;
-  -o-transition: -o-transform 240ms ease 60ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 60ms;
-  transition: transform 240ms ease 60ms;
-}
-/* line 188, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-element-attached-bottom .drop-content ul li:nth-child(3) span {
-  -moz-transform: translate3d(0, 60px, 0);
-  -ms-transform: translate3d(0, 60px, 0);
-  -webkit-transform: translate3d(0, 60px, 0);
-  transform: translate3d(0, 60px, 0);
-  -moz-transition: -moz-transform 240ms ease 0ms;
-  -o-transition: -o-transform 240ms ease 0ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 0ms;
-  transition: transform 240ms ease 0ms;
-}
-/* line 196, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-element-attached-bottom.drop-after-open .drop-content ul li:nth-child(1) span {
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -moz-transition: -moz-transform 240ms ease 0ms;
-  -o-transition: -o-transform 240ms ease 0ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 0ms;
-  transition: transform 240ms ease 0ms;
-}
-/* line 201, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-element-attached-bottom.drop-after-open .drop-content ul li:nth-child(2) span {
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -moz-transition: -moz-transform 240ms ease 60ms;
-  -o-transition: -o-transform 240ms ease 60ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 60ms;
-  transition: transform 240ms ease 60ms;
-}
-/* line 206, ../scss/modules/_dropdown.scss */
-.drop-theme-d4g.drop-element.drop-element-attached-bottom.drop-after-open .drop-content ul li:nth-child(3) span {
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  -moz-transition: -moz-transform 240ms ease 120ms;
-  -o-transition: -o-transform 240ms ease 120ms;
-  -webkit-transition: -webkit-transform 240ms ease;
-  -webkit-transition-delay: 120ms;
-  transition: transform 240ms ease 120ms;
-}
-
-/*
 *  Standard Menu Dropdowns (bounce popover with arrows)
 */
-/* line 220, ../scss/modules/_dropdown.scss */
+/* line 67, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce {
   max-width: 100%;
   max-height: 100%;
@@ -1688,9 +1450,8 @@ li.comment {
   -webkit-transition: opacity 0.1s;
   transition: opacity 0.1s;
   opacity: 0;
-  z-index: 10000;
 }
-/* line 228, ../scss/modules/_dropdown.scss */
+/* line 74, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce .drop-content {
   position: relative;
   font-family: inherit;
@@ -1711,7 +1472,7 @@ li.comment {
   -webkit-transform: scale(0) translateZ(0);
   transform: scale(0) translateZ(0);
 }
-/* line 242, ../scss/modules/_dropdown.scss */
+/* line 88, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce .drop-content:before {
   content: "";
   display: block;
@@ -1722,21 +1483,21 @@ li.comment {
   border-width: 12px;
   border-style: solid;
 }
-/* line 253, ../scss/modules/_dropdown.scss */
+/* line 99, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce .drop-content ul {
   list-style: none;
   padding: 0 1em 0 1em;
   margin: 0;
 }
-/* line 260, ../scss/modules/_dropdown.scss */
+/* line 106, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-open {
   display: none;
 }
-/* line 264, ../scss/modules/_dropdown.scss */
+/* line 110, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-open-transitionend {
   display: block;
 }
-/* line 268, ../scss/modules/_dropdown.scss */
+/* line 114, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-after-open {
   -moz-transition: none;
   -o-transition: none;
@@ -1744,138 +1505,138 @@ li.comment {
   transition: none;
   opacity: 1;
 }
-/* line 272, ../scss/modules/_dropdown.scss */
+/* line 118, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-after-open .drop-content {
   -moz-transform: scale(1) translateZ(0);
   -ms-transform: scale(1) translateZ(0);
   -webkit-transform: scale(1) translateZ(0);
   transform: scale(1) translateZ(0);
 }
-/* line 277, ../scss/modules/_dropdown.scss */
+/* line 123, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-center .drop-content {
   margin-bottom: 12px;
 }
-/* line 280, ../scss/modules/_dropdown.scss */
+/* line 126, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-center .drop-content:before {
   top: 100%;
   left: 50%;
   margin-left: -12px;
   border-top-color: #fff;
 }
-/* line 288, ../scss/modules/_dropdown.scss */
+/* line 134, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-center .drop-content {
   margin-top: 12px;
 }
-/* line 291, ../scss/modules/_dropdown.scss */
+/* line 137, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-center .drop-content:before {
   bottom: 100%;
   left: 50%;
   margin-left: -12px;
   border-bottom-color: #fff;
 }
-/* line 299, ../scss/modules/_dropdown.scss */
+/* line 145, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-right.drop-element-attached-middle .drop-content {
   margin-right: 12px;
 }
-/* line 302, ../scss/modules/_dropdown.scss */
+/* line 148, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-right.drop-element-attached-middle .drop-content:before {
   left: 100%;
   top: 50%;
   margin-top: -12px;
   border-left-color: #fff;
 }
-/* line 310, ../scss/modules/_dropdown.scss */
+/* line 156, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-left.drop-element-attached-middle .drop-content {
   margin-left: 12px;
 }
-/* line 313, ../scss/modules/_dropdown.scss */
+/* line 159, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-left.drop-element-attached-middle .drop-content:before {
   right: 100%;
   top: 50%;
   margin-top: -12px;
   border-right-color: #fff;
 }
-/* line 323, ../scss/modules/_dropdown.scss */
+/* line 169, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-left.drop-target-attached-bottom .drop-content {
   margin-top: 12px;
 }
-/* line 326, ../scss/modules/_dropdown.scss */
+/* line 172, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-left.drop-target-attached-bottom .drop-content:before {
   bottom: 100%;
   left: 12px;
   border-bottom-color: #fff;
 }
-/* line 333, ../scss/modules/_dropdown.scss */
+/* line 179, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-right.drop-target-attached-bottom .drop-content {
   margin-top: 12px;
 }
-/* line 336, ../scss/modules/_dropdown.scss */
+/* line 182, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-right.drop-target-attached-bottom .drop-content:before {
   bottom: 100%;
   right: 12px;
   border-bottom-color: #fff;
 }
-/* line 346, ../scss/modules/_dropdown.scss */
+/* line 192, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-top .drop-content {
   margin-bottom: 12px;
 }
-/* line 349, ../scss/modules/_dropdown.scss */
+/* line 195, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-top .drop-content:before {
   top: 100%;
   left: 12px;
   border-top-color: #fff;
 }
-/* line 356, ../scss/modules/_dropdown.scss */
+/* line 202, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-top .drop-content {
   margin-bottom: 12px;
 }
-/* line 359, ../scss/modules/_dropdown.scss */
+/* line 205, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-top .drop-content:before {
   top: 100%;
   right: 12px;
   border-top-color: #fff;
 }
-/* line 369, ../scss/modules/_dropdown.scss */
+/* line 215, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-right.drop-target-attached-left .drop-content {
   margin-right: 12px;
 }
-/* line 372, ../scss/modules/_dropdown.scss */
+/* line 218, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-right.drop-target-attached-left .drop-content:before {
   top: 12px;
   left: 100%;
   border-left-color: #fff;
 }
-/* line 379, ../scss/modules/_dropdown.scss */
+/* line 225, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-left.drop-target-attached-right .drop-content {
   margin-left: 12px;
 }
-/* line 382, ../scss/modules/_dropdown.scss */
+/* line 228, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-left.drop-target-attached-right .drop-content:before {
   top: 12px;
   right: 100%;
   border-right-color: #fff;
 }
-/* line 391, ../scss/modules/_dropdown.scss */
+/* line 237, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-left .drop-content {
   margin-right: 12px;
 }
-/* line 394, ../scss/modules/_dropdown.scss */
+/* line 240, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-left .drop-content:before {
   bottom: 12px;
   left: 100%;
   border-left-color: #fff;
 }
-/* line 400, ../scss/modules/_dropdown.scss */
+/* line 246, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-right .drop-content {
   margin-left: 12px;
 }
-/* line 403, ../scss/modules/_dropdown.scss */
+/* line 249, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-right .drop-content:before {
   bottom: 12px;
   right: 100%;
   border-right-color: #fff;
 }
-/* line 411, ../scss/modules/_dropdown.scss */
+/* line 257, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-center .drop-content {
   -webkit-transform-origin: 50% calc(100% + 12px);
   -moz-transform-origin: 50% calc(100% + 12px);
@@ -1883,7 +1644,7 @@ li.comment {
   -o-transform-origin: 50% calc(100% + 12px);
   transform-origin: 50% calc(100% + 12px);
 }
-/* line 419, ../scss/modules/_dropdown.scss */
+/* line 265, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-center .drop-content {
   -webkit-transform-origin: 50% -12px;
   -moz-transform-origin: 50% -12px;
@@ -1891,7 +1652,7 @@ li.comment {
   -o-transform-origin: 50% -12px;
   transform-origin: 50% -12px;
 }
-/* line 427, ../scss/modules/_dropdown.scss */
+/* line 273, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-right.drop-element-attached-middle .drop-content {
   -webkit-transform-origin: calc(100% + 12px) 50%;
   -moz-transform-origin: calc(100% + 12px) 50%;
@@ -1899,7 +1660,7 @@ li.comment {
   -o-transform-origin: calc(100% + 12px) 50%;
   transform-origin: calc(100% + 12px) 50%;
 }
-/* line 435, ../scss/modules/_dropdown.scss */
+/* line 281, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-left.drop-element-attached-middle .drop-content {
   -webkit-transform-origin: -12px 50%;
   -moz-transform-origin: -12px 50%;
@@ -1907,7 +1668,7 @@ li.comment {
   -o-transform-origin: -12px 50%;
   transform-origin: -12px 50%;
 }
-/* line 445, ../scss/modules/_dropdown.scss */
+/* line 291, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-left.drop-target-attached-bottom .drop-content {
   -webkit-transform-origin: 0 -12px;
   -moz-transform-origin: 0 -12px;
@@ -1915,7 +1676,7 @@ li.comment {
   -o-transform-origin: 0 -12px;
   transform-origin: 0 -12px;
 }
-/* line 453, ../scss/modules/_dropdown.scss */
+/* line 299, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-right.drop-target-attached-bottom .drop-content {
   -webkit-transform-origin: 100% -12px;
   -moz-transform-origin: 100% -12px;
@@ -1923,7 +1684,7 @@ li.comment {
   -o-transform-origin: 100% -12px;
   transform-origin: 100% -12px;
 }
-/* line 464, ../scss/modules/_dropdown.scss */
+/* line 310, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-top .drop-content {
   -webkit-transform-origin: 0 calc(100% + 12px);
   -moz-transform-origin: 0 calc(100% + 12px);
@@ -1931,7 +1692,7 @@ li.comment {
   -o-transform-origin: 0 calc(100% + 12px);
   transform-origin: 0 calc(100% + 12px);
 }
-/* line 472, ../scss/modules/_dropdown.scss */
+/* line 318, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-top .drop-content {
   -webkit-transform-origin: 100% calc(100% + 12px);
   -moz-transform-origin: 100% calc(100% + 12px);
@@ -1939,7 +1700,7 @@ li.comment {
   -o-transform-origin: 100% calc(100% + 12px);
   transform-origin: 100% calc(100% + 12px);
 }
-/* line 483, ../scss/modules/_dropdown.scss */
+/* line 329, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-right.drop-target-attached-left .drop-content {
   -webkit-transform-origin: calc(100% + 12px) 0;
   -moz-transform-origin: calc(100% + 12px) 0;
@@ -1947,7 +1708,7 @@ li.comment {
   -o-transform-origin: calc(100% + 12px) 0;
   transform-origin: calc(100% + 12px) 0;
 }
-/* line 491, ../scss/modules/_dropdown.scss */
+/* line 337, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-top.drop-element-attached-left.drop-target-attached-right .drop-content {
   -webkit-transform-origin: -12px 0;
   -moz-transform-origin: -12px 0;
@@ -1955,7 +1716,7 @@ li.comment {
   -o-transform-origin: -12px 0;
   transform-origin: -12px 0;
 }
-/* line 502, ../scss/modules/_dropdown.scss */
+/* line 348, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-right.drop-target-attached-left .drop-content {
   -webkit-transform-origin: calc(100% + 12px) 100%;
   -moz-transform-origin: calc(100% + 12px) 100%;
@@ -1963,7 +1724,7 @@ li.comment {
   -o-transform-origin: calc(100% + 12px) 100%;
   transform-origin: calc(100% + 12px) 100%;
 }
-/* line 510, ../scss/modules/_dropdown.scss */
+/* line 356, ../scss/modules/_dropdown.scss */
 .drop-element.drop-theme-arrows-bounce.drop-element-attached-bottom.drop-element-attached-left.drop-target-attached-right .drop-content {
   -webkit-transform-origin: -12px 100%;
   -moz-transform-origin: -12px 100%;
@@ -3168,44 +2929,47 @@ li.comment {
 }
 
 /* line 339, ../scss/modules/_posts.scss */
-.post-category {
+.post-category,
+a.post-category {
   display: inline-block;
   font-size: 11px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
-  background: #eee;
-  padding: 0px 6px;
+  background: #8CC2DA;
+  color: #fff;
+  padding: 2px 6px;
   text-transform: uppercase;
   font-weight: normal;
   vertical-align: middle;
 }
-/* line 349, ../scss/modules/_posts.scss */
-.post-category:hover {
-  background: #8CC2DA;
+/* line 351, ../scss/modules/_posts.scss */
+.post-category:hover,
+a.post-category:hover {
+  background: #52a3c7;
   color: white;
 }
 
-/* line 355, ../scss/modules/_posts.scss */
+/* line 357, ../scss/modules/_posts.scss */
 .post-meta {
   font-size: 12px;
   color: #b3c1c6;
   line-height: 1.5;
 }
-/* line 360, ../scss/modules/_posts.scss */
+/* line 362, ../scss/modules/_posts.scss */
 .post-meta a {
   color: #a4a9ab;
 }
-/* line 363, ../scss/modules/_posts.scss */
+/* line 365, ../scss/modules/_posts.scss */
 .post-meta a:visited, .post-meta a:active {
   color: #a4a9ab;
 }
 
-/* line 369, ../scss/modules/_posts.scss */
+/* line 371, ../scss/modules/_posts.scss */
 .post-share, .post-discuss {
   position: relative;
 }
-/* line 372, ../scss/modules/_posts.scss */
+/* line 374, ../scss/modules/_posts.scss */
 .post-share > a, .post-discuss > a {
   position: relative;
   display: inline-block;
@@ -3219,37 +2983,37 @@ li.comment {
   font-size: 36px;
   line-height: 50px;
 }
-/* line 385, ../scss/modules/_posts.scss */
+/* line 387, ../scss/modules/_posts.scss */
 .post-share > a.edit-link, .post-discuss > a.edit-link {
   color: #8CC2DA;
 }
-/* line 389, ../scss/modules/_posts.scss */
+/* line 391, ../scss/modules/_posts.scss */
 .post-share > a.share-link, .post-discuss > a.share-link {
   color: #8CC2DA;
 }
-/* line 393, ../scss/modules/_posts.scss */
+/* line 395, ../scss/modules/_posts.scss */
 .post-share > a.discuss-link, .post-discuss > a.discuss-link {
   color: #8CC2DA;
 }
-/* line 397, ../scss/modules/_posts.scss */
+/* line 399, ../scss/modules/_posts.scss */
 .post-share > a.more-link, .post-discuss > a.more-link {
   color: #7ac0e4;
 }
-/* line 402, ../scss/modules/_posts.scss */
+/* line 404, ../scss/modules/_posts.scss */
 .post-share > a:hover, .post-share > a:hover .action, .post-discuss > a:hover, .post-discuss > a:hover .action {
   color: #52a3c7;
 }
-/* line 407, ../scss/modules/_posts.scss */
+/* line 409, ../scss/modules/_posts.scss */
 .post-share > a.voted, .post-discuss > a.voted {
   background: #4e555d;
   color: white;
   cursor: default;
 }
-/* line 412, ../scss/modules/_posts.scss */
+/* line 414, ../scss/modules/_posts.scss */
 .post-share > a.voted .action, .post-discuss > a.voted .action {
   color: #fff;
 }
-/* line 417, ../scss/modules/_posts.scss */
+/* line 419, ../scss/modules/_posts.scss */
 .post-share > a .count, .post-discuss > a .count {
   position: absolute;
   top: 14px;
@@ -3259,13 +3023,13 @@ li.comment {
   line-height: 20px;
   font-size: 11px;
 }
-/* line 427, ../scss/modules/_posts.scss */
+/* line 429, ../scss/modules/_posts.scss */
 .post-share > a .points, .post-discuss > a .points {
   display: block;
   font-size: 30px;
   line-height: 50px;
 }
-/* line 433, ../scss/modules/_posts.scss */
+/* line 435, ../scss/modules/_posts.scss */
 .post-share > a .action, .post-discuss > a .action {
   display: block;
   height: 20px;
@@ -3279,7 +3043,7 @@ li.comment {
   pointer-events: none;
 }
 
-/* line 448, ../scss/modules/_posts.scss */
+/* line 450, ../scss/modules/_posts.scss */
 .post-body {
   border-radius: 3px;
   margin-bottom: 10px;
@@ -3287,17 +3051,17 @@ li.comment {
   padding: 20px;
   font-size: 16px;
 }
-/* line 456, ../scss/modules/_posts.scss */
+/* line 458, ../scss/modules/_posts.scss */
 .list .post-body {
   display: none;
 }
 
-/* line 461, ../scss/modules/_posts.scss */
+/* line 463, ../scss/modules/_posts.scss */
 .post.sticky {
   background: #fffce0;
 }
 
-/* line 465, ../scss/modules/_posts.scss */
+/* line 467, ../scss/modules/_posts.scss */
 .more-button {
   display: block;
   width: 100%;
@@ -3311,77 +3075,77 @@ li.comment {
   text-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
   padding: 0px;
 }
-/* line 478, ../scss/modules/_posts.scss */
+/* line 480, ../scss/modules/_posts.scss */
 .more-button:hover {
   background: rgba(0, 0, 0, 0.15);
 }
 
-/* line 483, ../scss/modules/_posts.scss */
+/* line 485, ../scss/modules/_posts.scss */
 .inner-table {
   display: table;
   height: 100%;
 }
 
-/* line 488, ../scss/modules/_posts.scss */
+/* line 490, ../scss/modules/_posts.scss */
 .inner-table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
 @media screen and (max-width: 40em) {
-  /* line 494, ../scss/modules/_posts.scss */
+  /* line 496, ../scss/modules/_posts.scss */
   .posts {
     padding: 0;
   }
-  /* line 497, ../scss/modules/_posts.scss */
+  /* line 499, ../scss/modules/_posts.scss */
   .posts .post-rank {
     display: none;
   }
 
-  /* line 504, ../scss/modules/_posts.scss */
+  /* line 506, ../scss/modules/_posts.scss */
   .post .post-content {
     margin-right: 50px;
     margin-right: 0px;
   }
-  /* line 508, ../scss/modules/_posts.scss */
+  /* line 510, ../scss/modules/_posts.scss */
   .post .post-content .upvote-link {
     width: 30px;
   }
-  /* line 512, ../scss/modules/_posts.scss */
+  /* line 514, ../scss/modules/_posts.scss */
   .post .post-content .post-info {
     padding: 13px 0;
   }
-  /* line 518, ../scss/modules/_posts.scss */
+  /* line 520, ../scss/modules/_posts.scss */
   .post .post-content .post-heading .post-title {
     display: block;
     margin-bottom: 4px;
   }
-  /* line 523, ../scss/modules/_posts.scss */
+  /* line 525, ../scss/modules/_posts.scss */
   .post .post-content .post-heading .post-domain {
     display: block;
     margin-bottom: 4px;
     font-size: 13px;
   }
-  /* line 530, ../scss/modules/_posts.scss */
+  /* line 532, ../scss/modules/_posts.scss */
   .post .post-content .post-meta {
     font-size: 11px;
   }
-  /* line 533, ../scss/modules/_posts.scss */
+  /* line 535, ../scss/modules/_posts.scss */
   .post .post-content .post-meta .unit {
     font-size: 0;
   }
-  /* line 536, ../scss/modules/_posts.scss */
+  /* line 538, ../scss/modules/_posts.scss */
   .post .post-content .post-meta .unit:after {
     font-size: 12px;
     content: "pts ";
   }
 }
-/* line 546, ../scss/modules/_posts.scss */
+/* line 548, ../scss/modules/_posts.scss */
 .more-button {
   display: block;
 }
 
-/* line 550, ../scss/modules/_posts.scss */
+/* line 552, ../scss/modules/_posts.scss */
 .module {
   border-radius: 3px;
 }
@@ -3389,13 +3153,13 @@ li.comment {
 /*
 *  Post submit/edit pages
 */
-/* line 560, ../scss/modules/_posts.scss */
+/* line 562, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .content-wrapper,
 .template-d4g_post_edit .content-wrapper {
   max-width: 700px;
   padding: 3em 0;
 }
-/* line 565, ../scss/modules/_posts.scss */
+/* line 567, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .grid-block, .template-d4g_post_submit .comment-content, .template-d4g_post_submit .comment-new, .template-d4g_post_submit .error,
 .template-d4g_post_edit .grid-block,
 .template-d4g_post_edit .comment-content,
@@ -3406,40 +3170,40 @@ li.comment {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 570, ../scss/modules/_posts.scss */
+/* line 572, ../scss/modules/_posts.scss */
 .template-d4g_post_submit h2,
 .template-d4g_post_edit h2 {
   text-transform: none;
   text-align: center;
 }
 @media screen and (max-width: 50em) {
-  /* line 570, ../scss/modules/_posts.scss */
+  /* line 572, ../scss/modules/_posts.scss */
   .template-d4g_post_submit h2,
   .template-d4g_post_edit h2 {
     font-size: 2.82715em;
     line-height: 0.53057;
   }
 }
-/* line 579, ../scss/modules/_posts.scss */
+/* line 581, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group, .template-d4g_post_submit .form-group,
 .template-d4g_post_edit .control-group,
 .template-d4g_post_edit .form-group {
   margin-bottom: 2.5em;
 }
-/* line 582, ../scss/modules/_posts.scss */
+/* line 584, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group > label, .template-d4g_post_submit .form-group > label,
 .template-d4g_post_edit .control-group > label,
 .template-d4g_post_edit .form-group > label {
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 587, ../scss/modules/_posts.scss */
+/* line 589, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group input[type="text"], .template-d4g_post_submit .form-group input[type="text"],
 .template-d4g_post_edit .control-group input[type="text"],
 .template-d4g_post_edit .form-group input[type="text"] {
   padding-left: 1em;
 }
-/* line 591, ../scss/modules/_posts.scss */
+/* line 593, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text, .template-d4g_post_submit .form-group .helper-text,
 .template-d4g_post_edit .control-group .helper-text,
 .template-d4g_post_edit .form-group .helper-text {
@@ -3448,7 +3212,7 @@ li.comment {
   color: #B3B3B3;
   margin-left: .5em;
 }
-/* line 597, ../scss/modules/_posts.scss */
+/* line 599, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text a, .template-d4g_post_submit .form-group .helper-text a,
 .template-d4g_post_edit .control-group .helper-text a,
 .template-d4g_post_edit .form-group .helper-text a {
@@ -3456,7 +3220,7 @@ li.comment {
   font-weight: normal;
   text-decoration: underline;
 }
-/* line 607, ../scss/modules/_posts.scss */
+/* line 609, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .categories-field .control-label,
 .template-d4g_post_edit .categories-field .control-label {
   border-bottom: 1px solid #B3B3B3;
@@ -3464,19 +3228,19 @@ li.comment {
   padding-left: 0.7em;
   padding-bottom: 0.2em;
 }
-/* line 617, ../scss/modules/_posts.scss */
+/* line 619, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .post-created-meta h4,
 .template-d4g_post_edit .post-created-meta h4 {
   font-size: 1.4em;
   text-transform: none;
   margin: 1.5em 1em 0.5em 0;
 }
-/* line 624, ../scss/modules/_posts.scss */
+/* line 626, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions,
 .template-d4g_post_edit .form-actions {
   margin-top: 5em;
 }
-/* line 627, ../scss/modules/_posts.scss */
+/* line 629, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link,
 .template-d4g_post_edit .form-actions .delete-link {
   display: block;
@@ -3489,20 +3253,20 @@ li.comment {
   -webkit-transition: background 0.7s;
   transition: background 0.7s;
 }
-/* line 635, ../scss/modules/_posts.scss */
+/* line 637, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link:hover,
 .template-d4g_post_edit .form-actions .delete-link:hover {
   background: #a12e3a;
 }
 @media screen and (max-width: 40em) {
-  /* line 627, ../scss/modules/_posts.scss */
+  /* line 629, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .delete-link,
   .template-d4g_post_edit .form-actions .delete-link {
     margin: 1em auto;
   }
 }
 @media screen and (max-width: 40em) {
-  /* line 644, ../scss/modules/_posts.scss */
+  /* line 646, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .button,
   .template-d4g_post_edit .form-actions .button {
     padding: 10px 85px;

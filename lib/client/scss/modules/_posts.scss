@@ -336,18 +336,20 @@
     text-align: right;
 }
 
-.post-category {
+.post-category,
+a.post-category {
     display: inline-block;
     font-size: 11px;
     @include border-radius(3px);
-    background: #eee;
-    padding: 0px 6px;
+    background: $brand-primary;
+    color: #fff;
+    padding: 2px 6px;
     text-transform: uppercase;
     font-weight: normal;
     vertical-align: middle;
 
     &:hover {
-        background: $brand-primary;
+        background: darken($brand-primary, 15%);
         color: white;
     }
 }
