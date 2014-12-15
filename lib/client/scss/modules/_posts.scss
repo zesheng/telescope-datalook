@@ -347,10 +347,11 @@ a.post-category {
     text-transform: uppercase;
     font-weight: normal;
     vertical-align: middle;
+    @include transition(background 0.7s);
 
     &:hover {
         background: darken($brand-primary, 15%);
-        color: white;
+        color: #fff;
     }
 }
 
