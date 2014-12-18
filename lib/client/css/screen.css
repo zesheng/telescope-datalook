@@ -1346,11 +1346,7 @@ li.comment {
 
 /* line 250, ../scss/modules/_comments.scss */
 .comment-deleted {
-  background: rgba(255, 255, 255, 0.6);
-  border-radius: 3px;
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  color: #b3c1c6;
+  display: none;
 }
 
 /* line 2, ../scss/modules/_dialogs.scss */
@@ -2942,34 +2938,38 @@ a.post-category {
   text-transform: uppercase;
   font-weight: normal;
   vertical-align: middle;
+  -moz-transition: background 0.7s;
+  -o-transition: background 0.7s;
+  -webkit-transition: background 0.7s;
+  transition: background 0.7s;
 }
-/* line 351, ../scss/modules/_posts.scss */
+/* line 352, ../scss/modules/_posts.scss */
 .post-category:hover,
 a.post-category:hover {
   background: #52a3c7;
-  color: white;
+  color: #fff;
 }
 
-/* line 357, ../scss/modules/_posts.scss */
+/* line 358, ../scss/modules/_posts.scss */
 .post-meta {
   font-size: 12px;
   color: #b3c1c6;
   line-height: 1.5;
 }
-/* line 362, ../scss/modules/_posts.scss */
+/* line 363, ../scss/modules/_posts.scss */
 .post-meta a {
   color: #a4a9ab;
 }
-/* line 365, ../scss/modules/_posts.scss */
+/* line 366, ../scss/modules/_posts.scss */
 .post-meta a:visited, .post-meta a:active {
   color: #a4a9ab;
 }
 
-/* line 371, ../scss/modules/_posts.scss */
+/* line 372, ../scss/modules/_posts.scss */
 .post-share, .post-discuss {
   position: relative;
 }
-/* line 374, ../scss/modules/_posts.scss */
+/* line 375, ../scss/modules/_posts.scss */
 .post-share > a, .post-discuss > a {
   position: relative;
   display: inline-block;
@@ -2983,37 +2983,37 @@ a.post-category:hover {
   font-size: 36px;
   line-height: 50px;
 }
-/* line 387, ../scss/modules/_posts.scss */
+/* line 388, ../scss/modules/_posts.scss */
 .post-share > a.edit-link, .post-discuss > a.edit-link {
   color: #8CC2DA;
 }
-/* line 391, ../scss/modules/_posts.scss */
+/* line 392, ../scss/modules/_posts.scss */
 .post-share > a.share-link, .post-discuss > a.share-link {
   color: #8CC2DA;
 }
-/* line 395, ../scss/modules/_posts.scss */
+/* line 396, ../scss/modules/_posts.scss */
 .post-share > a.discuss-link, .post-discuss > a.discuss-link {
   color: #8CC2DA;
 }
-/* line 399, ../scss/modules/_posts.scss */
+/* line 400, ../scss/modules/_posts.scss */
 .post-share > a.more-link, .post-discuss > a.more-link {
   color: #7ac0e4;
 }
-/* line 404, ../scss/modules/_posts.scss */
+/* line 405, ../scss/modules/_posts.scss */
 .post-share > a:hover, .post-share > a:hover .action, .post-discuss > a:hover, .post-discuss > a:hover .action {
   color: #52a3c7;
 }
-/* line 409, ../scss/modules/_posts.scss */
+/* line 410, ../scss/modules/_posts.scss */
 .post-share > a.voted, .post-discuss > a.voted {
   background: #4e555d;
   color: white;
   cursor: default;
 }
-/* line 414, ../scss/modules/_posts.scss */
+/* line 415, ../scss/modules/_posts.scss */
 .post-share > a.voted .action, .post-discuss > a.voted .action {
   color: #fff;
 }
-/* line 419, ../scss/modules/_posts.scss */
+/* line 420, ../scss/modules/_posts.scss */
 .post-share > a .count, .post-discuss > a .count {
   position: absolute;
   top: 14px;
@@ -3023,13 +3023,13 @@ a.post-category:hover {
   line-height: 20px;
   font-size: 11px;
 }
-/* line 429, ../scss/modules/_posts.scss */
+/* line 430, ../scss/modules/_posts.scss */
 .post-share > a .points, .post-discuss > a .points {
   display: block;
   font-size: 30px;
   line-height: 50px;
 }
-/* line 435, ../scss/modules/_posts.scss */
+/* line 436, ../scss/modules/_posts.scss */
 .post-share > a .action, .post-discuss > a .action {
   display: block;
   height: 20px;
@@ -3043,7 +3043,7 @@ a.post-category:hover {
   pointer-events: none;
 }
 
-/* line 450, ../scss/modules/_posts.scss */
+/* line 451, ../scss/modules/_posts.scss */
 .post-body {
   border-radius: 3px;
   margin-bottom: 10px;
@@ -3051,17 +3051,17 @@ a.post-category:hover {
   padding: 20px;
   font-size: 16px;
 }
-/* line 458, ../scss/modules/_posts.scss */
+/* line 459, ../scss/modules/_posts.scss */
 .list .post-body {
   display: none;
 }
 
-/* line 463, ../scss/modules/_posts.scss */
+/* line 464, ../scss/modules/_posts.scss */
 .post.sticky {
   background: #fffce0;
 }
 
-/* line 467, ../scss/modules/_posts.scss */
+/* line 468, ../scss/modules/_posts.scss */
 .more-button {
   display: block;
   width: 100%;
@@ -3075,77 +3075,77 @@ a.post-category:hover {
   text-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
   padding: 0px;
 }
-/* line 480, ../scss/modules/_posts.scss */
+/* line 481, ../scss/modules/_posts.scss */
 .more-button:hover {
   background: rgba(0, 0, 0, 0.15);
 }
 
-/* line 485, ../scss/modules/_posts.scss */
+/* line 486, ../scss/modules/_posts.scss */
 .inner-table {
   display: table;
   height: 100%;
 }
 
-/* line 490, ../scss/modules/_posts.scss */
+/* line 491, ../scss/modules/_posts.scss */
 .inner-table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
 @media screen and (max-width: 40em) {
-  /* line 496, ../scss/modules/_posts.scss */
+  /* line 497, ../scss/modules/_posts.scss */
   .posts {
     padding: 0;
   }
-  /* line 499, ../scss/modules/_posts.scss */
+  /* line 500, ../scss/modules/_posts.scss */
   .posts .post-rank {
     display: none;
   }
 
-  /* line 506, ../scss/modules/_posts.scss */
+  /* line 507, ../scss/modules/_posts.scss */
   .post .post-content {
     margin-right: 50px;
     margin-right: 0px;
   }
-  /* line 510, ../scss/modules/_posts.scss */
+  /* line 511, ../scss/modules/_posts.scss */
   .post .post-content .upvote-link {
     width: 30px;
   }
-  /* line 514, ../scss/modules/_posts.scss */
+  /* line 515, ../scss/modules/_posts.scss */
   .post .post-content .post-info {
     padding: 13px 0;
   }
-  /* line 520, ../scss/modules/_posts.scss */
+  /* line 521, ../scss/modules/_posts.scss */
   .post .post-content .post-heading .post-title {
     display: block;
     margin-bottom: 4px;
   }
-  /* line 525, ../scss/modules/_posts.scss */
+  /* line 526, ../scss/modules/_posts.scss */
   .post .post-content .post-heading .post-domain {
     display: block;
     margin-bottom: 4px;
     font-size: 13px;
   }
-  /* line 532, ../scss/modules/_posts.scss */
+  /* line 533, ../scss/modules/_posts.scss */
   .post .post-content .post-meta {
     font-size: 11px;
   }
-  /* line 535, ../scss/modules/_posts.scss */
+  /* line 536, ../scss/modules/_posts.scss */
   .post .post-content .post-meta .unit {
     font-size: 0;
   }
-  /* line 538, ../scss/modules/_posts.scss */
+  /* line 539, ../scss/modules/_posts.scss */
   .post .post-content .post-meta .unit:after {
     font-size: 12px;
     content: "pts ";
   }
 }
-/* line 548, ../scss/modules/_posts.scss */
+/* line 549, ../scss/modules/_posts.scss */
 .more-button {
   display: block;
 }
 
-/* line 552, ../scss/modules/_posts.scss */
+/* line 553, ../scss/modules/_posts.scss */
 .module {
   border-radius: 3px;
 }
@@ -3153,13 +3153,13 @@ a.post-category:hover {
 /*
 *  Post submit/edit pages
 */
-/* line 562, ../scss/modules/_posts.scss */
+/* line 563, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .content-wrapper,
 .template-d4g_post_edit .content-wrapper {
   max-width: 700px;
   padding: 3em 0;
 }
-/* line 567, ../scss/modules/_posts.scss */
+/* line 568, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .grid-block, .template-d4g_post_submit .comment-content, .template-d4g_post_submit .comment-new, .template-d4g_post_submit .error,
 .template-d4g_post_edit .grid-block,
 .template-d4g_post_edit .comment-content,
@@ -3170,40 +3170,40 @@ a.post-category:hover {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 572, ../scss/modules/_posts.scss */
+/* line 573, ../scss/modules/_posts.scss */
 .template-d4g_post_submit h2,
 .template-d4g_post_edit h2 {
   text-transform: none;
   text-align: center;
 }
 @media screen and (max-width: 50em) {
-  /* line 572, ../scss/modules/_posts.scss */
+  /* line 573, ../scss/modules/_posts.scss */
   .template-d4g_post_submit h2,
   .template-d4g_post_edit h2 {
     font-size: 2.82715em;
     line-height: 0.53057;
   }
 }
-/* line 581, ../scss/modules/_posts.scss */
+/* line 582, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group, .template-d4g_post_submit .form-group,
 .template-d4g_post_edit .control-group,
 .template-d4g_post_edit .form-group {
   margin-bottom: 2.5em;
 }
-/* line 584, ../scss/modules/_posts.scss */
+/* line 585, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group > label, .template-d4g_post_submit .form-group > label,
 .template-d4g_post_edit .control-group > label,
 .template-d4g_post_edit .form-group > label {
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 589, ../scss/modules/_posts.scss */
+/* line 590, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group input[type="text"], .template-d4g_post_submit .form-group input[type="text"],
 .template-d4g_post_edit .control-group input[type="text"],
 .template-d4g_post_edit .form-group input[type="text"] {
   padding-left: 1em;
 }
-/* line 593, ../scss/modules/_posts.scss */
+/* line 594, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text, .template-d4g_post_submit .form-group .helper-text,
 .template-d4g_post_edit .control-group .helper-text,
 .template-d4g_post_edit .form-group .helper-text {
@@ -3212,7 +3212,7 @@ a.post-category:hover {
   color: #B3B3B3;
   margin-left: .5em;
 }
-/* line 599, ../scss/modules/_posts.scss */
+/* line 600, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text a, .template-d4g_post_submit .form-group .helper-text a,
 .template-d4g_post_edit .control-group .helper-text a,
 .template-d4g_post_edit .form-group .helper-text a {
@@ -3220,7 +3220,7 @@ a.post-category:hover {
   font-weight: normal;
   text-decoration: underline;
 }
-/* line 609, ../scss/modules/_posts.scss */
+/* line 610, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .categories-field .control-label,
 .template-d4g_post_edit .categories-field .control-label {
   border-bottom: 1px solid #B3B3B3;
@@ -3228,19 +3228,19 @@ a.post-category:hover {
   padding-left: 0.7em;
   padding-bottom: 0.2em;
 }
-/* line 619, ../scss/modules/_posts.scss */
+/* line 620, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .post-created-meta h4,
 .template-d4g_post_edit .post-created-meta h4 {
   font-size: 1.4em;
   text-transform: none;
   margin: 1.5em 1em 0.5em 0;
 }
-/* line 626, ../scss/modules/_posts.scss */
+/* line 627, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions,
 .template-d4g_post_edit .form-actions {
   margin-top: 5em;
 }
-/* line 629, ../scss/modules/_posts.scss */
+/* line 630, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link,
 .template-d4g_post_edit .form-actions .delete-link {
   display: block;
@@ -3253,20 +3253,20 @@ a.post-category:hover {
   -webkit-transition: background 0.7s;
   transition: background 0.7s;
 }
-/* line 637, ../scss/modules/_posts.scss */
+/* line 638, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link:hover,
 .template-d4g_post_edit .form-actions .delete-link:hover {
   background: #a12e3a;
 }
 @media screen and (max-width: 40em) {
-  /* line 629, ../scss/modules/_posts.scss */
+  /* line 630, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .delete-link,
   .template-d4g_post_edit .form-actions .delete-link {
     margin: 1em auto;
   }
 }
 @media screen and (max-width: 40em) {
-  /* line 646, ../scss/modules/_posts.scss */
+  /* line 647, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .button,
   .template-d4g_post_edit .form-actions .button {
     padding: 10px 85px;
