@@ -1,4 +1,4 @@
-Package.describe({summary: "Telescope module for DataForGood.co"});
+Package.describe({summary: "Telescope module for DataLook.io"});
 
 Package.onUse(function (api) {
 
