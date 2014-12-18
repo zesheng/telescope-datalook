@@ -11,6 +11,7 @@ Package.onUse(function (api) {
   api.use([
     'telescope-lib',
     'telescope-base',
+    'telescope-newsletter',
     'telescope-search',
     'telescope-tags',
     'iron:router',
@@ -20,6 +21,7 @@ Package.onUse(function (api) {
     'jeremy:velocity-animate'
     ], ['client', 'server']);
 
+  api.use('cmather:handlebars-server');
 
   var path = Npm.require('path'),
       asset_path = path.join('lib/client');
@@ -89,7 +91,11 @@ Package.onUse(function (api) {
   */
   api.addFiles([
     'lib/server/publications.js',
-    'lib/server/seed.js'
+    'lib/server/seed.js',
+    'lib/server/email/d4g_emailWrapper.handlebars',
+    'lib/server/email/d4g_emailDigest.handlebars',
+    'lib/server/email/d4g_emailPostItem.handlebars',
+    'lib/server/email/custom_email_templates.js'
   ], 'server');
 
 
