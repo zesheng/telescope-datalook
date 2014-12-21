@@ -1,6 +1,6 @@
 <template name="d4g_postInfo">
   <div class="post-meta-item">
-    Posted by <a class="post-author" href="{{profileUrl}}">{{authorName}}</a> <span class="post-time">{{timeAgo postedAt}}</span>
+    <span class="post-time">{{timeAgo postedAt}}</span>
     {{#if can_edit}}
       | <a href="/posts/{{_id}}/edit" class="edit-link goto-edit">Edit</a>
     {{/if}}
