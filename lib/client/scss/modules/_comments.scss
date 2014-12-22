@@ -102,7 +102,6 @@ li.comment {
     }
 
     .user-avatar {
-        @include border-radius(100px);
         overflow: hidden;
         position: block;
         float: left;
