@@ -2,7 +2,7 @@
 // modules layout
 .posts {
     display: table;
-    border-collapse: collapse;
+    // border-collapse: collapse;
     width: 100%;
     position: relative;
 
@@ -11,90 +11,50 @@
 
         .post {
             border-radius: 3px;
-            display: block;
             @extend .has-shadow;
         }
     }
 }
 
 .post {
-    padding: 0;
+    display: flex;
+    align-items: center;
+    min-height: 120px;
+    padding: 10px 0px 10px 10px;
     border-radius: 0px;
     margin-bottom: 20px;
+    border-bottom: 1px solid $lightest-grey;
+    position: relative;
+    width: 100%;
+    background: white;
     @extend .has-shadow;
 
-    .modules-group {
-        display: table-cell;
-        vertical-align: middle;
-        height: 120px;
+    &:first-child {
+        border-radius: 3px 3px 0px 0px;
+    }
 
-        .inner {
-            @include flex();
-            @include align-items(center);
-        }
+    &:last-child {
+        border-radius: 0px 0px 3px 3px;
+    }
 
-        .cell {
-            margin-right: $grid-margin;
+    &.animate {
+        @include transition(ease-out, top, 400ms, 0ms);
+    }
 
-            @include medium-large {
-                @include flex-shrink(0);
-            }
-
-            &.post-upvote {
-                margin-left: 5px;
-                margin-right: 15px;
-                padding-top: 15px;
-            }
+    &.inactive {
+        .post-content {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIALMnDlTkpGQOpCi9PT053gVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQC5OyXvW/4BHwAAAABJRU5ErkJggg==');
         }
     }
 
-    .left-modules {
-
-        .inner {
-            margin-left: $grid-margin;
-        }
-
-        @include small {
-            .inner {
-                display: block;
-            }
-            margin-right: $grid-margin;
-        }
-
-        @include medium-large {
-        }
-    }
-
-    .center-modules {
-        width: 100%;
-
-        @include small {
-            .inner {
-                display: block;
-            }
-        }
-    }
-
-    .right-modules {
+    .post-upvote {
+        order: 1;
+        margin-left: 5px;
+        margin-right: 15px;
+        padding-top: 15px;
 
         @include small {
             display: none;
-            background: #333;
-            padding: 10px;
-
-            &.visible {
-                display: block;
-            }
-
-            .inner {
-                @include justify-content(center);
-            }
-
-            .cell {
-                @include flex-grow(1);
-                flex: 1;
-                text-align: center;
-            }
         }
     }
 
@@ -104,6 +64,80 @@
         text-align: center;
         padding-top: 8px;
         padding-right: 9px;
+    }
+
+    .post-module {
+        flex-shrink: 0;
+        flex-grow: 0;
+        margin-right: 10px;
+    }
+
+    .post-content {
+        order: 2;
+        width: 100%;
+        // can shrink on mobile or desktop
+        flex-shrink: 1;
+        align-items: center;
+
+        @include medium-large {
+            // but can only grow on desktop
+            flex-grow: 1;
+            // only be a flex container on desktop
+            display: flex;
+        }
+    }
+
+    .post-info {
+        flex-grow: 1;
+    }
+
+    .post-share {
+        order: 3;
+    }
+
+    .post-discuss {
+        order: 7;
+
+        @include small {
+            display: none;
+        }
+
+        // .action-label {
+
+        //     @include medium-large {
+        //         display: none;
+        //     }
+        // }
+    }
+
+    .post-share, .post-discuss {
+        // width: 60px;
+        text-align: center;
+        // height: 60px;
+        // position: relative;
+        // top: -5px;
+    }
+
+    .post-actions {
+        order: 8;
+    }
+
+    .post-avatars {
+        order: 6
+    }
+
+    &.show-actions {
+
+        .post-content {
+            display: none;
+        }
+
+        .post-share,
+        .post-discuss,
+        .post-upvote {
+            display: block;
+            flex-grow: 1;
+        }
     }
 }
 
@@ -131,7 +165,7 @@
             border: 1px solid rgba($brand-primary, 0.3);
             color: rgba($brand-primary, 0.8);
             text-align: center;
-            line-height: 10px;
+            line-height: 14px;
             font-weight: bold;
             font-size: 20px;
         }
@@ -149,7 +183,7 @@
         text-align: center;
 
         i {
-            display: block;
+            display: inline-block;
             font-size: 26px;
             height: 100%;
             width: 100%;
@@ -184,7 +218,7 @@
 
             i.icon-check {
                 border: 1px solid rgba($blue, 0.6);
-                display: block;
+                display: inline-block;
                 color: rgba($blue, 0.8);
                 opacity: 0.5;
             }
@@ -193,7 +227,7 @@
 }
 
 .post-meta-item {
-    display: inline;
+    display: inline-block;
 
     &:after {
         content: ",";
@@ -213,30 +247,7 @@
     padding: 0;
 }
 
-.post {
-    position: relative;
-    width: 100%;
-    background: white;
-    border-bottom: 1px solid $lightest-grey;
 
-    &:first-child {
-        border-radius: 3px 3px 0px 0px;
-    }
-
-    &:last-child {
-        border-radius: 0px 0px 3px 3px;
-    }
-
-    &.animate {
-        @include single-transition(ease-out, top, 400ms, 0ms);
-    }
-
-    &.inactive {
-        .post-content {
-            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVQYV2NkIALMnDlTkpGQOpCi9PT053gVwhSBDMOpEFkRToXoirAqxKYIQyEuRSgK8SmCKySkCKyQGEUghQC5OyXvW/4BHwAAAABJRU5ErkJggg==');
-        }
-    }
-}
 
 .post-rank {
     position: relative;
@@ -252,6 +263,10 @@
         text-align: right;
         font-size: 18px;
         color: black(0.2);
+    }
+
+    @include small {
+        display: none;
     }
 }
 
@@ -282,12 +297,12 @@
         }
     }
 
-    @include small{
+    @include small {
         @include flex-grow(1);
         flex: 1;
     }
 
-    @include medium-large{
+    @include medium-large {
         @include flex-shrink(1 !important);
     }
 }
@@ -369,6 +384,10 @@ a.post-category {
     }
 }
 
+.post-avatars.post-module {
+    display: none;
+}
+
 .post-share, .post-discuss {
     position: relative;
 
@@ -417,7 +436,7 @@ a.post-category {
             }
         }
 
-        .count {
+        .action-count {
             position: absolute;
             top: 14px;
             display: block;
@@ -433,7 +452,7 @@ a.post-category {
             line-height: 50px;
         }
 
-        .action {
+        .action-label {
             display: block;
             height: 20px;
             width: 100%;
