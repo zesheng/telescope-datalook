@@ -470,9 +470,9 @@ a.post-category {
 .post-body {
     @extend .has-shadow;
     border-radius: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     background: white;
-    padding: 20px;
+    padding: 30px 40px 35px 40px;
     font-size: 16px;
 
     .list & {

@@ -66,7 +66,7 @@ li.comment {
 }
 
 .comment {
-    margin-left: 30px;
+    margin-left: 23px;
     position: relative;
     padding: 0;
     background: none;
@@ -74,6 +74,7 @@ li.comment {
     .comment-body {
         @include single-transition(ease-out, opacity, 600ms, 0ms);
         opacity: 1;
+        position: relative;
     }
 
     &.comment-queued {
@@ -96,6 +97,7 @@ li.comment {
     @extend .grid-block;
     @include border-radius(0 3px 3px 3px);
     font-size: 14px;
+    z-index: 10;
 
     .comment-main {
         margin-left: 50px;
@@ -103,8 +105,9 @@ li.comment {
 
     .user-avatar {
         overflow: hidden;
-        position: block;
+        display: block;
         float: left;
+        margin: 0 0 0 5px;
 
         img {
             height: 40px;

@@ -1157,7 +1157,7 @@ li.comment {
 
 /* line 68, ../scss/modules/_comments.scss */
 .comment {
-  margin-left: 30px;
+  margin-left: 23px;
   position: relative;
   padding: 0;
   background: none;
@@ -1170,57 +1170,60 @@ li.comment {
   -webkit-transition-delay: 0ms;
   transition: ease-out 600ms opacity 0ms;
   opacity: 1;
+  position: relative;
 }
-/* line 81, ../scss/modules/_comments.scss */
+/* line 82, ../scss/modules/_comments.scss */
 .comment.comment-queued .comment-body {
   opacity: 0;
   position: absolute;
   pointer-events: none;
 }
-/* line 88, ../scss/modules/_comments.scss */
+/* line 89, ../scss/modules/_comments.scss */
 .comment .comment-reply {
   display: inline-block;
   margin-top: 10px;
 }
 
-/* line 94, ../scss/modules/_comments.scss */
+/* line 95, ../scss/modules/_comments.scss */
 .comment-content {
   position: relative;
   -moz-border-radius: 0 3px 3px 3px;
   -webkit-border-radius: 0;
   border-radius: 0 3px 3px 3px;
   font-size: 14px;
+  z-index: 10;
 }
-/* line 100, ../scss/modules/_comments.scss */
+/* line 102, ../scss/modules/_comments.scss */
 .comment-content .comment-main {
   margin-left: 50px;
 }
-/* line 104, ../scss/modules/_comments.scss */
+/* line 106, ../scss/modules/_comments.scss */
 .comment-content .user-avatar {
   overflow: hidden;
-  position: block;
+  display: block;
   float: left;
+  margin: 0 0 0 5px;
 }
-/* line 109, ../scss/modules/_comments.scss */
+/* line 112, ../scss/modules/_comments.scss */
 .comment-content .user-avatar img {
   height: 40px;
   width: 40px;
   display: block;
 }
 
-/* line 117, ../scss/modules/_comments.scss */
+/* line 120, ../scss/modules/_comments.scss */
 .comment-meta {
   margin-bottom: 5px;
   color: #b3c1c6;
 }
-/* line 121, ../scss/modules/_comments.scss */
+/* line 124, ../scss/modules/_comments.scss */
 .comment-meta .comment-username,
 .comment-meta .comment-time,
 .comment-meta .comment-permalink {
   display: inline-block;
   margin-right: 4px;
 }
-/* line 128, ../scss/modules/_comments.scss */
+/* line 131, ../scss/modules/_comments.scss */
 .comment-meta .comment-permalink {
   position: relative;
   text-indent: 100%;
@@ -1230,7 +1233,7 @@ li.comment {
   color: #b3c1c6;
   margin: 0;
 }
-/* line 135, ../scss/modules/_comments.scss */
+/* line 138, ../scss/modules/_comments.scss */
 .comment-meta .comment-permalink:before {
   position: absolute;
   display: block;
@@ -1238,18 +1241,18 @@ li.comment {
   left: 0;
   text-indent: 0;
 }
-/* line 143, ../scss/modules/_comments.scss */
+/* line 146, ../scss/modules/_comments.scss */
 .comment-meta .comment-permalink:hover:before {
   color: #8CC2DA;
 }
 
-/* line 149, ../scss/modules/_comments.scss */
+/* line 152, ../scss/modules/_comments.scss */
 .comment-actions {
   position: absolute;
   left: -30px;
   top: 0px;
 }
-/* line 154, ../scss/modules/_comments.scss */
+/* line 157, ../scss/modules/_comments.scss */
 .comment-actions a {
   -moz-border-radius: 0 0 0 3px;
   -webkit-border-radius: 0;
@@ -1267,14 +1270,14 @@ li.comment {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 165, ../scss/modules/_comments.scss */
+/* line 168, ../scss/modules/_comments.scss */
 .comment-actions a.upvote {
   -moz-border-radius: 3px 0 0 0;
   -webkit-border-radius: 3px;
   border-radius: 3px 0 0 0;
   margin-bottom: 1px;
 }
-/* line 170, ../scss/modules/_comments.scss */
+/* line 173, ../scss/modules/_comments.scss */
 .comment-actions a i {
   font-size: 12px;
   display: block;
@@ -1286,46 +1289,46 @@ li.comment {
   text-indent: 0;
   color: #8CC2DA;
 }
-/* line 182, ../scss/modules/_comments.scss */
+/* line 185, ../scss/modules/_comments.scss */
 .comment-actions a:hover {
   background: #4e555d;
 }
-/* line 185, ../scss/modules/_comments.scss */
+/* line 188, ../scss/modules/_comments.scss */
 .comment-actions a:hover i {
   color: white;
 }
-/* line 191, ../scss/modules/_comments.scss */
+/* line 194, ../scss/modules/_comments.scss */
 .comment-actions.upvoted .upvote, .comment-actions.downvoted .downvote {
   cursor: default;
 }
-/* line 194, ../scss/modules/_comments.scss */
+/* line 197, ../scss/modules/_comments.scss */
 .comment-actions.upvoted .upvote i, .comment-actions.downvoted .downvote i {
   color: #7ac0e4;
 }
-/* line 198, ../scss/modules/_comments.scss */
+/* line 201, ../scss/modules/_comments.scss */
 .comment-actions.upvoted .upvote:hover, .comment-actions.downvoted .downvote:hover {
   background: white;
 }
-/* line 203, ../scss/modules/_comments.scss */
+/* line 206, ../scss/modules/_comments.scss */
 .comment-actions.downvoted .upvote, .comment-actions.upvoted .downvote {
   cursor: default;
 }
-/* line 206, ../scss/modules/_comments.scss */
+/* line 209, ../scss/modules/_comments.scss */
 .comment-actions.downvoted .upvote i, .comment-actions.upvoted .downvote i {
   color: #b3c1c6;
 }
-/* line 210, ../scss/modules/_comments.scss */
+/* line 213, ../scss/modules/_comments.scss */
 .comment-actions.downvoted .upvote:hover, .comment-actions.upvoted .downvote:hover {
   background: white;
 }
 
-/* line 227, ../scss/modules/_comments.scss */
+/* line 230, ../scss/modules/_comments.scss */
 .comment-page .comment-new {
   margin-left: 30px;
   position: relative;
   background: #ffffff;
 }
-/* line 232, ../scss/modules/_comments.scss */
+/* line 235, ../scss/modules/_comments.scss */
 .comment-page .comment-new:after {
   bottom: 100%;
   border: solid transparent;
@@ -1341,7 +1344,7 @@ li.comment {
   margin-left: -8px;
 }
 
-/* line 249, ../scss/modules/_comments.scss */
+/* line 252, ../scss/modules/_comments.scss */
 .comment-deleted {
   display: none;
 }
@@ -3041,9 +3044,9 @@ a.post-category:hover {
 /* line 470, ../scss/modules/_posts.scss */
 .post-body {
   border-radius: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   background: white;
-  padding: 20px;
+  padding: 30px 40px 35px 40px;
   font-size: 16px;
 }
 /* line 478, ../scss/modules/_posts.scss */
