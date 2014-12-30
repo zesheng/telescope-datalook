@@ -3588,17 +3588,22 @@ a.mt-share-inline-square-sm {
   float: right;
 }
 
+/* line 45, ../scss/modules/_users.scss */
+.user-avatar .avatar-initials {
+  line-height: 40px;
+}
+
 /*
 *  Profile edit page
 */
 @media screen and (min-width: 40em) {
-  /* line 53, ../scss/modules/_users.scss */
+  /* line 58, ../scss/modules/_users.scss */
   .template-d4g_user_edit .control-group > label {
     float: left;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 60, ../scss/modules/_users.scss */
+  /* line 65, ../scss/modules/_users.scss */
   .template-d4g_user_edit .control-group .controls, .template-d4g_user_edit .control-group .note {
     margin-left: 200px;
   }
