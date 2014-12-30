@@ -93,7 +93,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 144, ../scss/helpers/_mixins.scss */
 .template-d4g_user_edit .content-wrapper,
 .template-d4g_user_profile .content-wrapper,
-.template-settings .content-wrapper, .template-about .content-wrapper, .template-press .content-wrapper {
+.template-settingsForm .content-wrapper, .template-about .content-wrapper, .template-press .content-wrapper {
   background: #fff;
   -moz-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
@@ -106,7 +106,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   /* line 144, ../scss/helpers/_mixins.scss */
   .template-d4g_user_edit .content-wrapper,
   .template-d4g_user_profile .content-wrapper,
-  .template-settings .content-wrapper, .template-about .content-wrapper, .template-press .content-wrapper {
+  .template-settingsForm .content-wrapper, .template-about .content-wrapper, .template-press .content-wrapper {
     padding: 1em 2em 3em 2em;
   }
 }
@@ -3276,7 +3276,7 @@ a.post-category:hover {
 /* line 10, ../scss/modules/_profile.scss */
 .template-d4g_user_edit hr,
 .template-d4g_user_profile hr,
-.template-settings hr {
+.template-settingsForm hr {
   margin: 4em 0 2.5em 0;
   color: #B3B3B3;
   border-top-color: #B3B3B3;
@@ -3795,13 +3795,13 @@ a.mt-share-inline-square-sm {
 
 @media screen and (min-width: 40em) {
   /* line 5, ../scss/modules/pages/_settings.scss */
-  .template-settings .form-group > label {
+  .template-settingsForm .form-group > label {
     float: left;
   }
 }
 @media screen and (min-width: 40em) {
   /* line 11, ../scss/modules/pages/_settings.scss */
-  .template-settings .form-group .controls {
+  .template-settingsForm .form-group .controls {
     margin-left: 200px;
   }
 }
