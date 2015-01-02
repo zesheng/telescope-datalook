@@ -70,6 +70,7 @@
     @include transform(translateZ(0));
     @include transition(opacity .1s);
     opacity: 0;
+    z-index: 101;
 
     .drop-content {
         position: relative;
