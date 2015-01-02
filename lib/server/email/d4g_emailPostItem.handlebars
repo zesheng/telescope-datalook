@@ -6,7 +6,7 @@
     <img class="post-thumbnail" src="{{thumbnailUrl}}"/>&nbsp;
   {{/if}}
 
-  <a href="{{postLink}}" target="_blank">{{title}}</a>
+  <a href="{{postPageLink}}" target="_blank">{{title}}</a>
   <p class="post-tagline">{{tagline}}</p>
 </span>
 
@@ -22,12 +22,14 @@
 </div>
 
 
-{{#if body}}
-  <div class="post-body-excerpt">
+
+<div class="post-body-excerpt">
+  {{#if body}}
     {{{htmlBody}}}
-    <a href="{{postPageLink}}" class="read-more-link" target="_blank">Read more</a>
-  </div>
-{{/if}}
+  {{/if}}
+  <a href="{{postPageLink}}" class="read-more-link" target="_blank">Read more</a>
+</div>
+
 
 
 <br>
