@@ -3,7 +3,7 @@
   <h2>Post a Project</h2>
 
   <div class="grid grid-module">
-    {{#autoForm collection="Posts" id="submitPostForm"}}
+    {{#autoForm collection="Posts" id="submitPostForm" type="method" meteormethod="submitPost"}}
       <div class="control-group">
         <label class="control-label">Title</label>
         <div class="controls">
