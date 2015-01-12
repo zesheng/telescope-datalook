@@ -1,8 +1,8 @@
 <template name="d4g_postInfo">
   <div class="post-meta-item">
     <span class="post-time">{{timeAgo postedAt}}</span>
-    {{#if can_edit}}
-      | <a href="/posts/{{_id}}/edit" class="edit-link goto-edit">Edit</a>
+    {{#if canEdit this}}
+      | <a href="{{pathFor route='post_edit' _id=_id}}" class="edit-link goto-edit">{{_ "edit"}}</a>
     {{/if}}
   </div>
 </template>
