@@ -2081,24 +2081,30 @@ li.comment {
   color: #fff;
   width: 100%;
 }
-/* line 26, ../scss/modules/_hero.scss */
+@media screen and (max-width: 40em) {
+  /* line 18, ../scss/modules/_hero.scss */
+  .hero .copy {
+    top: 25%;
+  }
+}
+/* line 30, ../scss/modules/_hero.scss */
 .hero .copy h1 {
   padding: 0px 20px;
   line-height: 1;
   font-size: 3em;
 }
-/* line 32, ../scss/modules/_hero.scss */
+/* line 36, ../scss/modules/_hero.scss */
 .hero .copy h3 {
   font-weight: 400;
   text-transform: none;
 }
 @media screen and (max-width: 40em) {
-  /* line 32, ../scss/modules/_hero.scss */
+  /* line 36, ../scss/modules/_hero.scss */
   .hero .copy h3 {
     display: none;
   }
 }
-/* line 41, ../scss/modules/_hero.scss */
+/* line 45, ../scss/modules/_hero.scss */
 .hero .copy .button {
   font-size: 1.8em;
   font-weight: 300;
@@ -2106,12 +2112,6 @@ li.comment {
   -moz-border-radius: 0px;
   -webkit-border-radius: 0px;
   border-radius: 0px;
-}
-@media screen and (max-width: 40em) {
-  /* line 41, ../scss/modules/_hero.scss */
-  .hero .copy .button {
-    display: none;
-  }
 }
 /* line 53, ../scss/modules/_hero.scss */
 .hero .learn-more {

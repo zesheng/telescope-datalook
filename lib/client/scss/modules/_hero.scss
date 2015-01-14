@@ -23,6 +23,10 @@
         color: #fff;
         width: 100%;
 
+        @include small {
+            top: 25%;
+        }
+
         h1 {
             padding: 0px 20px;
             line-height: 1;
@@ -43,10 +47,6 @@
             font-weight: 300;
             margin: 2em auto 1.2em auto;
             @include border-radius(0px);
-
-            @include small {
-                display: none;
-            }
         }
     }
 
