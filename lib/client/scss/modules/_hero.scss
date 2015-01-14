@@ -23,6 +23,10 @@
         color: #fff;
         width: 100%;
 
+        @include medium {
+            top: 30%;
+        }
+
         @include small {
             top: 25%;
         }
