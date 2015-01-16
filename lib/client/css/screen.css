@@ -859,27 +859,28 @@ blockquote {
   padding-bottom: 0;
   padding-left: 1.5em;
   border-left: 6px solid gray;
-  font-family: "source-code-pro", "Lucida Console", Monaco, monospace;
-  font-weight: bold;
+  font-family: "proxima-nova", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.85em;
+  font-style: italic;
 }
-/* line 344, ../scss/global/_typesettings.scss */
+/* line 345, ../scss/global/_typesettings.scss */
 blockquote footer cite:before {
   content: " – ";
 }
 
-/* line 351, ../scss/global/_typesettings.scss */
+/* line 352, ../scss/global/_typesettings.scss */
 pre,
 code {
   font-family: "source-code-pro", "Lucida Console", Monaco, monospace;
 }
 
-/* line 356, ../scss/global/_typesettings.scss */
+/* line 357, ../scss/global/_typesettings.scss */
 time,
 .time {
   text-transform: uppercase;
 }
 
-/* line 361, ../scss/global/_typesettings.scss */
+/* line 362, ../scss/global/_typesettings.scss */
 ol,
 ul,
 dl {
@@ -890,36 +891,36 @@ dl {
   padding-bottom: 0;
 }
 
-/* line 371, ../scss/global/_typesettings.scss */
+/* line 372, ../scss/global/_typesettings.scss */
 ul ul,
 ol ol,
 dl dl {
   margin-left: 0;
 }
 
-/* line 377, ../scss/global/_typesettings.scss */
+/* line 378, ../scss/global/_typesettings.scss */
 ul {
   list-style: disc;
 }
 
-/* line 381, ../scss/global/_typesettings.scss */
+/* line 382, ../scss/global/_typesettings.scss */
 ol {
   list-style: decimal;
 }
 
-/* line 386, ../scss/global/_typesettings.scss */
+/* line 387, ../scss/global/_typesettings.scss */
 abbr {
   font-variant: small-caps;
   font-weight: 600;
   text-transform: lowercase;
 }
 
-/* line 393, ../scss/global/_typesettings.scss */
+/* line 394, ../scss/global/_typesettings.scss */
 abbr[title]:hover {
   cursor: help;
 }
 
-/* line 399, ../scss/global/_typesettings.scss */
+/* line 400, ../scss/global/_typesettings.scss */
 hr {
   margin-top: 1.5em;
   margin-bottom: 0;
