@@ -2715,7 +2715,6 @@ li.comment {
 }
 /* line 155, ../scss/modules/_posts.scss */
 .post-actions a {
-  display: block;
   width: 36px;
   height: 36px;
   padding: 6px;
