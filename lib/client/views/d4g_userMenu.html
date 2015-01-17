@@ -6,6 +6,7 @@
         <ul role="menu" aria-labelledby="dLabel">
           {{#if isAdmin}}
           <li><a href="#">Notifications</a></li>
+          <li><a href="{{pathFor 'posts_pending'}}">Pending Posts</a></li>
           {{/if}}
           <li><a href="{{profileUrl}}">View My Profile</a></li>
           <li><a href="{{userEditUrl}}">Edit Account</a></li>
