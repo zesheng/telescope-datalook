@@ -1,7 +1,7 @@
 .queue-container {
     position: relative;
     height: 0px;
-    @include single-transition(ease-out, opacity, 400ms, 0ms);
+    @include transition(ease-out, opacity, 400ms, 0ms);
 
     ul {
         position: absolute;
@@ -66,10 +66,14 @@ li.comment {
 }
 
 .comment {
-    margin-left: 23px;
+    margin-left: 30px;
     position: relative;
     padding: 0;
     background: none;
+
+    @include small{
+        margin-left: 10px;
+    }
 
     .comment-body {
         @include single-transition(ease-out, opacity, 600ms, 0ms);
@@ -98,34 +102,51 @@ li.comment {
     @include border-radius(0 3px 3px 3px);
     font-size: 14px;
     z-index: 10;
+    margin-bottom: 10px;
+
+    @include small{
+        @include border-radius(3px);
+    }
 
     .comment-main {
         margin-left: 50px;
     }
 
-    .user-avatar {
-        overflow: hidden;
-        display: block;
-        float: left;
-        margin: 0 0 0 5px;
+    // .user-avatar {
+    //     overflow: hidden;
+    //     display: block;
+    //     float: left;
+    //     margin: 0 0 0 5px;
 
-        img {
-            height: 40px;
-            width: 40px;
-            display: block;
-        }
-    }
+    //     img {
+    //         height: 40px;
+    //         width: 40px;
+    //         display: block;
+    //     }
+    // }
 }
 
 .comment-meta {
-    margin-bottom: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px $lightest-grey solid;
     color: $light-text;
 
+    @include small {
+        margin-left: 7px;
+    }
+
+    .avatar {
+        height: 35px;
+        width: 35px;
+    }
+
+    .user-avatar,
     .comment-username,
     .comment-time,
     .comment-permalink {
         display: inline-block;
-        margin-right: 4px;
+        margin-right: 6px;
     }
 
     .comment-permalink {
@@ -154,8 +175,12 @@ li.comment {
     left: -30px;
     top: 0px;
 
+    @include small{
+        left: -15px;
+        top: 5px;
+    }
+
     a {
-        @include border-radius(0 0 0 3px);
         position: relative;
         display: block;
         height: 30px;
@@ -164,10 +189,19 @@ li.comment {
         @include box-shadow(0 1px 1px black(0.15));
         overflow: hidden;
         @include hide-text;
+        @include border-radius(0 0 0 3px);
+
+        @include small {
+            @include border-radius(0 0 3px 3px);
+        }
 
         &.upvote {
-            @include border-radius(3px 0 0 0);
             margin-bottom: 1px;
+            @include border-radius(3px 0 0 0);
+
+            @include small{
+                @include border-radius(3px 3px 0 0);
+            }
         }
 
         i {
