@@ -5,6 +5,7 @@ Package.onUse(function (api) {
   api.use([
     'templating',
     'ui',
+    'jquery',
     'bengott:avatar'
     ], 'client');
 
@@ -18,7 +19,8 @@ Package.onUse(function (api) {
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
     'percolatestudio:segment.io',
-    'jeremy:velocity-animate'
+    'jeremy:velocity-animate',
+    'jeremy:noty'
     ], ['client', 'server']);
 
   api.use('cmather:handlebars-server');
@@ -42,6 +44,9 @@ Package.onUse(function (api) {
 
     // Vendor
     'lib/client/vendor/drop.js',
+
+    // Libs
+    'lib/client/js/noty.js',
 
     // Config
     'lib/client/config/avatar.js',
@@ -106,5 +111,11 @@ Package.onUse(function (api) {
   api.addFiles([
     'lib/router/routes.js'
   ], ['client', 'server']);
+
+
+  /*
+  *  Exports
+  */
+  api.export(['Notify']);
 
 });
