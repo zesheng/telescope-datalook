@@ -26,11 +26,23 @@ body {
 
     @include small {
         overflow-x: hidden;
-        overflow-y: hidden;
     }
 }
 
-.grid-module, .at-form {
-    margin-bottom: $grid-margin;
-    padding: $grid-padding;
+.grid {
+    width:100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-small,
+.at-form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include medium-large{
+       max-width:500px;
+    }
 }
