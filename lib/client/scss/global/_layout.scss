@@ -32,13 +32,15 @@ body {
     margin-right: auto;
 }
 
+.grid-module,
+.at-form {
+    margin-bottom: $grid-margin;
+    padding: $grid-padding;
+}
+
 .grid-small,
 .at-form {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-
-    @include medium-large{
-       max-width:500px;
-    }
 }
