@@ -23,10 +23,6 @@ body {
 .content-wrapper {
     @include container(1000px);
     padding: 20px 0;
-
-    @include small {
-        overflow-x: hidden;
-    }
 }
 
 .grid {

@@ -522,14 +522,8 @@ body {
   display: block;
   clear: both;
 }
-@media screen and (max-width: 40em) {
-  /* line 23, ../scss/global/_layout.scss */
-  .content-wrapper {
-    overflow-x: hidden;
-  }
-}
 
-/* line 32, ../scss/global/_layout.scss */
+/* line 28, ../scss/global/_layout.scss */
 .grid {
   width: 100%;
   max-width: 1000px;
@@ -537,7 +531,7 @@ body {
   margin-right: auto;
 }
 
-/* line 39, ../scss/global/_layout.scss */
+/* line 35, ../scss/global/_layout.scss */
 .grid-small,
 .at-form {
   width: 100%;
@@ -545,7 +539,7 @@ body {
   margin-right: auto;
 }
 @media screen and (min-width: 40em) {
-  /* line 39, ../scss/global/_layout.scss */
+  /* line 35, ../scss/global/_layout.scss */
   .grid-small,
   .at-form {
     max-width: 500px;
