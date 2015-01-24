@@ -112,7 +112,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 156, ../scss/helpers/_mixins.scss */
-.grid-block, .comment-content, .comment-new, .error {
+.grid-block, .comment-content, .comment-new, .error, .at-error {
   background: #fff;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -1797,15 +1797,11 @@ li.comment {
 }
 
 /* line 2, ../scss/modules/_errors.scss */
-.error {
-  background: #DD3416;
-  color: white;
+.error, .at-error {
   margin-bottom: 10px;
   text-align: center;
-}
-/* line 9, ../scss/modules/_errors.scss */
-.error.success-message {
-  background: #BEB9DD;
+  background: #DD3416;
+  color: white;
 }
 
 /* line 3, ../scss/modules/_header.scss */
@@ -3212,50 +3208,56 @@ a.post-category:hover {
   padding: 3em 0;
 }
 /* line 575, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .grid-block, .template-d4g_post_submit .comment-content, .template-d4g_post_submit .comment-new, .template-d4g_post_submit .error,
+.template-d4g_post_submit .grid-block, .template-d4g_post_submit .comment-content, .template-d4g_post_submit .comment-new, .template-d4g_post_submit .error, .template-d4g_post_submit .at-error,
 .template-d4g_post_edit .grid-block,
 .template-d4g_post_edit .comment-content,
 .template-d4g_post_edit .comment-new,
-.template-d4g_post_edit .error {
+.template-d4g_post_edit .error,
+.template-d4g_post_edit .at-error {
   background: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 /* line 580, ../scss/modules/_posts.scss */
+.template-d4g_post_submit .error,
+.template-d4g_post_edit .error {
+  background: #DD3416;
+}
+/* line 584, ../scss/modules/_posts.scss */
 .template-d4g_post_submit h2,
 .template-d4g_post_edit h2 {
   text-transform: none;
   text-align: center;
 }
 @media screen and (max-width: 50em) {
-  /* line 580, ../scss/modules/_posts.scss */
+  /* line 584, ../scss/modules/_posts.scss */
   .template-d4g_post_submit h2,
   .template-d4g_post_edit h2 {
     font-size: 2.82715em;
     line-height: 0.53057;
   }
 }
-/* line 589, ../scss/modules/_posts.scss */
+/* line 593, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group, .template-d4g_post_submit .form-group,
 .template-d4g_post_edit .control-group,
 .template-d4g_post_edit .form-group {
   margin-bottom: 2.5em;
 }
-/* line 592, ../scss/modules/_posts.scss */
+/* line 596, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group > label, .template-d4g_post_submit .form-group > label,
 .template-d4g_post_edit .control-group > label,
 .template-d4g_post_edit .form-group > label {
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 597, ../scss/modules/_posts.scss */
+/* line 601, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group input[type="text"], .template-d4g_post_submit .form-group input[type="text"],
 .template-d4g_post_edit .control-group input[type="text"],
 .template-d4g_post_edit .form-group input[type="text"] {
   padding-left: 1em;
 }
-/* line 601, ../scss/modules/_posts.scss */
+/* line 605, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text, .template-d4g_post_submit .form-group .helper-text,
 .template-d4g_post_edit .control-group .helper-text,
 .template-d4g_post_edit .form-group .helper-text {
@@ -3264,7 +3266,7 @@ a.post-category:hover {
   color: #B3B3B3;
   margin-left: .5em;
 }
-/* line 607, ../scss/modules/_posts.scss */
+/* line 611, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text a, .template-d4g_post_submit .form-group .helper-text a,
 .template-d4g_post_edit .control-group .helper-text a,
 .template-d4g_post_edit .form-group .helper-text a {
@@ -3272,7 +3274,7 @@ a.post-category:hover {
   font-weight: normal;
   text-decoration: underline;
 }
-/* line 617, ../scss/modules/_posts.scss */
+/* line 621, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .categories-field .control-label,
 .template-d4g_post_edit .categories-field .control-label {
   border-bottom: 1px solid #B3B3B3;
@@ -3280,19 +3282,19 @@ a.post-category:hover {
   padding-left: 0.7em;
   padding-bottom: 0.2em;
 }
-/* line 627, ../scss/modules/_posts.scss */
+/* line 631, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .post-created-meta h4,
 .template-d4g_post_edit .post-created-meta h4 {
   font-size: 1.4em;
   text-transform: none;
   margin: 1.5em 1em 0.5em 0;
 }
-/* line 634, ../scss/modules/_posts.scss */
+/* line 638, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions,
 .template-d4g_post_edit .form-actions {
   margin-top: 5em;
 }
-/* line 637, ../scss/modules/_posts.scss */
+/* line 641, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link,
 .template-d4g_post_edit .form-actions .delete-link {
   display: block;
@@ -3305,20 +3307,20 @@ a.post-category:hover {
   -webkit-transition: background 0.7s;
   transition: background 0.7s;
 }
-/* line 645, ../scss/modules/_posts.scss */
+/* line 649, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link:hover,
 .template-d4g_post_edit .form-actions .delete-link:hover {
   background: #a12e3a;
 }
 @media screen and (max-width: 40em) {
-  /* line 637, ../scss/modules/_posts.scss */
+  /* line 641, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .delete-link,
   .template-d4g_post_edit .form-actions .delete-link {
     margin: 1em auto;
   }
 }
 @media screen and (max-width: 40em) {
-  /* line 654, ../scss/modules/_posts.scss */
+  /* line 658, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .button,
   .template-d4g_post_edit .form-actions .button {
     padding: 10px 85px;

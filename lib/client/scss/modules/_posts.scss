@@ -577,6 +577,10 @@ a.post-category {
         @include box-shadow(none);
     }
 
+    .error {
+        background: $red;
+    }
+
     h2 {
         text-transform: none;
         text-align: center;
