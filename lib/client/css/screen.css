@@ -1254,8 +1254,9 @@ li.comment {
 .comment-meta .comment-permalink {
   display: inline-block;
   margin-right: 6px;
+  vertical-align: middle;
 }
-/* line 152, ../scss/modules/_comments.scss */
+/* line 153, ../scss/modules/_comments.scss */
 .comment-meta .comment-permalink {
   position: relative;
   text-indent: 100%;
@@ -1265,7 +1266,7 @@ li.comment {
   color: #b3c1c6;
   margin: 0;
 }
-/* line 159, ../scss/modules/_comments.scss */
+/* line 160, ../scss/modules/_comments.scss */
 .comment-meta .comment-permalink:before {
   position: absolute;
   display: block;
@@ -1273,25 +1274,25 @@ li.comment {
   left: 0;
   text-indent: 0;
 }
-/* line 167, ../scss/modules/_comments.scss */
+/* line 168, ../scss/modules/_comments.scss */
 .comment-meta .comment-permalink:hover:before {
   color: #8CC2DA;
 }
 
-/* line 173, ../scss/modules/_comments.scss */
+/* line 174, ../scss/modules/_comments.scss */
 .comment-actions {
   position: absolute;
   left: -30px;
   top: 0px;
 }
 @media screen and (max-width: 40em) {
-  /* line 173, ../scss/modules/_comments.scss */
+  /* line 174, ../scss/modules/_comments.scss */
   .comment-actions {
     left: -15px;
     top: 5px;
   }
 }
-/* line 183, ../scss/modules/_comments.scss */
+/* line 184, ../scss/modules/_comments.scss */
 .comment-actions a {
   position: relative;
   display: block;
@@ -1310,14 +1311,14 @@ li.comment {
   border-radius: 0 0 0 3px;
 }
 @media screen and (max-width: 40em) {
-  /* line 183, ../scss/modules/_comments.scss */
+  /* line 184, ../scss/modules/_comments.scss */
   .comment-actions a {
     -moz-border-radius: 0 0 3px 3px;
     -webkit-border-radius: 0;
     border-radius: 0 0 3px 3px;
   }
 }
-/* line 198, ../scss/modules/_comments.scss */
+/* line 199, ../scss/modules/_comments.scss */
 .comment-actions a.upvote {
   margin-bottom: 1px;
   -moz-border-radius: 3px 0 0 0;
@@ -1325,14 +1326,14 @@ li.comment {
   border-radius: 3px 0 0 0;
 }
 @media screen and (max-width: 40em) {
-  /* line 198, ../scss/modules/_comments.scss */
+  /* line 199, ../scss/modules/_comments.scss */
   .comment-actions a.upvote {
     -moz-border-radius: 3px 3px 0 0;
     -webkit-border-radius: 3px;
     border-radius: 3px 3px 0 0;
   }
 }
-/* line 207, ../scss/modules/_comments.scss */
+/* line 208, ../scss/modules/_comments.scss */
 .comment-actions a i {
   font-size: 12px;
   display: block;
@@ -1344,46 +1345,50 @@ li.comment {
   text-indent: 0;
   color: #8CC2DA;
 }
-/* line 219, ../scss/modules/_comments.scss */
+/* line 220, ../scss/modules/_comments.scss */
 .comment-actions a:hover {
   background: #4e555d;
 }
-/* line 222, ../scss/modules/_comments.scss */
+/* line 223, ../scss/modules/_comments.scss */
 .comment-actions a:hover i {
   color: white;
 }
-/* line 228, ../scss/modules/_comments.scss */
+/* line 229, ../scss/modules/_comments.scss */
 .comment-actions.upvoted .upvote, .comment-actions.downvoted .downvote {
   cursor: default;
 }
-/* line 231, ../scss/modules/_comments.scss */
+/* line 232, ../scss/modules/_comments.scss */
 .comment-actions.upvoted .upvote i, .comment-actions.downvoted .downvote i {
   color: #7ac0e4;
 }
-/* line 235, ../scss/modules/_comments.scss */
+/* line 236, ../scss/modules/_comments.scss */
 .comment-actions.upvoted .upvote:hover, .comment-actions.downvoted .downvote:hover {
   background: white;
 }
-/* line 240, ../scss/modules/_comments.scss */
+/* line 241, ../scss/modules/_comments.scss */
 .comment-actions.downvoted .upvote, .comment-actions.upvoted .downvote {
   cursor: default;
 }
-/* line 243, ../scss/modules/_comments.scss */
+/* line 244, ../scss/modules/_comments.scss */
 .comment-actions.downvoted .upvote i, .comment-actions.upvoted .downvote i {
   color: #b3c1c6;
 }
-/* line 247, ../scss/modules/_comments.scss */
+/* line 248, ../scss/modules/_comments.scss */
 .comment-actions.downvoted .upvote:hover, .comment-actions.upvoted .downvote:hover {
   background: white;
 }
 
-/* line 264, ../scss/modules/_comments.scss */
+/* line 265, ../scss/modules/_comments.scss */
+.comment-new .comment-submit-button {
+  display: inline-block;
+}
+/* line 269, ../scss/modules/_comments.scss */
 .comment-page .comment-new {
   margin-left: 30px;
   position: relative;
   background: #ffffff;
 }
-/* line 269, ../scss/modules/_comments.scss */
+/* line 274, ../scss/modules/_comments.scss */
 .comment-page .comment-new:after {
   bottom: 100%;
   border: solid transparent;
@@ -1399,7 +1404,7 @@ li.comment {
   margin-left: -8px;
 }
 
-/* line 286, ../scss/modules/_comments.scss */
+/* line 291, ../scss/modules/_comments.scss */
 .comment-deleted {
   display: none;
 }

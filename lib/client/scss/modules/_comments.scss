@@ -147,6 +147,7 @@ li.comment {
     .comment-permalink {
         display: inline-block;
         margin-right: 6px;
+        vertical-align: middle;
     }
 
     .comment-permalink {
@@ -259,6 +260,10 @@ li.comment {
 
     .comment-submit {
         @extend .cf;
+    }
+
+    .comment-submit-button {
+        display: inline-block;
     }
 
     .comment-page & {
