@@ -507,6 +507,11 @@ a.post-category {
     vertical-align: middle;
 }
 
+// Make "jobs" category badge stand out
+a.post-category.category-jobs {
+    background: $success;
+}
+
 @include small {
     .posts {
         padding: 0;
