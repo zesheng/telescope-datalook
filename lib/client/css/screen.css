@@ -125,7 +125,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 164, ../scss/helpers/_mixins.scss */
-.has-shadow, .single-post .posts .post, .post, .post-body {
+.has-shadow, .newsletter-banner, .single-post .posts .post, .post, .post-body {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
@@ -2612,6 +2612,26 @@ li.comment {
 /* line 147, ../scss/modules/_mobile_nav.scss */
 .mobile-submit .button {
   max-width: none;
+}
+
+/* line 1, ../scss/modules/_newsletter.scss */
+.newsletter-banner {
+  background: #EDF6FA;
+  margin-top: 1em;
+}
+
+/* line 7, ../scss/modules/_newsletter.scss */
+.newsletter-tagline {
+  font-weight: normal;
+  text-transform: none;
+  margin-right: 30px;
+  margin-bottom: 0;
+}
+
+/* line 14, ../scss/modules/_newsletter.scss */
+a.newsletter-dismiss {
+  font-weight: 300;
+  float: right;
 }
 
 /* line 2, ../scss/modules/_notifications.scss */

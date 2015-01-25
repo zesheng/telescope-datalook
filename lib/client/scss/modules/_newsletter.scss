@@ -1,0 +1,17 @@
+.newsletter-banner {
+    background: $newsletter-banner;
+    margin-top: 1em;
+    @extend .has-shadow;
+}
+
+.newsletter-tagline {
+    font-weight: normal;
+    text-transform: none;
+    margin-right: 30px;
+    margin-bottom: 0;
+}
+
+a.newsletter-dismiss {
+    font-weight: 300;
+    float: right;
+}
