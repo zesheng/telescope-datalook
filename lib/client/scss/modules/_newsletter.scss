@@ -9,6 +9,10 @@
     text-transform: none;
     margin-right: 30px;
     margin-bottom: 0;
+
+    @include small {
+        margin-bottom: 16px;
+    }
 }
 
 a.newsletter-dismiss {

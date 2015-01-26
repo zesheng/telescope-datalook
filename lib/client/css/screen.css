@@ -2627,8 +2627,14 @@ li.comment {
   margin-right: 30px;
   margin-bottom: 0;
 }
+@media screen and (max-width: 40em) {
+  /* line 7, ../scss/modules/_newsletter.scss */
+  .newsletter-tagline {
+    margin-bottom: 16px;
+  }
+}
 
-/* line 14, ../scss/modules/_newsletter.scss */
+/* line 18, ../scss/modules/_newsletter.scss */
 a.newsletter-dismiss {
   font-weight: 300;
   float: right;
