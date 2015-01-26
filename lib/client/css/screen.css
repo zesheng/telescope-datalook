@@ -1811,6 +1811,11 @@ li.comment {
   color: white;
 }
 
+/* line 10, ../scss/modules/_errors.scss */
+.error.success-message {
+  background: #BEB9DD;
+}
+
 /* line 3, ../scss/modules/_header.scss */
 .header-wrap {
   background: #fff;
