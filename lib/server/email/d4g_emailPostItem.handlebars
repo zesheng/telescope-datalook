@@ -8,7 +8,7 @@
 
 <div class="post-meta">
   {{#if domain}}
-    <a class="post-domain" href="">{{domain}}</a>
+    <span class="post-domain" href="">{{domain}}</span>
     |
   {{/if}}
   <span class="post-submitted">Submitted by <a href="{{profileUrl}}" class="comment-link" target="_blank">{{authorName}}</a></span>
@@ -20,9 +20,6 @@
 
 
 <div class="post-body-excerpt">
-  {{#if body}}
-    {{{htmlBody}}}
-  {{/if}}
   <a href="{{postPageLink}}" class="read-more-link" target="_blank">Discuss</a>
 </div>
 
