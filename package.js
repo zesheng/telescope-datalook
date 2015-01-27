@@ -102,6 +102,7 @@ Package.onUse(function (api) {
     'lib/server/email/d4g_emailWrapper.handlebars',
     'lib/server/email/d4g_emailDigest.handlebars',
     'lib/server/email/d4g_emailPostItem.handlebars',
+    'lib/server/email/d4g_emailNewPost.handlebars',
     'lib/server/email/custom_email_templates.js'
   ], 'server');
 
