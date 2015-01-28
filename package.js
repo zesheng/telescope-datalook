@@ -84,6 +84,8 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_user_edit.html',
     'lib/client/views/d4g_user_edit.js',
     'lib/client/views/d4g_newsletterBanner.html',
+    'lib/client/views/d4g_newsletter_signup.html',
+    'lib/client/views/d4g_newsletter_signup.js',
 
     // Pages
     'lib/client/views/pages/about.html',
