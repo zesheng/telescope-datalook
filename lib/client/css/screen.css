@@ -2232,7 +2232,7 @@ li.comment {
 }
 
 /* line 71, ../scss/modules/_hero.scss */
-.link-effect a {
+.link-effect {
   padding: 10px 0 0 0;
   color: #fff;
   text-shadow: none;
@@ -2244,7 +2244,7 @@ li.comment {
   transition: background 0.5s ease 0.2s, padding 0.5s ease 0.2s, border-bottom 0.5s ease 0.2s;
 }
 /* line 78, ../scss/modules/_hero.scss */
-.link-effect a::before, .link-effect a::after {
+.link-effect::before, .link-effect::after {
   position: absolute;
   left: 0;
   width: 100%;
@@ -2262,7 +2262,7 @@ li.comment {
   transform: translateY(-10px);
 }
 /* line 91, ../scss/modules/_hero.scss */
-.link-effect a::before {
+.link-effect::before {
   top: 0;
   -moz-transform: translateY(-10px);
   -ms-transform: translateY(-10px);
@@ -2274,7 +2274,7 @@ li.comment {
   transform: rotate(50deg);
 }
 /* line 97, ../scss/modules/_hero.scss */
-.link-effect a::after {
+.link-effect::after {
   bottom: 0;
   -moz-transform: translateY(10px);
   -ms-transform: translateY(10px);
@@ -2286,13 +2286,13 @@ li.comment {
   transform: rotate(-50deg);
 }
 /* line 103, ../scss/modules/_hero.scss */
-.link-effect a:hover, .link-effect a:focus {
+.link-effect:hover, .link-effect:focus {
   background: #8CC2DA;
   padding: 10px;
   border-bottom: none;
 }
 /* line 110, ../scss/modules/_hero.scss */
-.link-effect a:hover::before, .link-effect a:focus::before, .link-effect a:hover::after, .link-effect a:focus::after {
+.link-effect:hover::before, .link-effect:focus::before, .link-effect:hover::after, .link-effect:focus::after {
   opacity: 1;
   background: #8CC2DA;
   -moz-transform: translateY(0px);
