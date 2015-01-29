@@ -1,99 +1,180 @@
 <template name="about">
 
-  <h2>About Us</h2>
+  <h2>About DataLook</h2>
 
   <section>
-    <h3>How can I use this site?</h3>
+    <h3>What's happening here?</h3>
     <p>
-      <a href="/">DataLook</a> is all about <strong>finding and sharing data-driven projects for social good</strong>. It's basically like <a href="http://www.producthunt.com/" target="_blank">Product Hunt</a> for social good projects (you could also call us <em>"Project Hunt"</em>, but that's too cheap). The idea is to get inspired and to replicate projects in your community.
+      DataLook showcases the latest and best data-driven projects for social good. The site is for people who are excited about solving social problems with data and code. Users can post, upvote and discuss projects and get in touch with project owners.
     </p>
-    <p>
-      There are more and more people out there who care about apps and data projects that somehow make life better for all of us. Imagine if all those would use <a href="/">DataLook</a> as their bookmark tool for projects they like. And imagine if others vote their favorite projects up. That way we would have a crowdsourced list of the best data- and tech-driven projects for social good. Users can use <a href="/">DataLook</a> to get inspired, to get in touch with project owners and to eventually replicate projects in their own community. That's our grand vision - help us make it true.
-    </p>
-    <p>
-      Apart from that you can also use DataLook as a marketplace. Some project owners are desperate for help. On the other side, some developers and data scientists out there are desperate for using their skills (or improving them) with cool and meaningful projects. Both sides can find each other by using the <a href="/category/help-us">"Help us!"</a> category.
-    </p>
+    <ul class="unstyled-list no-indent-list">
+      <li>
+        <span class="bold">Our mission:</span> to inspire <span class="underline">you</span>.
+      </li>
+      <li>
+        <span class="bold">Our vision:</span> <span class="underline">you</span> replicate the projects in your own community.
+      </li>
+      <li>
+        <span class="bold">Our measure of success:</span> number of redeployed/replicated projects (let us know if you replicate a project you see on DataLook!).
+      </li>
+    </ul>
   </section>
 
   <section>
-    <h3>Who uses this site?</h3>
+    <h3>What are "data-driven projects for social good"?</h3>
     <p>
-      This site is dedicated to the crowd out there that wants to use data and web/mobile technology to solve social problems. So it's the <a href="http://opengovdata.io/2014/civic-hacking/" target="_blank">civic hacking</a> community (mostly developers), it's the <a href="http://dssg.io/" target="_blank">data science for social good</a> community (mostly data scientists), it's NGOs, it's public administration, it's the open data and open government movement, it's journalists who love these stories, and whoever is mesmerized by these projects just like we are. Our mission is to bring all these communities together and help them with inspiration and information and by providing a discussion and matchmaking platform. The technology allows us to go beyond borders and that's truly fantastic.
+      That’s a good question. Most digital projects use data in some form or another. A website of a non-profit organization that shows images could theoretically be called a "data-driven project for social good". But that's not what we mean.
     </p>
     <p>
-      But why don't you <a href="/posts/6dhy2r8JhTwBb65ue">introduce yourself</a>?
+      We started DataLook because we are fascinated by projects from two movements:
     </p>
-  </section>
-
-  <section>
-    <h3>What about ranking projects?</h3>
+    <ol>
+      <li>
+        Using (open) data to solve civic problems (<a href="https://opengovdata.io/2014/civic-hacking/" target="_blank">Civic Hacking</a>, mostly web/mobile apps created by developers). An example project is <a href="/posts/gdB7dE4r9b6xeAMke">Adopt-a-hydrant</a>.
+      </li>
+      <li>
+        Using data science to solve social problems (<a href="http://carlshan.com/2015/01/08/data-science-social-good.html" target="_blank">Data Science for Social Good</a>, mostly analytics-driven insight created by data scientists). An example project is <a href="/posts/cPSRTkJFSd4fCkbLe" target="_blank">Foodborne Chicago</a>.
+      </li>
+    </ol>
     <p>
-      How cool would it be to filter out the best, coolest, most effective projects? However, measuring impact is difficult. Until we find a good solution (and we are thinking hard about it), you should sign in and hit the vote button for your favorite projects. Then rank projects by number of votes (View => Best). That way everyone can see which projects the crowd likes best. And that's already a pretty cool feature!
+      Other directories focus on <a href="http://digitalsocial.eu/" target="_blank">Digital Social Innovation</a>. That's basically anyone who uses the internet for social good. Or take the <a href="http://socialtech.org.uk/" target="_blank">Social Tech Guide</a>, featuring innovators that use technology to drive social change. The broader term is probably "<a href="http://www.grantcraft.org/assets/content/resources/blueprint_2015.pdf" target="_blank">digital civil society</a>". Some hashtags are #civichacking, #civictech, #tech4good, #data4good, #apps4good.
+    </p>
+    <p>
+      The field is broad (and awesome), so where does DataLook draw the line? Ultimately, we want to help you get engaged, contribute your coding or data science skills, replicate a project in your community, make the world a better place and feel good yourself. DataLook is not only a place to find information about cool projects, it's a call to action. Use DataLook to ask others how you can get involved. Gather or join a team, replicate a project or start a new one.
+    </p>
+    <p class="bold">
+      We welcome all projects that use a minimum amount of data, that tackle real-world social problems in some community, and that are replicable (ideally open source).
     </p>
   </section>
 
   <section>
     <h3>Can I post a project?</h3>
     <p>
-      Absolutely! Just sign in and hit the post button. And note that our app supports <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">markdown</a>.
+      Absolutely! Just sign in and hit the "<a href="{{pathFor 'post_submit'}}" target="_blank">Post a Project</a>" button. Each post needs:
     </p>
-    <p>
-      If you are looking for support for your project, use the category <a href="/category/help-us">"Help us!"</a>.
-    </p>
-  </section>
-
-  <section>
-    <h3>Can I also post stuff other than projects?</h3>
-    <ul>
-        <li>
-          That's a good question. The feedback we got from users so far is divided: 50% want to see only links to projects, 50% want to see all kinds of news. We believe that this site is really useful if there is a strict focus on projects. We might introduce a feature that allows separating projects from other news. <a href="mailto:info@dataforgood.co">Let us know</a> what you think is best.
-        </li>
-        <li>
-          In the meantime we will focus on projects and tweet any news we come across via <a href="https://twitter.com/datalook" target="_blank">@datalook</a>.
-        </li>
-        <li>
-          Apart from that, you can ask questions to the community by using the category <a href="/category/ask+dl">"Ask DL"</a>.
-        </li>
+    <ul class="unstyled-list">
+      <li>
+        <span class="bold">URL:</span> Direct link to the project (whatever page has the best information for replication)
+      </li>
+      <li>
+        <span class="bold">Title of the project:</span> if the project does not have a catchy title, you can use the organization's name (e.g., DataKind)
+      </li>
+      <li>
+        <span class="bold">Tagline:</span> as short as possible, you can add the location in square brackets (we will have a separate field for the location soon)
+      </li>
+      <li>
+        <span class="bold">Description (optional):</span> any additional information and links, not shown on the frontpage
+      </li>
     </ul>
+    <p>
+      Note that our app supports <a href="https://guides.github.com/features/mastering-markdown/" target="_blank">Markdown</a> in the project description field.
+    </p>
+    <p>
+      If the URL hasn't been posted before, it will be queued for approval. We approve your posts as quickly as possible.
+    </p>
+  </section>
+
+
+  <section>
+    <h3>What if I'm looking for help with my project?</h3>
+    <p>
+      Very simple. Just use the "<a href="/category/help-us" target="_blank">Help us!</a>" category. In the description you should explain what needs to be done, the skills you are looking for and how people can get involved. Think about possibilities of remote collaboration (e.g., via Github).
+    </p>
   </section>
 
   <section>
-    <h3>What will this site look like in the future?</h3>
+    <h3>Can I also submit stuff other than projects?</h3>
     <p>
-      That's basically up to you! We do whatever makes sense for the community. You can definitely influence the development of this site: please fill out this little <a href="https://docs.google.com/forms/d/1hDSn1D0IXIRZlp8Vqb31CPVmkg994aTJNkQhRtIzRFo/viewform?usp=send_form" target="_blank">feedback form</a> or <a href="mailto:info@dataforgood.co">get in touch</a>. We are currently implementing a new design.
+      Let's see. Stuff like tutorials to learn coding or data science should be posted on other sites (e.g., <a href="http://www.datatau.com/" target="_blank">DataTau</a>).
+    </p>
+    <p>
+      Jobs related to the field can be posted for free. Just use the "<a href="/category/jobs" target="_blank">Jobs</a>" category.
+    </p>
+    <p>
+      If you are not sure use the chat box on the bottom of the site, write us an <a href="mailto:tobias@datalook.io">email</a> or hit us up on <a href="https://twitter.com/datalook" target="_blank">@DataLook</a>. We are always happy to hear from you.
+    </p>
+  </section>
+
+  <section>
+    <h3>How are projects ranked?</h3>
+    <p>
+      Default is <a href="/top">Top</a> sorting. Projects are then ranked by the time since submission, the number of upvotes (=stars), and other factors. You can also see <a href="/new">New</a> projects and <a href="/best">Most Starred</a> projects.
+    </p>
+  </section>
+
+  <section>
+    <h3>Where do you want to go with this site?</h3>
+    <p>
+      We do whatever makes sense for the users. You can definitely influence the development of this site. Just <a href="mailto:info@datalook.io">get in touch</a>. We are happy to hear your feedback.
     </p>
   </section>
 
   <section>
     <h3>What's the story of DataLook?</h3>
     <p>
-      Pretty simple: We always missed such a site => went to a <a href="http://www.startupweekend.org/" target="_blank">Startup Weekend</a> => launched the site => kept going because we love what we do. We started out as Data for Good, but decided to go with DataLook.  Just after launching, <a href="http://venturebeat.com/2014/07/16/meet-data-for-good-the-hacker-news-for-showing-off-the-best-data-science-to-help-the-world/" target="_blank">VentureBeat</a> wrote a nice piece about us. We are also featured on <a href="http://www.kdnuggets.com/2014/07/data-for-good-data-driven-projects-social-good.html" target="_blank">KDnuggets</a> and <a href="http://www.itbusinessedge.com/blogs/integration/emerging-trend-data-scientist-as-humanitarian-worker.html" target="_blank">ITBusinessEdge</a>.
+      Pretty simple: We always missed such a site, went to a <a href="http://startupweekend.org/">Startup Weekend</a> in one of Germany's finest cities (Hamburg), launched the site, and kept going because we love what we do. We started out as Data for Good, but decided to go with DataLook. Just after launching, <a href="http://venturebeat.com/2014/07/16/meet-data-for-good-the-hacker-news-for-showing-off-the-best-data-science-to-help-the-world/">VentureBeat</a> wrote a nice piece about us. We are also featured on <a href="http://www.kdnuggets.com/2014/07/data-for-good-data-driven-projects-social-good.html">KDnuggets</a>.
+    </p>
+  </section>
+
+  <section>
+    <h3>Do you have an RSS feed?</h3>
+    <p>
+      Yes we do. You can find it <a href="/feed.xml" target="_blank">here</a>. You can also follow us on <a href="https://twitter.com/datalook" target="_blank">Twitter</a>.
     </p>
   </section>
 
   <section>
     <h3>Who's behind DataLook?</h3>
+    <p>The team (in order of appearance):</p>
+    <div class="team">
+      <div class="person">
+        <img src="https://datalook.s3.amazonaws.com/images/team/tobias.jpg" alt="Tobias">
+        <div class="name">Tobias Pfaff</div>
+        <div class="info">Founder<br>Executive Director</div>
+      </div>
+      <div class="person">
+        <img src="https://datalook.s3.amazonaws.com/images/team/vicens.png" alt="Vicens">
+        <div class="name">Vicens Fayos</div>
+        <div class="info">Co-Founder<br>Engineering</div>
+      </div>
+      <div class="person">
+        <img src="https://datalook.s3.amazonaws.com/images/team/jeremy.png" alt="Jeremy">
+        <div class="name">Jeremy Shimko</div>
+        <div class="info">Co-Founder<br>Engineering</div>
+      </div>
+      <div class="person">
+        <img src="https://datalook.s3.amazonaws.com/images/team/uli.png" alt="Uli">
+        <div class="name">Uli Schoof</div>
+        <div class="info">Co-Founder<br>Business Development</div>
+      </div>
+      <div class="person">
+        <img src="https://datalook.s3.amazonaws.com/images/team/sushant.jpg" alt="Sushant">
+        <div class="name">Sushant Chavan</div>
+        <div class="info">Volunteer<br>Engineering/PR</div>
+      </div>
+    </div>
     <p>
-      <a href="https://de.linkedin.com/in/tobiaspfaff/en" target="_blank">Tobias Pfaff</a>, <a href="https://twitter.com/datracka" target="_blank">Vicens Fayos</a>, David Geoffroy (left the team), <a href="https://de.linkedin.com/pub/ulrich-schoof/a/346/18b/de" target="_blank">Uli Schoof</a>, <a href="https://www.twitter.com/csushant/" target="_blank">Sushant Chavan</a>, <a href="https://github.com/jshimko" target="_blank">Jeremy Shimko</a> (in order of appearance). A global mission needs a global team, so we're based in Germany, India and the US. Our backgrounds are in Web Development, Economics, and Business Administration (two of us have PhD's). We love intelligent hacks for social good, we code and we make machines learn.
+      We are scattered over the planet. Don't expect us in a shiny office. But do expect us in front of a shiny screen. DataLook is a non-profit project currently looking for funding. Please <a href="mailto:tobias@datalook.io">get in touch</a> and we are happy to tell you how we want to contribute to solving social problems in the future.
     </p>
-    <figure>
-      <img src="http://venturebeat.files.wordpress.com/2014/07/swhh14-team-data-for-good.jpg?w=780&amp;h=9999&amp;crop=0" alt="The Startup Weekend Team"/>
-      <figcaption>
-        Tobias, Vicens, David - the Startup Weekend team. Image credit: <a href="http://www.twitter.com/oxenmensch" target="_blank">Robin Himmels</a>
-      </figcaption>
-    </figure>
     <p>
-      ...and there's of course the fabulous, open-source <a href="http://telesc.pe" target="_blank">Telescope</a> app working behind the scenes (kudos to <a href="http://twitter.com/SachaGreif" target="_blank">Sacha Greif</a>).
+      ...and there's of course the fabulous, open-source, <a href="http://meteor.com" target="_blank">Meteor.js</a>-based <a href="http://telesc.pe/" target="_blank">Telescope</a> app working behind the scenes (kudos to <a href="http://sachagreif.com/">Sacha Greif</a>).
     </p>
   </section>
 
   <section>
     <h3>Who are our friends (retweeting us, etc.)?</h3>
     <p>
-      <a href="http://www.datakind.org/" target="_blank">DataKind</a> | <a href="http://www.bayesimpact.org/" target="_blank">BayesImpact</a> | <a href="http://www.datarobot.com/" target="_blank">DataRobot</a> | <a href="http://dataanalystsforsocialgood.com/" target="_blank">Data Analysts for Social Good</a> | <a href="http://datasciencebe.com/" target="_blank">Brussels Data Science Community</a> | <a href="http://www.meetup.com/sfnetsquared/" target="_blank">San Francisco Tech 4 Good Meetup</a> | <a href="http://www.drivendata.org/" target="_blank">DrivenData</a>
-    </p>
-    <p>
-      Want to become our friend? Just <a href="https://twitter.com/OpenDataForGood" target="_blank">ping</a> us.
+      <a href="http://www.datakind.org/" target="_blank">DataKind</a> |
+      <a href="http://www.bayesimpact.org/" target="_blank">BayesImpact</a> |
+      <a href="http://www.datarobot.com/" target="_blank">DataRobot</a> |
+      <a href="http://dataanalystsforsocialgood.com/" target="_blank">Data Analysts for Social Good</a> |
+      <a href="http://datasciencebe.com/" target="_blank">Brussels Data Science Community</a> |
+      <a href="http://www.meetup.com/sfnetsquared/" target="_blank">San Francisco Tech 4 Good Meetup</a> |
+      <a href="http://www.drivendata.org/" target="_blank">DrivenData</a> |
+      <a href="http://www.datapopalliance.org/" target="_blank">Data-Pop Alliance</a> |
+      <a href="http://dssg.io/" target="_blank">Data Science for Social Good Fellowship</a> |
+      <a href="http://lucybernholz.com/" target="_blank">Lucy Bernholz</a> |
+      <a href="http://www.betterplace-lab.org/" target="_blank">betterplace lab</a>
     </p>
   </section>
 </template>
