@@ -1847,6 +1847,14 @@ li.comment {
 }
 
 /* line 10, ../scss/modules/_errors.scss */
+div.at-error p {
+  background: #DD3416;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 15, ../scss/modules/_errors.scss */
 .error.success-message {
   background: #BEB9DD;
 }
