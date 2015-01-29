@@ -32,3 +32,14 @@ $border-color: $grey;
 $highlight-color: $dark-blue;
 $sticky-background: #EDF6FA;
 $newsletter-banner: #EDF6FA;
+
+
+// Helpers
+
+.brand-color {
+    color: $brand-primary;
+}
+
+.brand-color-bg {
+    background: $brand-primary;
+}

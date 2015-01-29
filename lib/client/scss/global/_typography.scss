@@ -1,3 +1,29 @@
 html, body, input, button {
     font-family: $font-sans;
 }
+
+.bold {
+    font-weight: 700;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.unstyled-list {
+
+    & > li {
+        list-style: none;
+    }
+}
+
+.circle-list {
+
+    & > li {
+        list-style: circle;
+    }
+}
+
+.no-indent-list {
+    margin-left: 0;
+}

@@ -70,6 +70,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*
 *  Typography Settings
 */
+/* line 39, ../scss/helpers/_colors.scss */
+.brand-color {
+  color: #8CC2DA;
+}
+
+/* line 43, ../scss/helpers/_colors.scss */
+.brand-color-bg {
+  background: #8CC2DA;
+}
+
 /*================ FUNCTIONS =================*/
 /*================ MIXINS =================*/
 /*================ CLASSES =================*/
@@ -944,6 +954,31 @@ hr {
 /* line 1, ../scss/global/_typography.scss */
 html, body, input, button {
   font-family: "proxima-nova", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 5, ../scss/global/_typography.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 9, ../scss/global/_typography.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 15, ../scss/global/_typography.scss */
+.unstyled-list > li {
+  list-style: none;
+}
+
+/* line 22, ../scss/global/_typography.scss */
+.circle-list > li {
+  list-style: circle;
+}
+
+/* line 27, ../scss/global/_typography.scss */
+.no-indent-list {
+  margin-left: 0;
 }
 
 /* line 1, ../scss/modules/_accounts.scss */
