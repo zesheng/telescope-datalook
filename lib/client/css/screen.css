@@ -2078,22 +2078,26 @@ div.at-error p {
   font-size: 14px;
   padding: 7px 12px;
   line-height: 1.3;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
   border-radius: 20px;
   border: 0px;
   width: 80%;
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
   background: rgba(0, 0, 0, 0.05);
 }
-/* line 182, ../scss/modules/_header.scss */
+/* line 181, ../scss/modules/_header.scss */
 .header .search .search-field:focus {
   outline: none;
 }
-/* line 189, ../scss/modules/_header.scss */
+/* line 188, ../scss/modules/_header.scss */
 .header .search.empty .search-field {
   background: rgba(0, 0, 0, 0.03);
 }
-/* line 192, ../scss/modules/_header.scss */
+/* line 191, ../scss/modules/_header.scss */
 .header .search.empty .search-field:focus {
   background: white;
   -moz-box-shadow: rgba(140, 194, 218, 0.3) 0 0 7px 1px inset;
@@ -2101,18 +2105,18 @@ div.at-error p {
   box-shadow: rgba(140, 194, 218, 0.3) 0 0 7px 1px inset;
 }
 
-/* line 201, ../scss/modules/_header.scss */
+/* line 200, ../scss/modules/_header.scss */
 .header-module, .header-submodule {
   display: block;
   margin-right: 20px;
 }
 
-/* line 207, ../scss/modules/_header.scss */
+/* line 206, ../scss/modules/_header.scss */
 .header-module:last-child {
   margin-right: 0px;
 }
 
-/* line 212, ../scss/modules/_header.scss */
+/* line 211, ../scss/modules/_header.scss */
 .mobile-menu-button {
   position: absolute;
   display: inline-block;
@@ -2121,39 +2125,39 @@ div.at-error p {
   z-index: 100;
   font-size: 2em;
 }
-/* line 220, ../scss/modules/_header.scss */
+/* line 219, ../scss/modules/_header.scss */
 .mobile-menu-button:focus {
   outline: none;
 }
 
-/* line 225, ../scss/modules/_header.scss */
+/* line 224, ../scss/modules/_header.scss */
 .account-link {
   display: inline-block;
 }
 
-/* line 229, ../scss/modules/_header.scss */
+/* line 228, ../scss/modules/_header.scss */
 .sign-in {
   margin-right: 10px;
 }
 
-/* line 233, ../scss/modules/_header.scss */
+/* line 232, ../scss/modules/_header.scss */
 .dropdown-menu li {
   text-align: center;
 }
 
-/* line 237, ../scss/modules/_header.scss */
+/* line 236, ../scss/modules/_header.scss */
 .has-dropdown .user-menu .dropdown-menu {
   left: auto;
   right: 10px;
 }
 
-/* line 242, ../scss/modules/_header.scss */
+/* line 241, ../scss/modules/_header.scss */
 .has-dropdown .notifications-menu .dropdown-menu {
   left: auto;
   right: 10px;
 }
 
-/* line 247, ../scss/modules/_header.scss */
+/* line 246, ../scss/modules/_header.scss */
 .newsletter-dismiss {
   line-height: 30px !important;
 }
