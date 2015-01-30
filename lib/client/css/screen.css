@@ -3257,65 +3257,80 @@ a.post-category:hover {
 }
 
 /* line 493, ../scss/modules/_posts.scss */
+.post-subscribe.module {
+  max-width: 260px;
+  text-align: center;
+  float: right;
+}
+@media screen and (max-width: 40em) {
+  /* line 493, ../scss/modules/_posts.scss */
+  .post-subscribe.module {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 505, ../scss/modules/_posts.scss */
 .inner-table {
   display: table;
   height: 100%;
 }
 
-/* line 498, ../scss/modules/_posts.scss */
+/* line 510, ../scss/modules/_posts.scss */
 .inner-table-cell {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 504, ../scss/modules/_posts.scss */
+/* line 516, ../scss/modules/_posts.scss */
 a.post-category.category-jobs {
   background: #BEB9DD;
 }
 
 @media screen and (max-width: 40em) {
-  /* line 509, ../scss/modules/_posts.scss */
+  /* line 521, ../scss/modules/_posts.scss */
   .posts {
     padding: 0;
   }
-  /* line 512, ../scss/modules/_posts.scss */
+  /* line 524, ../scss/modules/_posts.scss */
   .posts .post-rank {
     display: none;
   }
 
-  /* line 519, ../scss/modules/_posts.scss */
+  /* line 531, ../scss/modules/_posts.scss */
   .post .post-content {
     margin-right: 50px;
     margin-right: 0px;
   }
-  /* line 523, ../scss/modules/_posts.scss */
+  /* line 535, ../scss/modules/_posts.scss */
   .post .post-content .upvote-link {
     width: 30px;
   }
-  /* line 527, ../scss/modules/_posts.scss */
+  /* line 539, ../scss/modules/_posts.scss */
   .post .post-content .post-info {
     padding: 13px 0;
   }
-  /* line 533, ../scss/modules/_posts.scss */
+  /* line 545, ../scss/modules/_posts.scss */
   .post .post-content .post-heading .post-title {
     display: block;
     margin-bottom: 4px;
   }
-  /* line 538, ../scss/modules/_posts.scss */
+  /* line 550, ../scss/modules/_posts.scss */
   .post .post-content .post-heading .post-domain {
     display: block;
     margin-bottom: 4px;
     font-size: 13px;
   }
-  /* line 545, ../scss/modules/_posts.scss */
+  /* line 557, ../scss/modules/_posts.scss */
   .post .post-content .post-meta {
     font-size: 11px;
   }
-  /* line 548, ../scss/modules/_posts.scss */
+  /* line 560, ../scss/modules/_posts.scss */
   .post .post-content .post-meta .unit {
     font-size: 0;
   }
-  /* line 551, ../scss/modules/_posts.scss */
+  /* line 563, ../scss/modules/_posts.scss */
   .post .post-content .post-meta .unit:after {
     font-size: 12px;
     content: "pts ";
@@ -3324,13 +3339,13 @@ a.post-category.category-jobs {
 /*
 *  Post submit/edit pages
 */
-/* line 568, ../scss/modules/_posts.scss */
+/* line 580, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .content-wrapper,
 .template-d4g_post_edit .content-wrapper {
   max-width: 700px;
   padding: 3em 0;
 }
-/* line 573, ../scss/modules/_posts.scss */
+/* line 585, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .grid-block, .template-d4g_post_submit .comment-content, .template-d4g_post_submit .comment-new, .template-d4g_post_submit .error, .template-d4g_post_submit .at-error,
 .template-d4g_post_edit .grid-block,
 .template-d4g_post_edit .comment-content,
@@ -3342,45 +3357,45 @@ a.post-category.category-jobs {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-/* line 578, ../scss/modules/_posts.scss */
+/* line 590, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .error,
 .template-d4g_post_edit .error {
   background: #DD3416;
 }
-/* line 582, ../scss/modules/_posts.scss */
+/* line 594, ../scss/modules/_posts.scss */
 .template-d4g_post_submit h2,
 .template-d4g_post_edit h2 {
   text-transform: none;
   text-align: center;
 }
 @media screen and (max-width: 50em) {
-  /* line 582, ../scss/modules/_posts.scss */
+  /* line 594, ../scss/modules/_posts.scss */
   .template-d4g_post_submit h2,
   .template-d4g_post_edit h2 {
     font-size: 2.82715em;
     line-height: 0.53057;
   }
 }
-/* line 591, ../scss/modules/_posts.scss */
+/* line 603, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group, .template-d4g_post_submit .form-group,
 .template-d4g_post_edit .control-group,
 .template-d4g_post_edit .form-group {
   margin-bottom: 2.5em;
 }
-/* line 594, ../scss/modules/_posts.scss */
+/* line 606, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group > label, .template-d4g_post_submit .form-group > label,
 .template-d4g_post_edit .control-group > label,
 .template-d4g_post_edit .form-group > label {
   font-size: 1.4em;
   font-weight: bold;
 }
-/* line 599, ../scss/modules/_posts.scss */
+/* line 611, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group input[type="text"], .template-d4g_post_submit .form-group input[type="text"],
 .template-d4g_post_edit .control-group input[type="text"],
 .template-d4g_post_edit .form-group input[type="text"] {
   padding-left: 1em;
 }
-/* line 603, ../scss/modules/_posts.scss */
+/* line 615, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text, .template-d4g_post_submit .form-group .helper-text,
 .template-d4g_post_edit .control-group .helper-text,
 .template-d4g_post_edit .form-group .helper-text {
@@ -3389,7 +3404,7 @@ a.post-category.category-jobs {
   color: #B3B3B3;
   margin-left: .5em;
 }
-/* line 609, ../scss/modules/_posts.scss */
+/* line 621, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .control-group .helper-text a, .template-d4g_post_submit .form-group .helper-text a,
 .template-d4g_post_edit .control-group .helper-text a,
 .template-d4g_post_edit .form-group .helper-text a {
@@ -3397,7 +3412,7 @@ a.post-category.category-jobs {
   font-weight: normal;
   text-decoration: underline;
 }
-/* line 619, ../scss/modules/_posts.scss */
+/* line 631, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .categories-field .control-label,
 .template-d4g_post_edit .categories-field .control-label {
   border-bottom: 1px solid #B3B3B3;
@@ -3405,19 +3420,19 @@ a.post-category.category-jobs {
   padding-left: 0.7em;
   padding-bottom: 0.2em;
 }
-/* line 629, ../scss/modules/_posts.scss */
+/* line 641, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .post-created-meta h4,
 .template-d4g_post_edit .post-created-meta h4 {
   font-size: 1.4em;
   text-transform: none;
   margin: 1.5em 1em 0.5em 0;
 }
-/* line 636, ../scss/modules/_posts.scss */
+/* line 648, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions,
 .template-d4g_post_edit .form-actions {
   margin-top: 5em;
 }
-/* line 639, ../scss/modules/_posts.scss */
+/* line 651, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link,
 .template-d4g_post_edit .form-actions .delete-link {
   display: block;
@@ -3430,20 +3445,20 @@ a.post-category.category-jobs {
   -webkit-transition: background 0.7s;
   transition: background 0.7s;
 }
-/* line 647, ../scss/modules/_posts.scss */
+/* line 659, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link:hover,
 .template-d4g_post_edit .form-actions .delete-link:hover {
   background: #a12e3a;
 }
 @media screen and (max-width: 40em) {
-  /* line 639, ../scss/modules/_posts.scss */
+  /* line 651, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .delete-link,
   .template-d4g_post_edit .form-actions .delete-link {
     margin: 1em auto;
   }
 }
 @media screen and (max-width: 40em) {
-  /* line 656, ../scss/modules/_posts.scss */
+  /* line 668, ../scss/modules/_posts.scss */
   .template-d4g_post_submit .form-actions .button,
   .template-d4g_post_edit .form-actions .button {
     padding: 10px 85px;

@@ -490,6 +490,18 @@ a.post-category {
     }
 }
 
+.post-subscribe.module {
+    max-width: 260px;
+    text-align: center;
+    float: right;
+
+    @include small {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .inner-table {
     display: table;
     height: 100%;
