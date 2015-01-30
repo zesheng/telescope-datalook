@@ -16,6 +16,7 @@ Package.onUse(function (api) {
     'telescope-search',
     'telescope-tags',
     'iron:router',
+    'aldeed:autoform',
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
     'percolatestudio:segment.io',
@@ -114,6 +115,7 @@ Package.onUse(function (api) {
   *  Client & Server
   */
   api.addFiles([
+    'lib/collections.js',
     'lib/router/routes.js'
   ], ['client', 'server']);
 
