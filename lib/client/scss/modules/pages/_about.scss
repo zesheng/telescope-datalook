@@ -3,18 +3,20 @@
     @extend %static-page;
 
     .team {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        @include display-flex;
+        @include flex-wrap(wrap);
+        @include justify-content(center);
         margin-top: 2em;
         margin-bottom: 1em;
     }
 
     .person {
-        flex: 0 1 175px;
+        @include flex-grow(0);
+        @include flex-shrink(1);
+        @include flex-basis(175px);
 
         @include small {
-            flex-basis: 150px;
+            @include flex-basis(150px);
         }
 
         img {

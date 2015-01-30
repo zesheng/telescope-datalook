@@ -2728,8 +2728,11 @@ a.newsletter-dismiss {
 
 /* line 25, ../scss/modules/_posts.scss */
 .post {
+  display: -webkit-flex;
   display: flex;
   align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
   min-height: 120px;
   padding: 10px 0px 10px 10px;
   border-radius: 0px;
@@ -2761,12 +2764,18 @@ a.newsletter-dismiss {
 /* line 56, ../scss/modules/_posts.scss */
 .post .post-module {
   flex-shrink: 0;
+  -webkit-flex-shrink: 0;
+  -moz-flex-shrink: 0;
   flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
   margin-right: 10px;
 }
 /* line 62, ../scss/modules/_posts.scss */
 .post .post-upvote {
   order: 1;
+  -webkit-order: 1;
+  -moz-order: 1;
   margin-left: 5px;
   margin-right: 15px;
   padding-top: 15px;
@@ -2788,28 +2797,43 @@ a.newsletter-dismiss {
 /* line 81, ../scss/modules/_posts.scss */
 .post .post-content {
   order: 2;
+  -webkit-order: 2;
+  -moz-order: 2;
   width: 100%;
   flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -moz-flex-shrink: 1;
   align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
 }
 @media screen and (min-width: 40em) {
   /* line 81, ../scss/modules/_posts.scss */
   .post .post-content {
     flex-grow: 1;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    display: -webkit-flex;
     display: flex;
   }
 }
 /* line 96, ../scss/modules/_posts.scss */
 .post .post-info {
   flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
 }
 /* line 100, ../scss/modules/_posts.scss */
 .post .post-share {
   order: 3;
+  -webkit-order: 3;
+  -moz-order: 3;
 }
 /* line 104, ../scss/modules/_posts.scss */
 .post .post-discuss {
   order: 7;
+  -webkit-order: 7;
+  -moz-order: 7;
 }
 @media screen and (max-width: 40em) {
   /* line 104, ../scss/modules/_posts.scss */
@@ -2824,10 +2848,14 @@ a.newsletter-dismiss {
 /* line 116, ../scss/modules/_posts.scss */
 .post .post-actions {
   order: 8;
+  -webkit-order: 8;
+  -moz-order: 8;
 }
 /* line 120, ../scss/modules/_posts.scss */
 .post .post-avatars {
   order: 6;
+  -webkit-order: 6;
+  -moz-order: 6;
 }
 /* line 126, ../scss/modules/_posts.scss */
 .post.show-actions .post-content {
@@ -2839,6 +2867,8 @@ a.newsletter-dismiss {
 .post.show-actions .post-upvote {
   display: block;
   flex-grow: 1;
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
 }
 
 /* line 139, ../scss/modules/_posts.scss */
@@ -3817,34 +3847,46 @@ a.mt-share-inline-square-sm {
 
 /* line 5, ../scss/modules/pages/_about.scss */
 .template-about .team {
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
   margin-top: 2em;
   margin-bottom: 1em;
 }
 /* line 13, ../scss/modules/pages/_about.scss */
 .template-about .person {
-  flex: 0 1 175px;
+  flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
+  flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -moz-flex-shrink: 1;
+  -webkit-flex-basis: 175px;
+  flex-basis: 175px;
 }
 @media screen and (max-width: 40em) {
   /* line 13, ../scss/modules/pages/_about.scss */
   .template-about .person {
+    -webkit-flex-basis: 150px;
     flex-basis: 150px;
   }
 }
-/* line 20, ../scss/modules/pages/_about.scss */
+/* line 22, ../scss/modules/pages/_about.scss */
 .template-about .person img {
   display: block;
   max-width: 100px;
   margin: 0 auto .5em auto;
 }
-/* line 26, ../scss/modules/pages/_about.scss */
+/* line 28, ../scss/modules/pages/_about.scss */
 .template-about .person .name {
   font-weight: 700;
   text-align: center;
 }
-/* line 31, ../scss/modules/pages/_about.scss */
+/* line 33, ../scss/modules/pages/_about.scss */
 .template-about .person .info {
   text-align: center;
   color: #6F6F6F;
