@@ -6,7 +6,9 @@ Package.onUse(function (api) {
     'templating',
     'ui',
     'jquery',
-    'bengott:avatar'
+    'bengott:avatar',
+    'jeremy:velocity-animate',
+    'hedcet:noty'
     ], 'client');
 
   api.use([
@@ -19,9 +21,7 @@ Package.onUse(function (api) {
     'aldeed:autoform',
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
-    'percolatestudio:segment.io',
-    'jeremy:velocity-animate',
-    'jeremy:noty'
+    'percolatestudio:segment.io'
     ], ['client', 'server']);
 
   api.use('cmather:handlebars-server');
@@ -45,9 +45,6 @@ Package.onUse(function (api) {
 
     // Vendor
     'lib/client/vendor/drop.js',
-
-    // Libs
-    'lib/client/js/noty.js',
 
     // Config
     'lib/client/config/avatar.js',
@@ -92,7 +89,11 @@ Package.onUse(function (api) {
     // Pages
     'lib/client/views/pages/about.html',
     'lib/client/views/pages/press.html',
-    'lib/client/views/pages/press.js'
+    'lib/client/views/pages/press.js',
+
+
+    // Libs
+    'lib/client/js/noty.js'
 
   ], 'client');
 
