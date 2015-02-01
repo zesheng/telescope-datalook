@@ -7,8 +7,7 @@ Package.onUse(function (api) {
     'ui',
     'jquery',
     'bengott:avatar',
-    'jeremy:velocity-animate',
-    'hedcet:noty'
+    'jeremy:velocity-animate'
     ], 'client');
 
   api.use([
