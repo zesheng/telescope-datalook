@@ -20,7 +20,7 @@ Package.onUse(function (api) {
     'aldeed:autoform',
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
-    'percolatestudio:segment.io'
+    'jeremy:segment.io'
     ], ['client', 'server']);
 
   api.use('cmather:handlebars-server');
