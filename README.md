@@ -35,11 +35,11 @@ You will be using Meteorite to add the local telescope-d4g package to Telescope,
 
 ```json
 {
-    "packages": {
-        "telescope-d4g": {
-            "path": "/local/path/to/telescope-d4g"
-        }
+  "packages": {
+    "telescope-d4g": {
+      "path": "/local/path/to/telescope-d4g"
     }
+  }
 }
 ```
 
