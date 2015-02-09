@@ -52,6 +52,9 @@ Package.onUse(function (api) {
     'lib/client/helpers/spacebars.js',
 
     // Layouts
+    'lib/client/views/d4g_layout.html',
+    'lib/client/views/layouts/full_width_layout.html',
+    'lib/client/views/layouts/full_width_layout.js',
     'lib/client/views/layouts/press_layout.html',
     'lib/client/views/layouts/press_layout.js',
 
@@ -59,7 +62,6 @@ Package.onUse(function (api) {
     'lib/client/views/main.html',
     'lib/client/views/custom_templates.js',
     'lib/client/views/d4g_atForm.js',
-    'lib/client/views/d4g_layout.html',
     'lib/client/views/d4g_nav.html',
     'lib/client/views/d4g_search.html',
     'lib/client/views/d4g_userMenu.html',
