@@ -69,7 +69,7 @@ You will need to satisfy a few dependencies on your machine before you can get s
 
 To install dependencies:
 ```sh
-gem install compass compass-notify susy breakpoint
+gem install compass compass-notify susy breakpoint autoprefixer-rails
 ```
 
 To get started writing Sass, (assuming Meteor is already running) just open another terminal window, `cd` into the `scss` folder of this package, and start Compass.
