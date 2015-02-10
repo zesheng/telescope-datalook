@@ -1,7 +1,7 @@
 
 .hero {
-    background-image: url(https://dataforgood.s3.amazonaws.com/images/hero-background.jpg);
-    @include background-size(cover);
+    background-image: url("https://dataforgood.s3.amazonaws.com/images/hero-background.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
@@ -10,7 +10,7 @@
     display: block;
 
     .hero-inner {
-        background: rgba(0,0,0,0.10);
+        background: rgba(0, 0, 0, .10);
         position: relative;
         min-height: 500px;
     }
@@ -32,7 +32,7 @@
         }
 
         h1 {
-            padding: 0px 20px;
+            padding: 0 20px;
             line-height: 1;
             font-size: 3em;
         }
@@ -50,7 +50,7 @@
             font-size: 1.8em;
             font-weight: 300;
             margin: 2em auto 1.2em auto;
-            @include border-radius(0px);
+            border-radius: 0;
         }
     }
 
@@ -73,7 +73,7 @@
     color: #fff;
     text-shadow: none;
     border-bottom: 1px solid #fff;
-    @include transition(background 0.5s ease 0.2s, padding 0.5s ease 0.2s, border-bottom 0.5s ease 0.2s);
+    transition: background .5s ease .2s, padding .5s ease .2s, border-bottom .5s ease .2s;
 
     &::before,
     &::after {
@@ -84,20 +84,18 @@
         background: #fff;
         content: '';
         opacity: 0;
-        @include transition(opacity 0.3s, transform 0.3s);
-        @include transform(translateY(-10px));
+        transition: opacity .3s, transform .3s;
+        transform: translateY(-10px);
     }
 
     &::before {
         top: 0;
-        @include transform(translateY(-10px));
-        @include transform(rotate(50deg));
+        transform: translateY(-10px), rotate(50deg);
     }
 
     &::after {
         bottom: 0;
-        @include transform(translateY(10px));
-        @include transform(rotate(-50deg));
+        transform: translateY(10px), rotate(-50deg);
     }
 
     &:hover,
@@ -113,8 +111,7 @@
     &:focus::after {
         opacity: 1;
         background: $brand-primary;
-        @include transform(translateY(0px));
-        @include transform(rotate(0deg));
+        transform: translateY(0), rotate(0deg);
     }
 }
 
@@ -134,7 +131,7 @@
 
         a {
             color: $text-medium;
-            @include transition(color .7s);
+            transition: color .7s;
 
             &:hover {
                 color: darken($brand-primary, 10%);
@@ -147,7 +144,7 @@
         padding-right: 23px;
         z-index: 101;
 
-        & > a {
+        > a {
             color: $text-medium;
             cursor: pointer;
         }

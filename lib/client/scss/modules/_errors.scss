@@ -1,5 +1,5 @@
 
-.error, .at-error{
+.error, .at-error {
     @extend .grid-block;
     margin-bottom: $grid-margin;
     text-align: center;
@@ -9,7 +9,7 @@
 
 div.at-error p {
     background: $red;
-    @include border-radius(3px);
+    border-radius: 3px;
 }
 
 .error.success-message {

@@ -23,11 +23,11 @@
 }
 
 .post {
-    @include display-flex();
-    @include align-items(center);
+    display: flex;
+    align-items: center;
     min-height: 120px;
-    padding: 10px 0px 10px 10px;
-    border-radius: 0px;
+    padding: 10px 0 10px 10px;
+    border-radius: 0;
     margin-bottom: 20px;
     border-bottom: 1px solid $lightest-grey;
     position: relative;
@@ -36,15 +36,15 @@
     @extend .has-shadow;
 
     &:first-child {
-        border-radius: 3px 3px 0px 0px;
+        border-radius: 3px 3px 0 0;
     }
 
     &:last-child {
-        border-radius: 0px 0px 3px 3px;
+        border-radius: 0 0 3px 3px;
     }
 
     &.animate {
-        @include transition(ease-out, top, 400ms, 0ms);
+        transition: ease-out top 400ms 0ms;
     }
 
     &.inactive {
@@ -54,13 +54,13 @@
     }
 
     .post-module {
-        @include flex-shrink(0);
-        @include flex-grow(0);
+        flex-shrink: 0;
+        flex-grow: 0;
         margin-right: 10px;
     }
 
     .post-upvote {
-        @include order(1);
+        order: 1;
         margin-left: 5px;
         margin-right: 15px;
         padding-top: 15px;
@@ -79,30 +79,30 @@
     }
 
     .post-content {
-        @include order(2);
+        order: 2;
         width: 100%;
         // can shrink on mobile or desktop
-        @include flex-shrink(1);
-        @include align-items(center);
+        flex-shrink: 1;
+        align-items: center;
 
         @include medium-large {
             // but can only grow on desktop
-            @include flex-grow(1);
+            flex-grow: 1;
             // only be a flex container on desktop
-            @include display-flex();
+            display: flex;
         }
     }
 
     .post-info {
-        @include flex-grow(1);
+        flex-grow: 1;
     }
 
     .post-share {
-        @include order(3);
+        order: 3;
     }
 
     .post-discuss {
-        @include order(7);
+        order: 7;
 
         @include small {
             display: none;
@@ -156,8 +156,8 @@
             height: 100%;
             width: 100%;
             border-radius: 3px;
-            border: 1px solid rgba($brand-primary, 0.3);
-            color: rgba($brand-primary, 0.8);
+            border: 1px solid rgba($brand-primary, .3);
+            color: rgba($brand-primary, .8);
             text-align: center;
             line-height: 14px;
             font-weight: bold;
@@ -182,12 +182,12 @@
             height: 100%;
             width: 100%;
             text-align: center;
-            color: rgba($brand-primary, 0.8);
-            text-shadow: 0px 1px 0px white;
+            color: rgba($brand-primary, .8);
+            text-shadow: 0 1px 0 white;
             line-height: 1;
 
             &:before {
-                top: 0px;
+                top: 0;
             }
 
             &.icon-check {
@@ -216,10 +216,10 @@
             }
 
             i.icon-check {
-                border: 1px solid rgba($blue, 0.6);
+                border: 1px solid rgba($blue, .6);
                 display: inline-block;
-                color: rgba($blue, 0.8);
-                opacity: 0.5;
+                color: rgba($blue, .8);
+                opacity: .5;
             }
         }
     }
@@ -244,7 +244,7 @@
 
     span {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: -60px;
         display: block;
         height: 36px;
@@ -252,7 +252,7 @@
         width: 30px;
         text-align: right;
         font-size: 18px;
-        color: black(0.2);
+        color: black(.2);
     }
 
     @include small {
@@ -310,7 +310,7 @@
     }
 
     .post-domain {
-        color:$light-text;
+        color: $light-text;
 
         @include small {
             font-size: 13px;
@@ -320,7 +320,7 @@
             font-size: 14px;
         }
 
-        font-weight:normal;
+        font-weight: normal;
     }
 }
 
@@ -332,14 +332,14 @@
 a.post-category {
     display: inline-block;
     font-size: 11px;
-    @include border-radius(3px);
+    border-radius: 3px;
     background: $brand-primary;
     color: #fff;
     padding: 2px 6px;
     text-transform: uppercase;
     font-weight: normal;
     vertical-align: middle;
-    @include transition(background 0.7s);
+    transition: background .7s;
 
     &:hover {
         background: darken($brand-primary, 15%);
@@ -365,9 +365,9 @@ a.post-category {
     display: none;
 }
 
-.post-author{
+.post-author {
 
-    .avatar{
+    .avatar {
         display: inline-block;
         width: 20px;
         height: 20px;
@@ -385,7 +385,6 @@ a.post-category {
         padding: 0;
         width: $grid-unit;
         height: $grid-unit;
-        line-height: $grid-unit;
         vertical-align: baseline;
         text-align: center;
         color: $light-text;
@@ -447,7 +446,7 @@ a.post-category {
             line-height: 20px;
             position: absolute;
             bottom: 5px;
-            left: 0px;
+            left: 0;
             font-size: 13px;
             color: $light-text;
             pointer-events: none;
@@ -476,17 +475,17 @@ a.post-category {
     display: block;
     width: 100%;
     height: $grid-unit;
-    background: black(0.05);
+    background: black(.05);
     text-align: center;
     color: white;
     line-height: $grid-unit;
     font-size: 18px;
-    border-radius: 0px 0px 3px 3px;
-    text-shadow: 0px 1px 1px 0px black(0.25);
-    padding: 0px;
+    border-radius: 0 0 3px 3px;
+    text-shadow: 0 1px 1px 0 black(.25);
+    padding: 0;
 
     &:hover {
-        background: black(0.15);
+        background: black(.15);
     }
 }
 
@@ -529,8 +528,7 @@ a.post-category.category-jobs {
     .post {
 
         .post-content {
-            margin-right: 50px;
-            margin-right: 0px;
+            margin-right: 0;
 
             .upvote-link {
                 width: 30px;
@@ -584,7 +582,7 @@ a.post-category.category-jobs {
 
     .grid-block {
         background: none;
-        @include box-shadow(none);
+        box-shadow: none;
     }
 
     .error {
@@ -630,9 +628,9 @@ a.post-category.category-jobs {
 
         .control-label {
             border-bottom: 1px solid $text-light;
-            margin: 1.5em -0.1em 1em -0.2em;
-            padding-left: 0.7em;
-            padding-bottom: 0.2em;
+            margin: 1.5em -.1em 1em -.2em;
+            padding-left: .7em;
+            padding-bottom: .2em;
         }
     }
 
@@ -641,7 +639,7 @@ a.post-category.category-jobs {
         h4 {
             font-size: 1.4em;
             text-transform: none;
-            margin: 1.5em 1em 0.5em 0;
+            margin: 1.5em 1em .5em 0;
         }
     }
 
@@ -654,7 +652,7 @@ a.post-category.category-jobs {
             background: $danger;
             color: #fff;
             font-weight: normal;
-            @include transition(background 0.7s);
+            transition: background .7s;
 
             &:hover {
                 background: darken($danger, 10%);

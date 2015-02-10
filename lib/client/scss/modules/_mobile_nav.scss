@@ -15,40 +15,37 @@ $mobile-nav-width: 200px;
 .mobile-nav {
     position: fixed;
     overflow: auto;
-    left: -$mobile-nav-width;
     left: calc((100% - 60px) * -1);
-    width: $mobile-nav-width;
     width: calc(100% - 60px);
     height: 100%;
-    top: 0px;
-    bottom: 0px;
+    top: 0;
+    bottom: 0;
     background: #444;
     color: white;
-    @include box-shadow(inset -3px 0px 7px black(0.5));
+    box-shadow: inset -3px 0 7px black(.5);
     z-index: 100;
 }
 
 .mobile-nav, .inner-wrapper {
-    @include transition(all, 300ms, ease-out, 0ms);
+    transition: all 300ms ease-out 0ms;
 }
 
 .inner-wrapper {
     position: relative;
-    left: 0px;
+    left: 0;
 }
 
 .mobile-nav-open {
     overflow: hidden;
 
     .mobile-nav {
-        left: 0px;
+        left: 0;
     }
 
     .outer-wrapper {
         overflow: hidden;
 
         .inner-wrapper {
-            left: $mobile-nav-width;
             left: calc(100% - 60px);
         }
     }
@@ -73,12 +70,12 @@ $mobile-nav-width: 200px;
 
     .header-module, .header-submodule {
         display: block;
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     > li {
         margin-bottom: 0;
-        border-bottom: 1px white(0.2) solid;
+        border-bottom: 1px white(.2) solid;
 
         &:last-child {
             border: none;
@@ -90,8 +87,8 @@ $mobile-nav-width: 200px;
     }
 
     .sign-in {
-        border-bottom: 1px white(0.2) solid;
-        margin-right: 0px;
+        border-bottom: 1px white(.2) solid;
+        margin-right: 0;
     }
 
     a {
@@ -112,7 +109,7 @@ $mobile-nav-width: 200px;
                 position: relative;
                 top: -1px;
                 margin-left: 4px;
-                content:"▼";
+                content: "▼";
                 font-size: 8px;
             }
         }
@@ -131,7 +128,7 @@ $mobile-nav-width: 200px;
         li {
             padding: 10px;
             margin-bottom: 0;
-            border-top: 1px white(0.2) solid;
+            border-top: 1px white(.2) solid;
         }
     }
 
@@ -142,7 +139,7 @@ $mobile-nav-width: 200px;
 
 .mobile-submit {
     padding: 10px;
-    border-bottom: 1px white(0.2) solid;
+    border-bottom: 1px white(.2) solid;
 
     .button {
         max-width: none;

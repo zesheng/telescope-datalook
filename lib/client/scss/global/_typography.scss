@@ -12,14 +12,14 @@ html, body, input, button {
 
 .unstyled-list {
 
-    & > li {
+    > li {
         list-style: none;
     }
 }
 
 .circle-list {
 
-    & > li {
+    > li {
         list-style: circle;
     }
 }

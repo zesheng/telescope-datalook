@@ -24,8 +24,8 @@
             font-weight: 400;
             padding: 7px;
             border: 2px solid darken($brand-primary, 10%);
-            @include border-radius(3px);
-            @include transition(all .5s);
+            border-radius: 3px;
+            transition: all .5s;
         }
     }
 
@@ -36,7 +36,7 @@
             width: 150px;
             height: 150px;
             margin-bottom: 2em;
-            @include border-radius(2px);
+            border-radius: 2px;
         }
     }
 }

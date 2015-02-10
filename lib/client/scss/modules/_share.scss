@@ -1,17 +1,17 @@
 .share-options {
-    position:absolute;
+    position: absolute;
     padding: 10px;
     line-height: 1;
     @extend .popover;
 
     @include small {
-        left: 0px;
+        left: 0;
         top: 75px;
     }
 
     @include medium-large {
-        left:-180px;
-        top:5px;
+        left: -180px;
+        top: 5px;
     }
 
     a {
@@ -20,16 +20,16 @@
     }
 
     &.hidden {
-        display:block;
-        opacity:0;
+        display: block;
+        opacity: 0;
         pointer-events: none;
-        left:-160px;
+        left: -160px;
     }
 
     &:after, &:before {
         left: 100%;
         border: solid transparent;
-        content:" ";
+        content: " ";
         height: 0;
         width: 0;
         position: absolute;
@@ -41,14 +41,14 @@
         border-width: 10px;
 
         @include small {
-            border-bottom-color: #ffffff;
+            border-bottom-color: #fff;
             top: -20px;
             left: 50%;
             margin-left: -11px;
         }
 
         @include medium-large {
-            border-left-color: #ffffff;
+            border-left-color: #fff;
             top: 20px;
             margin-top: -3px;
         }
@@ -80,7 +80,7 @@
             float: left;
             margin-right: 10px;
             background: transparent;
-            padding: 0px;
+            padding: 0;
             height: 100%;
         }
     }
@@ -89,7 +89,7 @@
 a.mt-share-inline-square-sm img {
     width: 34px;
     height: auto;
-    border: 0px;
+    border: 0;
 }
 
 a.mt-share-inline-square-sm {

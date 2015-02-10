@@ -9,7 +9,7 @@
             width: 30px;
             background-size: 30px 30px;
             display: block;
-            @include border-radius(3px);
+            border-radius: 3px;
         }
     }
 }
@@ -17,7 +17,7 @@
 .filter-sort {
     @include cf;
     padding: $grid-padding;
-    background: black(0.05);
+    background: black(.05);
 
     a, span {
         display: inline-block;

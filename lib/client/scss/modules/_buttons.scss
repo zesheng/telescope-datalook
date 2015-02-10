@@ -2,7 +2,7 @@
 button,
 .btn-primary,
 .button {
-    @include transition(background .7s);
+    transition: background .7s;
 
     &:hover {
         background: darken($brand-primary, 10%);

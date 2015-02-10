@@ -1,15 +1,15 @@
 .queue-container {
     position: relative;
-    height: 0px;
-    @include transition(ease-out, opacity, 400ms, 0ms);
+    height: 0;
+    transition: ease-out opacity 400ms 0ms;
 
     ul {
         position: absolute;
         margin-left: 100%;
         left: 10px;
         top: -30px;
-        @include border-radius(3px);
-        background: black(0.05);
+        border-radius: 3px;
+        background: black(.05);
         padding: 10px 0 0 10px;
         max-width: 120px;
         white-space: nowrap;
@@ -24,7 +24,7 @@
             position: absolute;
             pointer-events: none;
             border-color: rgba(255, 255, 255, 0);
-            border-right-color: black(0.05);
+            border-right-color: black(.05);
             border-width: 8px;
             top: 25px;
             margin-top: -8px;
@@ -34,11 +34,10 @@
             display: block;
             float: left;
             margin: 0 10px 10px 0;
-            display: block;
             height: 30px;
             width: 30px;
             background: $brand-primary;
-            @include border-radius(100px);
+            border-radius: 100px;
             line-height: 30px;
             text-align: center;
             position: relative;
@@ -49,11 +48,11 @@
 
             a {
                 position: absolute;
-                top: 0px;
+                top: 0;
                 display: block;
                 height: 30px;
                 width: 30px;
-                @include border-radius(100px);
+                border-radius: 100px;
                 background-size: 30px 30px;
             }
         }
@@ -71,7 +70,7 @@ li.comment {
     padding: 0;
     background: none;
 
-    @include small{
+    @include small {
         margin-left: 10px;
     }
 
@@ -99,14 +98,14 @@ li.comment {
 .comment-content {
     position: relative;
     @extend .grid-block;
-    @include border-radius(0 3px 3px 3px);
+    border-radius: 0 3px 3px 3px;
     font-size: 14px;
     z-index: 10;
     margin-bottom: 10px;
     padding: 15px 15px 20px 15px;
 
-    @include small{
-        @include border-radius(3px);
+    @include small {
+        border-radius: 3px;
     }
 
     .comment-main {
@@ -166,9 +165,9 @@ li.comment {
 .comment-actions {
     position: absolute;
     left: -30px;
-    top: 0px;
+    top: 0;
 
-    @include small{
+    @include small {
         left: -15px;
         top: 5px;
     }
@@ -179,21 +178,21 @@ li.comment {
         height: 30px;
         width: 30px;
         background: white;
-        @include box-shadow(0 1px 1px black(0.15));
+        box-shadow: 0 1px 1px black(.15);
         overflow: hidden;
         @include hide-text;
-        @include border-radius(0 0 0 3px);
+        border-radius: 0 0 0 3px;
 
         @include small {
-            @include border-radius(0 0 3px 3px);
+            border-radius: 0 0 3px 3px;
         }
 
         &.upvote {
             margin-bottom: 1px;
-            @include border-radius(3px 0 0 0);
+            border-radius: 3px 0 0 0;
 
-            @include small{
-                @include border-radius(3px 3px 0 0);
+            @include small {
+                border-radius: 3px 3px 0 0;
             }
         }
 
@@ -247,9 +246,6 @@ li.comment {
     @extend .grid-block;
     @extend .cf;
 
-    .comment-field {
-    }
-
     .comment-submit {
         @extend .cf;
     }
@@ -261,18 +257,18 @@ li.comment {
     .comment-page & {
         margin-left: 30px;
         position: relative;
-        background: #ffffff;
+        background: #fff;
 
         &:after {
             bottom: 100%;
             border: solid transparent;
-            content:" ";
+            content: " ";
             height: 0;
             width: 0;
             position: absolute;
             pointer-events: none;
             border-color: rgba(255, 255, 255, 0);
-            border-bottom-color: #ffffff;
+            border-bottom-color: #fff;
             border-width: 8px;
             left: 20px;
             margin-left: -8px;
@@ -282,7 +278,7 @@ li.comment {
 
 .comment-deleted {
     display: none;
-    // background: white(0.6);
+    // background: white(.6);
     // border-radius: 3px;
     // margin-bottom: 10px;
     // padding: 10px 15px;

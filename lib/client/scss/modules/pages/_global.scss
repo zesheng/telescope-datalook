@@ -38,7 +38,7 @@
 
     a {
         color: $brand-primary;
-        @include transition(color .7s);
+        transition: color .7s;
 
         &:hover {
             color: darken($brand-primary, 20%);
