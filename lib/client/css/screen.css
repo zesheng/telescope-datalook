@@ -3298,12 +3298,12 @@ a.post-category.category-jobs {
 .template-d4g_post_edit .post-created-meta h4 {
   font-size: 1.4em;
   text-transform: none;
-  margin: 1.5em 1em .5em 0;
+  margin: 0 1em .5em 0;
 }
 /* line 646, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions,
 .template-d4g_post_edit .form-actions {
-  margin-top: 5em;
+  margin-top: 3em;
 }
 /* line 649, ../scss/modules/_posts.scss */
 .template-d4g_post_submit .form-actions .delete-link,

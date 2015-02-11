@@ -49,13 +49,20 @@
         {{> afFieldInput name='status'}}
       </div>
     </div>
+
+    {{#if isPostEdit}}
+      <div class="post-created-meta">
+        <h4>Post originally submitted</h4>
+        <p>{{formattedDatetime post.createdAt}} ({{fromNow post.createdAt}})</p>
+      </div>
+    {{/if}}
   {{/if}}
 
-  <div class="form-group">
-    <div class="control-label"></div>
-    <div class="controls">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
+  <div class="form-actions">
+    {{#if isPostEdit}}
+      <a class="delete-link" href="/posts/deleted">Delete Project</a>
+    {{/if}}
+    <input type="submit" class="button" value="Submit" />
   </div>
 
 </template>
