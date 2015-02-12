@@ -2629,8 +2629,8 @@ a.newsletter-dismiss {
 }
 /* line 46, ../scss/modules/_posts.scss */
 .post.animate {
-  -webkit-transition: ease-out top 400ms 0ms;
-          transition: ease-out top 400ms 0ms;
+  -webkit-transition: all .7s 0ms ease-out;
+          transition: all .7s 0ms ease-out;
 }
 /* line 51, ../scss/modules/_posts.scss */
 .post.inactive .post-content {

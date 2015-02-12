@@ -67,6 +67,8 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_userMenu.html',
     'lib/client/views/d4g_categories_menu.html',
     'lib/client/views/d4g_categories_menu.js',
+    'lib/client/views/d4g_posts_list.html',
+    'lib/client/views/d4g_posts_list.js',
     'lib/client/views/d4g_postAuthor.html',
     'lib/client/views/d4g_postInfo.html',
     'lib/client/views/d4g_postUpvote.html',

@@ -44,7 +44,7 @@
     }
 
     &.animate {
-        transition: ease-out top 400ms 0ms;
+        transition: all .7s 0ms ease-out;
     }
 
     &.inactive {
