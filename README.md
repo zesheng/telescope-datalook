@@ -7,7 +7,7 @@ This package is intended to be added to [Telescope][1] to create the styling and
 This package/site is currently under heavy development.  If you're reading this, it's likely because you're one of the fine people working on it.  So I'll get right to it.
 
 ### Telescope Core
-The clone of Telescope [in my Guthub account][3] will be kept up to date with [the official upstream version][4] published by [Sacha Greif][5].  The master branch in my Telescope repo will always be equal to the master branch on the upstream repo.  The [datalook branch][6] is the production branch for dataforgood.io and data-for-good-dev is the staging/testing branch (this branch doesn't currently exist - coming soon).
+The clone of Telescope [in my Github account][3] will be kept up to date with [the official upstream version][4] published by [Sacha Greif][5].  The master branch in my Telescope repo will always be equal to the master branch on the upstream repo.  The [datalook branch][6] is the production branch for datalook.io and datalook-dev is the staging/testing branch.
 
 ---
 
@@ -19,9 +19,9 @@ First, you will need to fork our Telescope repo to your own Github account.  Go 
 # Clone the repo
 git clone git@github.com:YOUR_NAME/Telescope.git
 
-# Checkout the data-for-good branch
-cd telescope
-git checkout -b data-for-good
+# Checkout the datalook branch
+cd Telescope
+git checkout -b datalook
 ```
 
 Now you're ready to get this theme package installed.  The steps are similar to what you just did.  However, you will not want to clone this package inside of Telescope.  It should be a separate repo on your local machine.  First, `cd` into whatever directory you would like to store this package in for development.  Then fork this repo to your own Github account and clone it to your local machine the same way you did with Telescope.
@@ -49,18 +49,13 @@ and then from the Telescope directory run:
 # Symlink the D4G package to the /packages folder 
 mrt add telescope-d4g
 
-# Add package to Telescope
+# Add package to Telescope if meteorite didn't do it for you
 meteor add telescope-d4g
 ```
 
-If you have already checked out the data-for-good branch of Telescope, the default theme packages should already be disabled.  If they aren't, you need to disable them with:
+If you have already checked out the `datalook` branch of [our fork of Telescope][6], the default theme packages should already be disabled and additional packages should already be added.  See `.meteor/packages` in the `datalook` branch for more details.
 
-```sh
-meteor remove telescope-theme-base
-meteor remove telescope-theme-hubble
-```
-
-Now just fire up Meteor and go to `http://localhost:3000` to test it out.  Telescope should look like the productions site here: http://dataforgood.io
+Now just fire up Meteor and go to `http://localhost:3000` to test it out.  Telescope should look like the productions site here: http://datalook.io
 
 ---
 
@@ -79,12 +74,6 @@ To get started writing Sass, (assuming Meteor is already running) just open anot
 cd packages/telescope-d4g/lib/client/scss
 
 compass watch
-```
-
-If you experience issues with Compass not seeing scss files changing when you save them, you can alternatively run:
-
-```sh
-compass watch --poll
 ```
 
 You should now be able to edit scss files and Compass will compile them to `packages/telescope-d4g/lib/client/css/screen.css` on each file save.  Meteor will detect that file change and refresh the styles in the page (without a full page refresh).
