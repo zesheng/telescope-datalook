@@ -1,0 +1,452 @@
+/*
+*  Praise Timeline
+*/
+
+.praise-container {
+    width: 90%;
+    max-width: 1170px;
+    margin: 0 auto;
+
+    &::after {
+        @include cf;
+    }
+}
+
+#praise-timeline {
+    position: relative;
+    padding: 2em 0;
+    margin: {
+        top: 2em;
+        bottom: 2em;
+    }
+
+    &::before {
+        /* the vertical line */
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 18px;
+        height: 100%;
+        width: 4px;
+        background: darken(#e9f0f5, 5%);
+    }
+
+    @include large {
+        margin: {
+            top: 3em;
+            bottom: 3em;
+        }
+
+        &::before {
+            left: 50%;
+            margin-left: -2px;
+        }
+    }
+}
+
+.praise-timeline-block {
+    position: relative;
+    margin: 2em 0;
+    @include cf;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include large {
+        margin: 4em 0;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.praise-timeline-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $brand-primary;
+    box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05);
+
+    img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @include large {
+        width: 60px;
+        height: 60px;
+        left: 50%;
+        margin-left: -30px;
+
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+
+        img {
+            width: 60px;
+            height: 60px;
+        }
+
+        &.is-hidden {
+            display: none;
+        }
+
+        &.bounce-in {
+            display: block;
+            @include animation(praise-bounce-1 .6s);
+        }
+    }
+}
+
+@include keyframes(praise-bounce-1) {
+    0% {
+        opacity: 0;
+        @include transform(scale(.5));
+    }
+
+    60% {
+        opacity: 1;
+        @include transform(scale(1.2));
+    }
+
+    100% {
+        @include transform(scale(1));
+    }
+}
+
+.praise-timeline-content {
+    position: relative;
+    margin-left: 60px;
+    background: #fff;
+    border-radius: 2em;
+    padding: 1em;
+    box-shadow: 0 3px 0 darken(#e9f0f5, 5%);
+    @include cf;
+
+    .quote {
+        font-size: 1.5em;
+    }
+
+    .name {
+        font-style: italic;
+    }
+
+    .bio {
+        font-size: .8em;
+        color: $text-medium;
+    }
+
+    .twitter {
+        display: inline-block;
+        float: left;
+        padding: .8em 0;
+        opacity: .7;
+        transition: color .7s;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 100%;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-right: 7px solid #fff;
+    }
+
+    @include medium {
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .twitter {
+            font-size: 14px;
+        }
+    }
+
+    @include large {
+        margin-left: 0;
+        padding: 1.6em;
+        width: 45%;
+
+        &::before {
+            top: 24px;
+            left: 100%;
+            border-color: transparent;
+            border-left-color: #fff;
+        }
+
+        .twitter {
+            position: absolute;
+            width: 100%;
+            left: 122%;
+            top: 6px;
+            font-size: 16px;
+        }
+
+        .praise-timeline-block:nth-child(even) & {
+            float: right;
+
+            &::before {
+                top: 24px;
+                left: auto;
+                right: 100%;
+                border-color: transparent;
+                border-right-color: #fff;
+            }
+
+            .twitter {
+                left: auto;
+                right: 122%;
+                text-align: right;
+            }
+        }
+
+        &.is-hidden {
+            display: none;
+        }
+
+        &.bounce-in {
+            display: block;
+            @include animation(praise-bounce-2 .6s);
+        }
+    }
+}
+
+@include large {
+    /* inverse bounce effect on even content blocks */
+    .praise-timeline-block:nth-child(even) .praise-timeline-content.bounce-in {
+        @include animation(praise-bounce-2-inverse .6s);
+    }
+}
+
+@include keyframes(praise-bounce-2) {
+    0% {
+        opacity: 0;
+        @include transform(translateX(-100px));
+    }
+
+    60% {
+        opacity: 1;
+        @include transform(translateX(20px));
+    }
+
+    100% {
+        @include transform(translateX(0));
+    }
+}
+
+@include keyframes(praise-bounce-2-inverse) {
+    0% {
+        opacity: 0;
+        @include transform(translateX(100px));
+    }
+
+    60% {
+        opacity: 1;
+        @include transform(translateX(-20px));
+    }
+
+    100% {
+        @include transform(translateX(0));
+    }
+}
+
+
+/*
+*  Praise List
+*/
+
+.template-praise_list {
+
+    .content-wrapper {
+        max-width: 95%;
+        padding: 20px 35px 45px 35px;
+        margin-top: 10px;
+        margin-bottom: 50px;
+        background: #fff;
+        border-radius: 1px;
+        box-shadow: 0 2px 1px 1px rgba(0, 0, 0, .15);
+    }
+
+    .new-praise {
+        margin: 20px 0 -30px 0;
+    }
+
+    .reactive-table-filter {
+        font-size: 1em;
+        font-weight: bold;
+        color: #000;
+        margin: 5px 7px 25px 0;
+
+        input {
+            height: 2em;
+            font-size: 1em;
+            padding: 10px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    td {
+        border: solid $grey 1px;
+    }
+
+    td.name,
+    td.twitter,
+    td.followers,
+    td.location {
+        max-width: 100px;
+    }
+
+    td.bio,
+    td.quote {
+        max-width: 250px;
+    }
+
+    td.actions {
+        min-width: 180px;
+    }
+
+    .edit-link,
+    .delete-link {
+        display: block;
+        width: 75px;
+        padding: 7px 12px;
+        color: #fff;
+        font-weight: normal;
+        float: left;
+        margin: 0 auto;
+
+        @include small {
+            margin: 1em auto;
+        }
+    }
+
+    .delete-link {
+        margin-left: 10px;
+        background: $danger;
+        transition: background .7s;
+
+        &:hover {
+            background: darken($danger, 10%);
+        }
+    }
+
+    .reactive-table-navigation {
+        margin-top: 30px;
+    }
+}
+
+
+/*
+*  Praise submit/edit
+*/
+
+.template-praise_submit,
+.template-praise_edit {
+
+    .content-wrapper {
+        max-width: 700px;
+        padding: 3em 0;
+    }
+
+    .grid-block {
+        background: none;
+        box-shadow: none;
+    }
+
+    .error {
+        background: $red;
+    }
+
+    h2 {
+        text-transform: none;
+        text-align: center;
+
+        @include small-medium {
+            @include setType(4, $ms-up3);
+        }
+    }
+
+    .control-group, .form-group {
+        margin-bottom: 2.5em;
+
+        > label {
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            padding-left: 1em;
+        }
+
+        .helper-text {
+            font-size: .65em;
+            font-weight: normal;
+            color: $text-light;
+            margin-left: .5em;
+
+            a {
+                color: $text-light;
+                font-weight: normal;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .form-actions {
+        margin-top: 5em;
+
+        .delete-link {
+            display: block;
+            padding: 7px 12px;
+            background: $danger;
+            color: #fff;
+            font-weight: normal;
+            transition: background .7s;
+
+            &:hover {
+                background: darken($danger, 10%);
+            }
+
+            @include small {
+                margin: 1em auto;
+            }
+        }
+
+        .button {
+
+            @include small {
+                padding: 10px 85px;
+                float: none;
+                margin: 1em auto;
+            }
+        }
+    }
+}

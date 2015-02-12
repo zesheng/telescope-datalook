@@ -3777,6 +3777,583 @@ a.mt-share-inline-square-sm {
   padding: 0 10px 25px 10px;
 }
 
+/*
+*  Praise Timeline
+*/
+/* line 5, ../scss/modules/pages/_praise.scss */
+.praise-container {
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* line 10, ../scss/modules/pages/_praise.scss */
+.praise-container::after {
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  zoom: 1;
+}
+/* line 4, ../scss/helpers/_mixins.scss */
+.praise-container::after:before, .praise-container::after:after {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/helpers/_mixins.scss */
+.praise-container::after:after {
+  clear: both;
+}
+
+/* line 15, ../scss/modules/pages/_praise.scss */
+#praise-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+/* line 23, ../scss/modules/pages/_praise.scss */
+#praise-timeline::before {
+  /* the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #d7e4ed;
+}
+@media screen and (min-width: 50em) {
+  /* line 15, ../scss/modules/pages/_praise.scss */
+  #praise-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  /* line 40, ../scss/modules/pages/_praise.scss */
+  #praise-timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+/* line 47, ../scss/modules/pages/_praise.scss */
+.praise-timeline-block {
+  position: relative;
+  margin: 2em 0;
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  zoom: 1;
+}
+/* line 4, ../scss/helpers/_mixins.scss */
+.praise-timeline-block:before, .praise-timeline-block:after {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/helpers/_mixins.scss */
+.praise-timeline-block:after {
+  clear: both;
+}
+/* line 52, ../scss/modules/pages/_praise.scss */
+.praise-timeline-block:first-child {
+  margin-top: 0;
+}
+/* line 56, ../scss/modules/pages/_praise.scss */
+.praise-timeline-block:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 50em) {
+  /* line 47, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-block {
+    margin: 4em 0;
+  }
+  /* line 63, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-block:first-child {
+    margin-top: 0;
+  }
+  /* line 67, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* line 73, ../scss/modules/pages/_praise.scss */
+.praise-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #8cc2da;
+  box-shadow: 0 0 0 4px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
+/* line 83, ../scss/modules/pages/_praise.scss */
+.praise-timeline-img img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 50em) {
+  /* line 73, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+  }
+  /* line 103, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-img img {
+    width: 60px;
+    height: 60px;
+  }
+  /* line 108, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-img.is-hidden {
+    display: none;
+  }
+  /* line 112, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-img.bounce-in {
+    display: block;
+    -webkit-animation: praise-bounce-1 0.6s;
+    animation: praise-bounce-1 0.6s;
+  }
+}
+@-webkit-keyframes praise-bounce-1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes praise-bounce-1 {
+  0% {
+    opacity: 0;
+    -ms-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  60% {
+    opacity: 1;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/* line 135, ../scss/modules/pages/_praise.scss */
+.praise-timeline-content {
+  position: relative;
+  margin-left: 60px;
+  background: #fff;
+  border-radius: 2em;
+  padding: 1em;
+  box-shadow: 0 3px 0 #d7e4ed;
+  /* For modern browsers */
+  /* For IE 6/7 (trigger hasLayout) */
+  zoom: 1;
+}
+/* line 4, ../scss/helpers/_mixins.scss */
+.praise-timeline-content:before, .praise-timeline-content:after {
+  content: "";
+  display: table;
+}
+/* line 8, ../scss/helpers/_mixins.scss */
+.praise-timeline-content:after {
+  clear: both;
+}
+/* line 144, ../scss/modules/pages/_praise.scss */
+.praise-timeline-content .quote {
+  font-size: 1.5em;
+}
+/* line 148, ../scss/modules/pages/_praise.scss */
+.praise-timeline-content .name {
+  font-style: italic;
+}
+/* line 152, ../scss/modules/pages/_praise.scss */
+.praise-timeline-content .bio {
+  font-size: .8em;
+  color: #6f6f6f;
+}
+/* line 157, ../scss/modules/pages/_praise.scss */
+.praise-timeline-content .twitter {
+  display: inline-block;
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
+  -webkit-transition: color .7s;
+          transition: color .7s;
+}
+/* line 165, ../scss/modules/pages/_praise.scss */
+.praise-timeline-content::before {
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-right: 7px solid #fff;
+}
+@media screen and (min-width: 40em) and (max-width: 50em) {
+  /* line 177, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content h2 {
+    font-size: 20px;
+  }
+  /* line 181, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content p {
+    font-size: 16px;
+  }
+  /* line 185, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content .twitter {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 135, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+  }
+  /* line 195, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #fff;
+  }
+  /* line 202, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content .twitter {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+  }
+  /* line 210, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-block:nth-child(even) .praise-timeline-content {
+    float: right;
+  }
+  /* line 213, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-block:nth-child(even) .praise-timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #fff;
+  }
+  /* line 221, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-block:nth-child(even) .praise-timeline-content .twitter {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  /* line 228, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content.is-hidden {
+    display: none;
+  }
+  /* line 232, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-content.bounce-in {
+    display: block;
+    -webkit-animation: praise-bounce-2 0.6s;
+    animation: praise-bounce-2 0.6s;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  /* inverse bounce effect on even content blocks */
+  /* line 241, ../scss/modules/pages/_praise.scss */
+  .praise-timeline-block:nth-child(even) .praise-timeline-content.bounce-in {
+    -webkit-animation: praise-bounce-2-inverse 0.6s;
+    animation: praise-bounce-2-inverse 0.6s;
+  }
+}
+@-webkit-keyframes praise-bounce-2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes praise-bounce-2 {
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(-100px);
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  60% {
+    opacity: 1;
+    -ms-transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  100% {
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes praise-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes praise-bounce-2-inverse {
+  0% {
+    opacity: 0;
+    -ms-transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  60% {
+    opacity: 1;
+    -ms-transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  100% {
+    -ms-transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+/*
+*  Praise List
+*/
+/* line 285, ../scss/modules/pages/_praise.scss */
+.template-praise_list .content-wrapper {
+  max-width: 95%;
+  padding: 20px 35px 45px 35px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+/* line 295, ../scss/modules/pages/_praise.scss */
+.template-praise_list .new-praise {
+  margin: 20px 0 -30px 0;
+}
+/* line 299, ../scss/modules/pages/_praise.scss */
+.template-praise_list .reactive-table-filter {
+  font-size: 1em;
+  font-weight: bold;
+  color: #000;
+  margin: 5px 7px 25px 0;
+}
+/* line 305, ../scss/modules/pages/_praise.scss */
+.template-praise_list .reactive-table-filter input {
+  height: 2em;
+  font-size: 1em;
+  padding: 10px;
+}
+/* line 310, ../scss/modules/pages/_praise.scss */
+.template-praise_list .reactive-table-filter input:focus {
+  outline: none;
+}
+/* line 316, ../scss/modules/pages/_praise.scss */
+.template-praise_list td {
+  border: solid #b5b0b0 1px;
+}
+/* line 320, ../scss/modules/pages/_praise.scss */
+.template-praise_list td.name,
+.template-praise_list td.twitter,
+.template-praise_list td.followers,
+.template-praise_list td.location {
+  max-width: 100px;
+}
+/* line 327, ../scss/modules/pages/_praise.scss */
+.template-praise_list td.bio,
+.template-praise_list td.quote {
+  max-width: 250px;
+}
+/* line 332, ../scss/modules/pages/_praise.scss */
+.template-praise_list td.actions {
+  min-width: 180px;
+}
+/* line 336, ../scss/modules/pages/_praise.scss */
+.template-praise_list .edit-link,
+.template-praise_list .delete-link {
+  display: block;
+  width: 75px;
+  padding: 7px 12px;
+  color: #fff;
+  font-weight: normal;
+  float: left;
+  margin: 0 auto;
+}
+@media screen and (max-width: 40em) {
+  /* line 336, ../scss/modules/pages/_praise.scss */
+  .template-praise_list .edit-link,
+  .template-praise_list .delete-link {
+    margin: 1em auto;
+  }
+}
+/* line 351, ../scss/modules/pages/_praise.scss */
+.template-praise_list .delete-link {
+  margin-left: 10px;
+  background: #c73b49;
+  -webkit-transition: background .7s;
+          transition: background .7s;
+}
+/* line 356, ../scss/modules/pages/_praise.scss */
+.template-praise_list .delete-link:hover {
+  background: #a12e3a;
+}
+/* line 361, ../scss/modules/pages/_praise.scss */
+.template-praise_list .reactive-table-navigation {
+  margin-top: 30px;
+}
+
+/*
+*  Praise submit/edit
+*/
+/* line 374, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .content-wrapper,
+.template-praise_edit .content-wrapper {
+  max-width: 700px;
+  padding: 3em 0;
+}
+/* line 379, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .grid-block, .template-praise_submit .comment-content, .template-praise_submit .comment-new, .template-praise_submit .error, .template-praise_submit .at-error,
+.template-praise_edit .grid-block,
+.template-praise_edit .comment-content,
+.template-praise_edit .comment-new,
+.template-praise_edit .error,
+.template-praise_edit .at-error {
+  background: none;
+  box-shadow: none;
+}
+/* line 384, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .error,
+.template-praise_edit .error {
+  background: #dd3416;
+}
+/* line 388, ../scss/modules/pages/_praise.scss */
+.template-praise_submit h2,
+.template-praise_edit h2 {
+  text-transform: none;
+  text-align: center;
+}
+@media screen and (max-width: 50em) {
+  /* line 388, ../scss/modules/pages/_praise.scss */
+  .template-praise_submit h2,
+  .template-praise_edit h2 {
+    font-size: 2.82715em;
+    line-height: 0.53057;
+  }
+}
+/* line 397, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .control-group, .template-praise_submit .form-group,
+.template-praise_edit .control-group,
+.template-praise_edit .form-group {
+  margin-bottom: 2.5em;
+}
+/* line 400, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .control-group > label, .template-praise_submit .form-group > label,
+.template-praise_edit .control-group > label,
+.template-praise_edit .form-group > label {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+/* line 405, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .control-group input[type="text"], .template-praise_submit .form-group input[type="text"],
+.template-praise_edit .control-group input[type="text"],
+.template-praise_edit .form-group input[type="text"] {
+  padding-left: 1em;
+}
+/* line 409, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .control-group .helper-text, .template-praise_submit .form-group .helper-text,
+.template-praise_edit .control-group .helper-text,
+.template-praise_edit .form-group .helper-text {
+  font-size: .65em;
+  font-weight: normal;
+  color: #b3b3b3;
+  margin-left: .5em;
+}
+/* line 415, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .control-group .helper-text a, .template-praise_submit .form-group .helper-text a,
+.template-praise_edit .control-group .helper-text a,
+.template-praise_edit .form-group .helper-text a {
+  color: #b3b3b3;
+  font-weight: normal;
+  text-decoration: underline;
+}
+/* line 423, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .form-actions,
+.template-praise_edit .form-actions {
+  margin-top: 5em;
+}
+/* line 426, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .form-actions .delete-link,
+.template-praise_edit .form-actions .delete-link {
+  display: block;
+  padding: 7px 12px;
+  background: #c73b49;
+  color: #fff;
+  font-weight: normal;
+  -webkit-transition: background .7s;
+          transition: background .7s;
+}
+/* line 434, ../scss/modules/pages/_praise.scss */
+.template-praise_submit .form-actions .delete-link:hover,
+.template-praise_edit .form-actions .delete-link:hover {
+  background: #a12e3a;
+}
+@media screen and (max-width: 40em) {
+  /* line 426, ../scss/modules/pages/_praise.scss */
+  .template-praise_submit .form-actions .delete-link,
+  .template-praise_edit .form-actions .delete-link {
+    margin: 1em auto;
+  }
+}
+@media screen and (max-width: 40em) {
+  /* line 443, ../scss/modules/pages/_praise.scss */
+  .template-praise_submit .form-actions .button,
+  .template-praise_edit .form-actions .button {
+    padding: 10px 85px;
+    float: none;
+    margin: 1em auto;
+  }
+}
+
 /* line 4, ../scss/modules/pages/_press.scss */
 .template-press .content-wrapper {
   padding: 0 0 3em 0;

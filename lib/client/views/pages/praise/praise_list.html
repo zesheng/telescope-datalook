@@ -1,0 +1,10 @@
+
+<template name="praise_list">
+  <a href="{{pathFor 'praise_submit'}}"><button class="new-praise">Add New Praise</button></a>
+  {{> reactiveTable settings=settings}}
+</template>
+
+<template name="praise_list_controls">
+  <button class="edit-link">Edit</button>
+  <button class="delete-link">Delete</button>
+</template>

@@ -1,0 +1,22 @@
+
+<template name="praise">
+  <section id="praise-timeline" class="praise-container">
+    {{#each praise}}
+      <div class="praise-timeline-block">
+        <div class="praise-timeline-img">
+          <a href="https://twitter.com/{{twitter}}" target="_blank">
+            <img src="{{image}}" alt="Quote avatar">
+          </a>
+        </div>
+        <div class="praise-timeline-content">
+          <p class="quote">{{quote}}</p>
+          <p class="name">-{{name}}</p>
+          <p class="bio">{{bio}}</p>
+          <a href="https://twitter.com/{{twitter}}" target="_blank">
+            <span class="twitter">@{{twitter}}</span>
+          </a>
+        </div>
+      </div>
+    {{/each}}
+  </section>
+</template>

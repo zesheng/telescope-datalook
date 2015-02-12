@@ -90,6 +90,14 @@ Package.onUse(function (api) {
 
     // Pages
     'lib/client/views/pages/about.html',
+    'lib/client/views/pages/praise/praise.html',
+    'lib/client/views/pages/praise/praise.js',
+    'lib/client/views/pages/praise/praise_submit.html',
+    'lib/client/views/pages/praise/praise_submit.js',
+    'lib/client/views/pages/praise/praise_edit.html',
+    'lib/client/views/pages/praise/praise_edit.js',
+    'lib/client/views/pages/praise/praise_list.html',
+    'lib/client/views/pages/praise/praise_list.js',
     'lib/client/views/pages/press.html',
     'lib/client/views/pages/press.js',
 
@@ -126,6 +134,9 @@ Package.onUse(function (api) {
   /*
   *  Exports
   */
-  api.export(['Notify']);
+  api.export([
+    'Notify',
+    'Praises'
+  ]);
 
 });

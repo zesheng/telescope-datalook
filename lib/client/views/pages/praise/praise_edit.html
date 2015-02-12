@@ -1,0 +1,55 @@
+<template name="praise_edit">
+  {{#autoForm collection="Praises" id="editPraiseForm" type="update" doc=this}}
+    <button id="refresh-twitter" style="float: right; margin: -30px 0 0 0;" type="#">Refresh Twitter Info</button>
+
+    <div class="control-group">
+      <label class="control-label">Twitter <span class="helper-text">Followers: {{followers}}</span></label>
+      <div class="controls">
+        {{> afFieldInput name='twitter'}}
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Name</label>
+      <div class="controls">
+        {{> afFieldInput name='name'}}
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Image URL</label>
+      <div class="controls">
+        {{> afFieldInput name='image'}}
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Bio</label>
+      <div class="controls">
+        {{> afFieldInput name='bio' rows=3}}
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Location</label>
+      <div class="controls">
+        {{> afFieldInput name='location'}}
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Quote<!-- <span class="helper-text">(Markdown supported)</span> --></label>
+      <div class="controls" id="editor">
+        {{> afFieldInput name='quote' rows=6 class='input-xlarge'}}
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="control-label"></div>
+      <div class="controls">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+
+  {{/autoForm}}
+</template>
