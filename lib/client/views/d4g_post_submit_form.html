@@ -21,17 +21,15 @@
     </div>
   </div>
 
-  {{#if isAdmin}}
-    {{#if hasGoogleApiKey}}
-      <div class="control-group">
-        <label class="control-label">Location</label>
-        <div class="controls">
-          {{> afFieldInput id='location' name='location.name' placeholder='Project location'}}
-        </div>
+  {{#if hasGoogleApiKey}}
+    <div class="control-group">
+      <label class="control-label">Location</label>
+      <div class="controls">
+        {{> afFieldInput id='location' name='location.name' placeholder='Project location'}}
       </div>
-      {{> afFieldInput id='latitude' name='location.latitude' type='hidden'}}
-      {{> afFieldInput id='longitude' name='location.longitude' type='hidden'}}
-    {{/if}}
+    </div>
+    {{> afFieldInput id='latitude' name='location.latitude' type='hidden'}}
+    {{> afFieldInput id='longitude' name='location.longitude' type='hidden'}}
   {{/if}}
 
   <div class="control-group">
