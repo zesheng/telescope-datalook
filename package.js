@@ -20,6 +20,7 @@ Package.onUse(function (api) {
     'aldeed:autoform',
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
+    'aslagle:reactive-table',
     'jeremy:segment.io'
     ], ['client', 'server']);
 
@@ -89,6 +90,16 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_newsletterBanner.html',
     'lib/client/views/d4g_newsletter_signup.html',
     'lib/client/views/d4g_newsletter_signup.js',
+
+    // Users list
+    'lib/client/views/users/d4g_users.html',
+    'lib/client/views/users/d4g_users.js',
+    'lib/client/views/users/users_list_actions.html',
+    'lib/client/views/users/users_list_actions.js',
+    'lib/client/views/users/users_list_avatar.html',
+    'lib/client/views/users/users_list_created_at.html',
+    'lib/client/views/users/users_list_email.html',
+    'lib/client/views/users/users_list_username.html',
 
     // Pages
     'lib/client/views/pages/about.html',

@@ -3591,61 +3591,94 @@ a.mt-share-inline-square-sm {
   background-color: #cc2127;
 }
 
-/* line 1, ../scss/modules/_users.scss */
-.user-list,
-.user-table {
-  font-size: 13px;
+/* line 4, ../scss/modules/_users.scss */
+.template-d4g_users .content-wrapper {
+  max-width: 95%;
+  padding: 20px 35px 45px 35px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  background: #fff;
+  border-radius: 1px;
+  box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.15);
 }
-/* line 7, ../scss/modules/_users.scss */
-.user-list .user .user-avatar,
-.user-table .user .user-avatar {
+/* line 14, ../scss/modules/_users.scss */
+.template-d4g_users a {
+  color: #565656;
+  -webkit-transition: color .5s;
+          transition: color .5s;
+}
+/* line 18, ../scss/modules/_users.scss */
+.template-d4g_users a:hover {
+  color: #8cc2da;
+}
+/* line 23, ../scss/modules/_users.scss */
+.template-d4g_users .user-table-heading {
+  text-transform: none;
+  margin-bottom: -50px;
+}
+/* line 28, ../scss/modules/_users.scss */
+.template-d4g_users .reactive-table-filter {
+  margin: 5px 7px 25px 0;
+}
+/* line 31, ../scss/modules/_users.scss */
+.template-d4g_users .reactive-table-filter span {
+  font-size: 1.15em;
+  color: #3c3c3c;
+  font-weight: bold;
+}
+/* line 37, ../scss/modules/_users.scss */
+.template-d4g_users .reactive-table-filter input {
+  width: 170px;
   height: 30px;
-  width: 30px;
-  background-size: 30px 30px;
-  display: block;
-  border-radius: 3px;
+  font-size: 1em;
+  padding: .7em;
+  margin-left: .3em;
+  -webkit-transition: width .7s ease-in-out;
+          transition: width .7s ease-in-out;
 }
-
-/* line 17, ../scss/modules/_users.scss */
-.filter-sort {
-  /* For modern browsers */
-  /* For IE 6/7 (trigger hasLayout) */
-  zoom: 1;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.05);
-}
-/* line 4, ../scss/helpers/_mixins.scss */
-.filter-sort:before, .filter-sort:after {
-  content: "";
-  display: table;
-}
-/* line 8, ../scss/helpers/_mixins.scss */
-.filter-sort:after {
-  clear: both;
-}
-/* line 22, ../scss/modules/_users.scss */
-.filter-sort a, .filter-sort span {
-  display: inline-block;
-  margin-right: 20px;
-}
-/* line 26, ../scss/modules/_users.scss */
-.filter-sort a.active, .filter-sort span.active {
-  border-bottom: 2px solid #7ac0e4;
-}
-/* line 30, ../scss/modules/_users.scss */
-.filter-sort a:last-child, .filter-sort span:last-child {
-  margin-right: 0;
-}
-/* line 35, ../scss/modules/_users.scss */
-.filter-sort .filter {
-  float: left;
-}
-/* line 39, ../scss/modules/_users.scss */
-.filter-sort .sort {
-  float: right;
-}
-
 /* line 45, ../scss/modules/_users.scss */
+.template-d4g_users .reactive-table-filter input:focus {
+  width: 220px;
+  outline: none;
+}
+/* line 52, ../scss/modules/_users.scss */
+.template-d4g_users th, .template-d4g_users td {
+  text-align: center;
+}
+/* line 56, ../scss/modules/_users.scss */
+.template-d4g_users td {
+  border: solid #b5b0b0 1px;
+}
+/* line 59, ../scss/modules/_users.scss */
+.template-d4g_users td .time-ago {
+  font-size: .9em;
+  color: #626262;
+}
+/* line 66, ../scss/modules/_users.scss */
+.template-d4g_users td.actions ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 71, ../scss/modules/_users.scss */
+.template-d4g_users td.actions li {
+  list-style: none;
+  margin-bottom: .25em;
+}
+/* line 75, ../scss/modules/_users.scss */
+.template-d4g_users td.actions li:last-child {
+  margin-bottom: .15em;
+}
+/* line 82, ../scss/modules/_users.scss */
+.template-d4g_users .reactive-table-navigation {
+  margin-top: 30px;
+}
+/* line 85, ../scss/modules/_users.scss */
+.template-d4g_users .reactive-table-navigation input {
+  text-align: center;
+  font-size: 1em;
+}
+
+/* line 93, ../scss/modules/_users.scss */
 .user-avatar .avatar-initials {
   line-height: 40px;
 }
@@ -3654,13 +3687,13 @@ a.mt-share-inline-square-sm {
 *  Profile edit page
 */
 @media screen and (min-width: 40em) {
-  /* line 58, ../scss/modules/_users.scss */
+  /* line 106, ../scss/modules/_users.scss */
   .template-d4g_user_edit .control-group > label {
     float: left;
   }
 }
 @media screen and (min-width: 40em) {
-  /* line 65, ../scss/modules/_users.scss */
+  /* line 113, ../scss/modules/_users.scss */
   .template-d4g_user_edit .control-group .controls, .template-d4g_user_edit .control-group .note {
     margin-left: 200px;
   }
