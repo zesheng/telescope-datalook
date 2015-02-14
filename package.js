@@ -7,7 +7,9 @@ Package.onUse(function (api) {
     'ui',
     'jquery',
     'bengott:avatar',
-    'jeremy:velocity-animate'
+    'jeremy:velocity-animate',
+    'dburles:google-maps',
+    'geocomplete'
     ], 'client');
 
   api.use([
@@ -17,6 +19,8 @@ Package.onUse(function (api) {
     'telescope-search',
     'telescope-tags',
     'iron:router',
+    'aldeed:collection2',
+    'aldeed:simple-schema',
     'aldeed:autoform',
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
@@ -78,6 +82,7 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_post_tagline.js',
     'lib/client/views/d4g_post_discuss.html',
     'lib/client/views/d4g_post_submit_form.html',
+    'lib/client/views/d4g_post_submit_form.js',
     'lib/client/views/d4g_post_submit.html',
     'lib/client/views/d4g_post_edit.html',
     'lib/client/views/d4g_hero.html',
