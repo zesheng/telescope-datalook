@@ -1,4 +1,7 @@
 # DataLook.io
+
+### The Latest and Best of Civic Hacking, Open Data, and Data Science for Social Good
+
 This package is intended to be added to [Telescope][1] to create the styling and functionality seen on [datalook.io][2].  
 
 ---
