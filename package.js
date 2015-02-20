@@ -2,6 +2,10 @@ Package.describe({summary: "Telescope module for DataLook.io"});
 
 Package.onUse(function (api) {
 
+  Npm.depends({
+    "twit": "1.1.19"
+  });
+
   api.use([
     'templating',
     'ui',
@@ -22,6 +26,7 @@ Package.onUse(function (api) {
     'aldeed:collection2',
     'aldeed:simple-schema',
     'aldeed:autoform',
+    'meteorhacks:npm',
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
     'aslagle:reactive-table',
@@ -119,7 +124,6 @@ Package.onUse(function (api) {
     'lib/client/views/pages/press.html',
     'lib/client/views/pages/press.js',
 
-
     // Libs
     'lib/client/js/noty.js'
 
@@ -130,6 +134,7 @@ Package.onUse(function (api) {
   *  Server
   */
   api.addFiles([
+    'lib/server/methods.js',
     'lib/server/publications.js',
     'lib/server/seed.js',
     'lib/server/email/d4g_emailWrapper.handlebars',
