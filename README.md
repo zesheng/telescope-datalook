@@ -79,7 +79,7 @@ You should now be able to edit scss files and Compass will compile them to `pack
 
 ---
 
-## Future
+## Getting Help
 The [official docs on the Telescope website][10] are a great resource for all types of customization. It is definitely the recommended place to go first.  If you can't fine what you're looking for there, head over to http://meta.telesc.pe and ask for help.  There's always someone there can point you in the right direction.
 
 
