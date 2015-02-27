@@ -13,7 +13,7 @@ Package.onUse(function (api) {
     'bengott:avatar',
     'jeremy:velocity-animate',
     'dburles:google-maps',
-    'geocomplete'
+    'jeremy:geocomplete'
     ], 'client');
 
   api.use([
