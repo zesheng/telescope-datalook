@@ -23,7 +23,7 @@ git clone git@github.com:YOUR_NAME/Telescope.git
 
 # Checkout the datalook branch
 cd Telescope
-git checkout -b datalook
+git checkout datalook
 ```
 
 Now you're ready to get the telescope-datalook package installed.  The steps are similar to what you just did.  However, you want to clone this package into it's own location outside of Telescope and symlink it with Meteorite. Just `cd` into whatever directory you would like to store this package in for development.  Then fork this repo to your own account and clone it to your local machine.
