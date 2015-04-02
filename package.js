@@ -1,4 +1,10 @@
-Package.describe({summary: "Telescope module for DataLook.io"});
+
+Package.describe({
+  name: 'telescope-datalook',
+  summary: 'Telescope module for DataLook.io',
+  version: '0.1.0',
+  git: 'https://github.com/jshimko/telescope-datalook.git'
+});
 
 Package.onUse(function (api) {
 
