@@ -1,5 +1,6 @@
 
 .hero {
+    margin-top: 0;
 
     .copy {
 
@@ -21,6 +22,23 @@
             outline: none;
             color: #fff;
             text-decoration: none;
+        }
+    }
+}
+
+.hero-config {
+    top: 98px;
+
+    .tgl .tgl_bgd-on {
+        background: $brand-primary;
+    }
+
+    button {
+        background: $brand-primary;
+        transition: background .7s;
+
+        &:hover {
+            background: darken($brand-primary, 10%);
         }
     }
 }
