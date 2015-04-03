@@ -19,7 +19,8 @@ Package.onUse(function (api) {
     'bengott:avatar',
     'jeremy:velocity-animate',
     'dburles:google-maps',
-    'jeremy:geocomplete'
+    'jeremy:geocomplete',
+    'telescope-plugin-hero'
     ], 'client');
 
   api.use([
@@ -96,7 +97,6 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_post_submit_form.js',
     'lib/client/views/d4g_post_submit.html',
     'lib/client/views/d4g_post_edit.html',
-    'lib/client/views/d4g_hero.html',
     'lib/client/views/d4g_button_bar.html',
     'lib/client/views/d4g_user_profile.html',
     'lib/client/views/d4g_userInfo.html',
