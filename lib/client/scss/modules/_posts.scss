@@ -108,6 +108,9 @@
             display: none;
         }
     }
+    .d4g_owner-commented-star {
+        order: 8;
+    }
 
     .post-share, .post-discuss {
         text-align: center;
@@ -376,6 +379,25 @@ a.post-category {
     }
 }
 
+// .owner-badge {
+//     position: relative;
+//     left: -41px;
+//     top: -22px;
+// }
+
+// .owner-badge-icon {
+//     color: $success;
+//     font-size: 23px;
+// }
+
+// .owner-badge-letter {
+//     color: #fff;
+//     font-size: 10px;
+//     position: relative;
+//     top: -5px;
+//     left: -18px;
+// }
+
 .post-share, .post-discuss {
     position: relative;
 
@@ -621,6 +643,23 @@ a.post-category.category-jobs {
                 font-weight: normal;
                 text-decoration: underline;
             }
+        }
+    }
+
+    .selectize-control.multi .selectize-input {
+        border-radius: 1px;
+
+        [data-value],
+        [data-value].active {
+            background-color: $brand-primary !important;
+            background-image: none;
+            border: none;
+            text-shadow: none;
+        }
+
+        > div {
+            border: none;
+            padding: 5px;
         }
     }
 

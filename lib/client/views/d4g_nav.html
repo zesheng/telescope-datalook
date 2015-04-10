@@ -1,35 +1,21 @@
 <template name="d4g_nav">
   <div class="header-wrap">
-    <header class="header">
+    <header class="header {{headerClass}}">
 
-      <a href="#menu" class="mobile-only mobile-menu-button">
-        <span class="icon-menu"></span>
+      <a href="#menu" class="mobile-only mobile-menu-button button">
+        {{{icon "menu"}}}
       </a>
 
-      <div class="nav-module">
-        {{#if logo_url}}
-          <h1 class="logo logo-image">
-            <a href="/">
-              <img src="{{logo_url}}" alt="{{site_title}}"/>
-            </a>
-          </h1>
-        {{else}}
-          <h1 class="logo"><a href="/">{{site_title}}</a></h1>
-        {{/if}}
+      <div class="nav desktop-nav nav-module">
+        {{> Template.dynamic template=logoTemplate}}
       </div>
 
-      <div class="nav-module">
-        <div class="nav desktop-only">
-          {{> d4g_search}}
-        </div>
+      <div class="nav desktop-nav nav-module desktop-only">
+        {{> d4g_search}}
       </div>
 
-      <div class="nav-module">
-        <ul class="nav secondary-nav {{dropdownClass}} desktop-only">
-          <li>
-            {{> d4g_userMenu}}
-          </li>
-        </ul>
+      <div class="nav secondary-nav desktop-nav nav-module desktop-only">
+        {{> userMenu}}
       </div>
 
     </header>

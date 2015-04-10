@@ -1,14 +1,18 @@
 
-.template-d4g_users {
+.template-adminWrapper {
 
     .content-wrapper {
         max-width: 95%;
-        padding: 20px 35px 45px 35px;
+        padding: 20px 10px 10px 10px;
         margin-top: 10px;
         margin-bottom: 50px;
         background: #fff;
         border-radius: 1px;
         box-shadow: 0 2px 1px 1px rgba(0, 0, 0, .15);
+    }
+
+    .grid {
+        max-width: 100%;
     }
 
     a {
