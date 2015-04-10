@@ -20,7 +20,7 @@ Package.onUse(function (api) {
     'jeremy:velocity-animate',
     'dburles:google-maps',
     'jeremy:geocomplete',
-    'telescope-plugin-hero'
+    'jeremy:telescope-plugin-hero'
     ], 'client');
 
   api.use([
