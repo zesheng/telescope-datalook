@@ -28,6 +28,7 @@ Package.onUse(function (api) {
     'telescope-base',
     'telescope-newsletter',
     'telescope-search',
+    'telescope-settings',
     'telescope-tags',
     'iron:router',
     'aldeed:collection2',
