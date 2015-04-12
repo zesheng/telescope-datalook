@@ -2235,18 +2235,34 @@ div.at-error p {
   margin-top: 0;
 }
 /* line 7, ../scss/modules/_hero.scss */
+.hero .copy h1 {
+  font-size: 3em;
+}
+/* line 11, ../scss/modules/_hero.scss */
+.hero .copy h3 {
+  text-transform: none;
+}
+/* line 15, ../scss/modules/_hero.scss */
 .hero .copy .button {
   font-size: 1.8em;
   font-weight: 300;
   margin: 2em auto 1.2em auto;
   border-radius: 0;
+  background: #8cc2da;
+  color: #fff;
+  -webkit-transition: background 1s;
+          transition: background 1s;
 }
-/* line 15, ../scss/modules/_hero.scss */
+/* line 24, ../scss/modules/_hero.scss */
+.hero .copy .button:hover {
+  background: #65aece;
+}
+/* line 30, ../scss/modules/_hero.scss */
 .hero .learn-more {
   font-size: 1.5em;
   font-weight: 300;
 }
-/* line 19, ../scss/modules/_hero.scss */
+/* line 34, ../scss/modules/_hero.scss */
 .hero .learn-more a {
   position: relative;
   display: inline-block;
@@ -2255,26 +2271,26 @@ div.at-error p {
   text-decoration: none;
 }
 
-/* line 29, ../scss/modules/_hero.scss */
+/* line 44, ../scss/modules/_hero.scss */
 .hero-config {
   top: 98px;
 }
-/* line 32, ../scss/modules/_hero.scss */
+/* line 47, ../scss/modules/_hero.scss */
 .hero-config .tgl .tgl_bgd-on {
   background: #8cc2da;
 }
-/* line 36, ../scss/modules/_hero.scss */
+/* line 51, ../scss/modules/_hero.scss */
 .hero-config button {
   background: #8cc2da;
   -webkit-transition: background .7s;
           transition: background .7s;
 }
-/* line 40, ../scss/modules/_hero.scss */
+/* line 55, ../scss/modules/_hero.scss */
 .hero-config button:hover {
   background: #65aece;
 }
 
-/* line 46, ../scss/modules/_hero.scss */
+/* line 61, ../scss/modules/_hero.scss */
 .link-effect {
   padding: 10px 0 0 0;
   color: #fff;
@@ -2283,7 +2299,7 @@ div.at-error p {
   -webkit-transition: background .5s ease .2s, padding .5s ease .2s, border-bottom .5s ease .2s;
           transition: background .5s ease .2s, padding .5s ease .2s, border-bottom .5s ease .2s;
 }
-/* line 53, ../scss/modules/_hero.scss */
+/* line 68, ../scss/modules/_hero.scss */
 .link-effect::before, .link-effect::after {
   position: absolute;
   left: 0;
@@ -2298,7 +2314,7 @@ div.at-error p {
       -ms-transform: translateY(-10px);
           transform: translateY(-10px);
 }
-/* line 66, ../scss/modules/_hero.scss */
+/* line 81, ../scss/modules/_hero.scss */
 .link-effect::before {
   top: 0;
   -webkit-transform: translateY(-10px);
@@ -2308,7 +2324,7 @@ div.at-error p {
       -ms-transform: rotate(50deg);
           transform: rotate(50deg);
 }
-/* line 72, ../scss/modules/_hero.scss */
+/* line 87, ../scss/modules/_hero.scss */
 .link-effect::after {
   bottom: 0;
   -webkit-transform: translateY(10px);
@@ -2318,13 +2334,13 @@ div.at-error p {
       -ms-transform: rotate(-50deg);
           transform: rotate(-50deg);
 }
-/* line 78, ../scss/modules/_hero.scss */
+/* line 93, ../scss/modules/_hero.scss */
 .link-effect:hover, .link-effect:focus {
   background: #8cc2da;
   padding: 10px;
   border-bottom: none;
 }
-/* line 85, ../scss/modules/_hero.scss */
+/* line 100, ../scss/modules/_hero.scss */
 .link-effect:hover::before, .link-effect:focus::before, .link-effect:hover::after, .link-effect:focus::after {
   opacity: 1;
   background: #8cc2da;
@@ -2336,7 +2352,7 @@ div.at-error p {
           transform: rotate(0deg);
 }
 
-/* line 96, ../scss/modules/_hero.scss */
+/* line 111, ../scss/modules/_hero.scss */
 .sort-links {
   max-width: 1000px;
   margin-left: auto;
@@ -2363,45 +2379,45 @@ div.at-error p {
 .sort-links:after {
   clear: both;
 }
-/* line 103, ../scss/modules/_hero.scss */
+/* line 118, ../scss/modules/_hero.scss */
 .sort-links span {
   padding-right: 3em;
 }
 @media screen and (max-width: 40em) {
-  /* line 103, ../scss/modules/_hero.scss */
+  /* line 118, ../scss/modules/_hero.scss */
   .sort-links span {
     padding-right: 1.5em;
   }
 }
-/* line 110, ../scss/modules/_hero.scss */
+/* line 125, ../scss/modules/_hero.scss */
 .sort-links span a {
   color: #6f6f6f;
   -webkit-transition: color .7s;
           transition: color .7s;
 }
-/* line 114, ../scss/modules/_hero.scss */
+/* line 129, ../scss/modules/_hero.scss */
 .sort-links span a:hover {
   color: #65aece;
 }
-/* line 120, ../scss/modules/_hero.scss */
+/* line 135, ../scss/modules/_hero.scss */
 .sort-links .categories-popover {
   float: right;
   padding-right: 23px;
   z-index: 101;
 }
-/* line 125, ../scss/modules/_hero.scss */
+/* line 140, ../scss/modules/_hero.scss */
 .sort-links .categories-popover > a {
   color: #6f6f6f;
   cursor: pointer;
 }
 @media screen and (max-width: 40em) {
-  /* line 120, ../scss/modules/_hero.scss */
+  /* line 135, ../scss/modules/_hero.scss */
   .sort-links .categories-popover {
     display: none;
   }
 }
 
-/* line 137, ../scss/modules/_hero.scss */
+/* line 152, ../scss/modules/_hero.scss */
 .categories-content {
   z-index: 99;
 }

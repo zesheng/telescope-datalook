@@ -4,11 +4,26 @@
 
     .copy {
 
+        h1 {
+            font-size: 3em;
+        }
+
+        h3 {
+            text-transform: none;
+        }
+
         .button {
             font-size: 1.8em;
             font-weight: 300;
             margin: 2em auto 1.2em auto;
             border-radius: 0;
+            background: $brand-primary;
+            color: #fff;
+            transition: background 1s;
+
+            &:hover {
+                background: darken($brand-primary, 10%);
+            }
         }
     }
 
