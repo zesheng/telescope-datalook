@@ -3450,10 +3450,15 @@ a.post-category.category-jobs {
 }
 
 /* line 1, ../scss/modules/_search.scss */
+.search .search-field {
+  color: #6f6f6f;
+}
+
+/* line 5, ../scss/modules/_search.scss */
 .search-date-header {
   background: #e7eff2;
 }
-/* line 4, ../scss/modules/_search.scss */
+/* line 8, ../scss/modules/_search.scss */
 .search-date-header th {
   /* For modern browsers */
   /* For IE 6/7 (trigger hasLayout) */
@@ -3468,13 +3473,13 @@ a.post-category.category-jobs {
 .search-date-header th:after {
   clear: both;
 }
-/* line 8, ../scss/modules/_search.scss */
+/* line 12, ../scss/modules/_search.scss */
 .search-date-header .search-date {
   display: block;
   float: left;
   font-weight: bold;
 }
-/* line 14, ../scss/modules/_search.scss */
+/* line 18, ../scss/modules/_search.scss */
 .search-date-header .search-count {
   font-size: 13px;
   display: block;
