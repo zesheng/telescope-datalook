@@ -144,6 +144,11 @@
         span > a {
             color: $text-medium;
             cursor: pointer;
+            transition: color .5s;
+
+            &:hover {
+                color: $brand-primary;
+            }
         }
 
         .category-list {

@@ -2296,8 +2296,14 @@ div.at-error p {
 .sort-links .categories-dropdown span > a {
   color: #6f6f6f;
   cursor: pointer;
+  -webkit-transition: color .5s;
+          transition: color .5s;
 }
 /* line 149, ../scss/modules/_hero.scss */
+.sort-links .categories-dropdown span > a:hover {
+  color: #8cc2da;
+}
+/* line 154, ../scss/modules/_hero.scss */
 .sort-links .categories-dropdown .category-list {
   list-style: none;
 }
