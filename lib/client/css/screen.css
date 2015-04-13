@@ -95,8 +95,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 135, ../scss/helpers/_mixins.scss */
-.template-d4g_user_edit .content-wrapper,
-.template-d4g_user_profile .content-wrapper,
+.template-user_edit .content-wrapper,
+.template-user_profile .content-wrapper,
 .template-settingsForm .content-wrapper, .template-about .content-wrapper, .template-press .content-wrapper {
   background: #fff;
   box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
@@ -106,8 +106,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @media screen and (max-width: 40em) {
   /* line 135, ../scss/helpers/_mixins.scss */
-  .template-d4g_user_edit .content-wrapper,
-  .template-d4g_user_profile .content-wrapper,
+  .template-user_edit .content-wrapper,
+  .template-user_profile .content-wrapper,
   .template-settingsForm .content-wrapper, .template-about .content-wrapper, .template-press .content-wrapper {
     padding: 1em 2em 3em 2em;
   }
@@ -3378,120 +3378,120 @@ a.post-category.category-jobs {
 *  Post submit/edit pages
 */
 /* line 600, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .content-wrapper,
-.template-d4g_post_edit .content-wrapper {
+.template-post_submit .content-wrapper,
+.template-post_edit .content-wrapper {
   max-width: 700px;
   padding: 3em 0;
 }
 /* line 605, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .grid-block, .template-d4g_post_submit .comment-content, .template-d4g_post_submit .comment-new, .template-d4g_post_submit .error, .template-d4g_post_submit .at-error,
-.template-d4g_post_edit .grid-block,
-.template-d4g_post_edit .comment-content,
-.template-d4g_post_edit .comment-new,
-.template-d4g_post_edit .error,
-.template-d4g_post_edit .at-error {
+.template-post_submit .grid-block, .template-post_submit .comment-content, .template-post_submit .comment-new, .template-post_submit .error, .template-post_submit .at-error,
+.template-post_edit .grid-block,
+.template-post_edit .comment-content,
+.template-post_edit .comment-new,
+.template-post_edit .error,
+.template-post_edit .at-error {
   background: none;
   box-shadow: none;
 }
 /* line 610, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .error,
-.template-d4g_post_edit .error {
+.template-post_submit .error,
+.template-post_edit .error {
   background: #dd3416;
 }
 /* line 614, ../scss/modules/_posts.scss */
-.template-d4g_post_submit h2,
-.template-d4g_post_edit h2 {
+.template-post_submit h2,
+.template-post_edit h2 {
   text-transform: none;
   text-align: center;
 }
 @media screen and (max-width: 50em) {
   /* line 614, ../scss/modules/_posts.scss */
-  .template-d4g_post_submit h2,
-  .template-d4g_post_edit h2 {
+  .template-post_submit h2,
+  .template-post_edit h2 {
     font-size: 2.82715em;
     line-height: 0.53057;
   }
 }
 /* line 623, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group, .template-d4g_post_submit .form-group,
-.template-d4g_post_edit .control-group,
-.template-d4g_post_edit .form-group {
+.template-post_submit .control-group, .template-post_submit .form-group,
+.template-post_edit .control-group,
+.template-post_edit .form-group {
   margin-bottom: 2.5em;
 }
 /* line 626, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group > label, .template-d4g_post_submit .form-group > label,
-.template-d4g_post_edit .control-group > label,
-.template-d4g_post_edit .form-group > label {
+.template-post_submit .control-group > label, .template-post_submit .form-group > label,
+.template-post_edit .control-group > label,
+.template-post_edit .form-group > label {
   font-size: 1.4em;
   font-weight: bold;
 }
 /* line 631, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group input[type="text"], .template-d4g_post_submit .form-group input[type="text"],
-.template-d4g_post_edit .control-group input[type="text"],
-.template-d4g_post_edit .form-group input[type="text"] {
+.template-post_submit .control-group input[type="text"], .template-post_submit .form-group input[type="text"],
+.template-post_edit .control-group input[type="text"],
+.template-post_edit .form-group input[type="text"] {
   padding-left: 1em;
 }
 /* line 635, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group .helper-text, .template-d4g_post_submit .form-group .helper-text,
-.template-d4g_post_edit .control-group .helper-text,
-.template-d4g_post_edit .form-group .helper-text {
+.template-post_submit .control-group .helper-text, .template-post_submit .form-group .helper-text,
+.template-post_edit .control-group .helper-text,
+.template-post_edit .form-group .helper-text {
   font-size: .65em;
   font-weight: normal;
   color: #b3b3b3;
   margin-left: .5em;
 }
 /* line 641, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .control-group .helper-text a, .template-d4g_post_submit .form-group .helper-text a,
-.template-d4g_post_edit .control-group .helper-text a,
-.template-d4g_post_edit .form-group .helper-text a {
+.template-post_submit .control-group .helper-text a, .template-post_submit .form-group .helper-text a,
+.template-post_edit .control-group .helper-text a,
+.template-post_edit .form-group .helper-text a {
   color: #b3b3b3;
   font-weight: normal;
   text-decoration: underline;
 }
 /* line 649, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .selectize-control.multi .selectize-input,
-.template-d4g_post_edit .selectize-control.multi .selectize-input {
+.template-post_submit .selectize-control.multi .selectize-input,
+.template-post_edit .selectize-control.multi .selectize-input {
   border-radius: 1px;
 }
 /* line 652, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .selectize-control.multi .selectize-input [data-value],
-.template-d4g_post_submit .selectize-control.multi .selectize-input [data-value].active,
-.template-d4g_post_edit .selectize-control.multi .selectize-input [data-value],
-.template-d4g_post_edit .selectize-control.multi .selectize-input [data-value].active {
+.template-post_submit .selectize-control.multi .selectize-input [data-value],
+.template-post_submit .selectize-control.multi .selectize-input [data-value].active,
+.template-post_edit .selectize-control.multi .selectize-input [data-value],
+.template-post_edit .selectize-control.multi .selectize-input [data-value].active {
   background-color: #8cc2da !important;
   background-image: none;
   border: none;
   text-shadow: none;
 }
 /* line 660, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .selectize-control.multi .selectize-input > div,
-.template-d4g_post_edit .selectize-control.multi .selectize-input > div {
+.template-post_submit .selectize-control.multi .selectize-input > div,
+.template-post_edit .selectize-control.multi .selectize-input > div {
   border: none;
   padding: 5px;
 }
 /* line 668, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .categories-field .control-label,
-.template-d4g_post_edit .categories-field .control-label {
+.template-post_submit .categories-field .control-label,
+.template-post_edit .categories-field .control-label {
   border-bottom: 1px solid #b3b3b3;
   margin: 1.5em -.1em 1em -.2em;
   padding-left: .7em;
   padding-bottom: .2em;
 }
 /* line 678, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .post-created-meta h4,
-.template-d4g_post_edit .post-created-meta h4 {
+.template-post_submit .post-created-meta h4,
+.template-post_edit .post-created-meta h4 {
   font-size: 1.4em;
   text-transform: none;
   margin: 0 1em .5em 0;
 }
 /* line 685, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .form-actions,
-.template-d4g_post_edit .form-actions {
+.template-post_submit .form-actions,
+.template-post_edit .form-actions {
   margin-top: 3em;
 }
 /* line 688, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .form-actions .delete-link,
-.template-d4g_post_edit .form-actions .delete-link {
+.template-post_submit .form-actions .delete-link,
+.template-post_edit .form-actions .delete-link {
   display: block;
   padding: 7px 12px;
   background: #c73b49;
@@ -3501,21 +3501,21 @@ a.post-category.category-jobs {
           transition: background .7s;
 }
 /* line 696, ../scss/modules/_posts.scss */
-.template-d4g_post_submit .form-actions .delete-link:hover,
-.template-d4g_post_edit .form-actions .delete-link:hover {
+.template-post_submit .form-actions .delete-link:hover,
+.template-post_edit .form-actions .delete-link:hover {
   background: #a12e3a;
 }
 @media screen and (max-width: 40em) {
   /* line 688, ../scss/modules/_posts.scss */
-  .template-d4g_post_submit .form-actions .delete-link,
-  .template-d4g_post_edit .form-actions .delete-link {
+  .template-post_submit .form-actions .delete-link,
+  .template-post_edit .form-actions .delete-link {
     margin: 1em auto;
   }
 }
 @media screen and (max-width: 40em) {
   /* line 705, ../scss/modules/_posts.scss */
-  .template-d4g_post_submit .form-actions .button,
-  .template-d4g_post_edit .form-actions .button {
+  .template-post_submit .form-actions .button,
+  .template-post_edit .form-actions .button {
     padding: 10px 85px;
     float: none;
     margin: 1em auto;
@@ -3523,8 +3523,8 @@ a.post-category.category-jobs {
 }
 
 /* line 10, ../scss/modules/_profile.scss */
-.template-d4g_user_edit hr,
-.template-d4g_user_profile hr,
+.template-user_edit hr,
+.template-user_profile hr,
 .template-settingsForm hr {
   margin: 4em 0 2.5em 0;
   color: #b3b3b3;
@@ -3532,12 +3532,12 @@ a.post-category.category-jobs {
 }
 
 /* line 19, ../scss/modules/_profile.scss */
-.template-d4g_user_profile .edit-profile {
+.template-user_profile .edit-profile {
   float: right;
   margin-top: 1.5em;
 }
 /* line 23, ../scss/modules/_profile.scss */
-.template-d4g_user_profile .edit-profile a {
+.template-user_profile .edit-profile a {
   font-weight: 400;
   padding: 7px;
   border: 2px solid #65aece;
@@ -3546,7 +3546,7 @@ a.post-category.category-jobs {
           transition: all .5s;
 }
 /* line 34, ../scss/modules/_profile.scss */
-.template-d4g_user_profile .profile .avatar {
+.template-user_profile .profile .avatar {
   margin-top: -20px;
   width: 150px;
   height: 150px;
@@ -3555,11 +3555,11 @@ a.post-category.category-jobs {
 }
 
 /* line 47, ../scss/modules/_profile.scss */
-.template-d4g_user_edit .pw-change {
+.template-user_edit .pw-change {
   margin-bottom: 2em;
 }
 /* line 50, ../scss/modules/_profile.scss */
-.template-d4g_user_edit .pw-change h4 {
+.template-user_edit .pw-change h4 {
   text-decoration: underline;
 }
 
@@ -3876,13 +3876,13 @@ a.mt-share-inline-square-sm {
 */
 @media screen and (min-width: 40em) {
   /* line 110, ../scss/modules/_users.scss */
-  .template-d4g_user_edit .control-group > label {
+  .template-user_edit .control-group > label {
     float: left;
   }
 }
 @media screen and (min-width: 40em) {
   /* line 117, ../scss/modules/_users.scss */
-  .template-d4g_user_edit .control-group .controls, .template-d4g_user_edit .control-group .note {
+  .template-user_edit .control-group .controls, .template-user_edit .control-group .note {
     margin-left: 200px;
   }
 }

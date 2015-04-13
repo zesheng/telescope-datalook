@@ -34,6 +34,7 @@ Package.onUse(function (api) {
     'aldeed:collection2',
     'aldeed:simple-schema',
     'aldeed:autoform',
+    'aldeed:template-extension',
     'meteorhacks:npm',
     'meteorhacks:fast-render',
     'meteorhacks:subs-manager',
@@ -78,15 +79,12 @@ Package.onUse(function (api) {
 
     // Templates
     'lib/client/views/main.html',
-    'lib/client/views/custom_templates.js',
     'lib/client/views/d4g_atForm.js',
     'lib/client/views/d4g_nav.html',
     'lib/client/views/d4g_search.html',
     'lib/client/views/d4g_userMenu.html',
     'lib/client/views/d4g_categories_menu.html',
     'lib/client/views/d4g_categories_menu.js',
-    'lib/client/views/d4g_posts_list.html',
-    'lib/client/views/d4g_posts_list.js',
     'lib/client/views/d4g_postAuthor.html',
     'lib/client/views/d4g_postInfo.html',
     'lib/client/views/d4g_postUpvote.html',
@@ -107,6 +105,7 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_newsletterBanner.html',
     'lib/client/views/d4g_newsletter_signup.html',
     'lib/client/views/d4g_newsletter_signup.js',
+    'lib/client/views/custom_templates.js',
 
 
     // Pages
