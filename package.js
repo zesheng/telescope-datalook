@@ -17,8 +17,9 @@ Package.onUse(function (api) {
     'ui',
     'jquery',
     'bengott:avatar',
-    'jeremy:velocity-animate',
     'dburles:google-maps',
+    'lookback:dropdowns',
+    'jeremy:velocity-animate',
     'jeremy:geocomplete',
     'jeremy:telescope-plugin-hero'
     ], 'client');
@@ -60,9 +61,6 @@ Package.onUse(function (api) {
     path.join(asset_path, 'fonts', 'icomoon.ttf'),
     path.join(asset_path, 'fonts', 'icomoon.svg'),
     path.join(asset_path, 'fonts', 'icomoon.woff'),
-
-    // Vendor
-    'lib/client/vendor/drop.js',
 
     // Config
     'lib/client/config/avatar.js',
