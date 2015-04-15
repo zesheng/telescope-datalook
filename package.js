@@ -155,7 +155,8 @@ Package.onUse(function (api) {
   api.export([
     'Notify',
     'Praises',
-    'heroModules'
+    'heroModules',
+    'userProfileEdit'
   ]);
 
 });
