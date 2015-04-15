@@ -45,6 +45,10 @@ Package.onUse(function (api) {
 
   api.use('cmather:handlebars-server');
 
+  api.imply([
+    'dburles:google-maps'
+  ]);
+
   var path = Npm.require('path'),
       asset_path = path.join('lib/client');
 
