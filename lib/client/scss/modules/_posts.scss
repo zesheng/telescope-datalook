@@ -1,3 +1,7 @@
+.posts-list-views {
+    display: none;
+}
+
 .posts-list-description {
     text-align: center;
     margin-bottom: 10px;
@@ -133,7 +137,6 @@
         .post-share,
         .post-discuss,
         .post-upvote {
-            display: block;
             @include flex-grow(1);
         }
     }
@@ -397,6 +400,10 @@ a.post-category {
 //     top: -5px;
 //     left: -18px;
 // }
+
+.post-share {
+    display: none;  // hide until icons fixed
+}
 
 .post-share, .post-discuss {
     position: relative;

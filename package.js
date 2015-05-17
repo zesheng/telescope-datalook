@@ -9,44 +9,36 @@ Package.describe({
 Package.onUse(function (api) {
 
   Npm.depends({
-    "twit": "1.1.19"
+    "twit": "1.1.20"
   });
 
   api.use([
     'templating',
     'ui',
     'jquery',
-    'bengott:avatar',
+    'cmather:handlebars-server',
+    'utilities:avatar',
     'dburles:google-maps',
     'lookback:dropdowns',
     'jeremy:velocity-animate',
     'jeremy:geocomplete',
-    'jeremy:telescope-plugin-hero'
-    ], 'client');
-
-  api.use([
-    'telescope-lib',
-    'telescope-base',
-    'telescope-newsletter',
-    'telescope-search',
-    'telescope-settings',
-    'telescope-tags',
-    'iron:router',
-    'aldeed:collection2',
-    'aldeed:simple-schema',
-    'aldeed:autoform',
-    'aldeed:template-extension',
+    'jeremy:selectize',
+    'jeremy:autoform-selectize',
+    'jeremy:telescope-plugin-hero',
+    'telescope:core',
+    'telescope:lib',
+    'telescope:newsletter',
+    'telescope:search',
+    'telescope:settings',
+    'telescope:tags',
     'meteorhacks:npm',
-    'meteorhacks:fast-render',
-    'meteorhacks:subs-manager',
-    'aslagle:reactive-table',
     'jeremy:segment.io'
-    ], ['client', 'server']);
-
-  api.use('cmather:handlebars-server');
+  ]);
 
   api.imply([
-    'dburles:google-maps'
+    'dburles:google-maps',
+    'jeremy:selectize',
+    'jeremy:autoform-selectize'
   ]);
 
   var path = Npm.require('path'),
@@ -98,12 +90,16 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_post_submit_form.js',
     'lib/client/views/d4g_post_submit.html',
     'lib/client/views/d4g_post_edit.html',
+
+    'lib/client/views/comments/d4g_comment_submit.html',
+    'lib/client/views/comments/d4g_comment_submit.js',
+
     'lib/client/views/d4g_button_bar.html',
-    'lib/client/views/d4g_user_profile.html',
-    'lib/client/views/d4g_userInfo.html',
-    'lib/client/views/d4g_userInfo.js',
-    'lib/client/views/d4g_user_edit.html',
-    'lib/client/views/d4g_user_edit.js',
+    // 'lib/client/views/d4g_user_profile.html',
+    // 'lib/client/views/d4g_userInfo.html',
+    // 'lib/client/views/d4g_userInfo.js',
+    // 'lib/client/views/d4g_user_edit.html',
+    // 'lib/client/views/d4g_user_edit.js',
     'lib/client/views/d4g_newsletterBanner.html',
     'lib/client/views/d4g_newsletter_signup.html',
     'lib/client/views/d4g_newsletter_signup.js',

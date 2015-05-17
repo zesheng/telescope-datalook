@@ -4,9 +4,7 @@
     {{> mobile_nav}}
     <div class="inner-wrapper template-{{pageName}}">
       {{> nav}}
-      {{#each heroModules}}
-        {{> Template.dynamic template=template}}
-      {{/each}}
+      {{> modules "hero"}}
       <div class="content-wrapper">
         {{> messages}}
         {{> yield "adminMenu"}}

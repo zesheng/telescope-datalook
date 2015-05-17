@@ -1,0 +1,9 @@
+<template name="d4g_comment_submit">
+  {{#if canComment}}
+    <div class="comment-form comment-new module">
+      {{> quickForm collection="Comments" id="submitCommentForm" template="bootstrap3-horizontal" input-col-class="controls" type="method" meteormethod="submitComment" fields=commentFields parentContext=this buttonContent="Add Comment"}}
+    </div>
+  {{else}}
+    <p class="cannot-comment-message">{{reason}}</p>
+  {{/if}}
+</template>

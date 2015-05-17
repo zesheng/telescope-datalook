@@ -242,16 +242,21 @@ li.comment {
     }
 }
 
-.comment-new {
+.comment-new, .comment-edit {
     @extend .grid-block;
     @extend .cf;
+
+    .control-label {
+        display: none;
+    }
 
     .comment-submit {
         @extend .cf;
     }
 
-    .comment-submit-button {
-        display: inline-block;
+    button[type=submit] {
+        border-radius: 0;
+        float: none;
     }
 
     .comment-page & {
