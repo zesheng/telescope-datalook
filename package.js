@@ -22,6 +22,7 @@ Package.onUse(function (api) {
     'lookback:dropdowns',
     'jeremy:velocity-animate',
     'jeremy:geocomplete',
+    'jeremy:noty',
     'jeremy:selectize',
     'jeremy:autoform-selectize',
     'jeremy:telescope-plugin-hero',
