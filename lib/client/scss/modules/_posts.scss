@@ -82,6 +82,12 @@
         padding-right: 9px;
     }
 
+    .post-location {
+        font-size: 14px;
+        color: darken($text-light, 10%);
+        padding-right: 7px;
+    }
+
     .post-content {
         order: 2;
         width: 100%;

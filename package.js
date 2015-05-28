@@ -86,6 +86,7 @@ Package.onUse(function (api) {
     'lib/client/views/d4g_post_content.html',
     'lib/client/views/d4g_post_tagline.html',
     'lib/client/views/d4g_post_tagline.js',
+    'lib/client/views/d4g_post_location.html',
     'lib/client/views/d4g_post_discuss.html',
     'lib/client/views/d4g_post_submit_form.html',
     'lib/client/views/d4g_post_submit_form.js',
