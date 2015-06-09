@@ -107,6 +107,7 @@
         flex-grow: 1;
     }
 
+    .d4g-post_share,
     .post-share {
         order: 3;
     }
@@ -407,11 +408,45 @@ a.post-category {
 //     left: -18px;
 // }
 
-.post-share {
-    display: none;  // hide until icons fixed
+.d4g-post_share {
+
+    @include small {
+        display: none;
+    }
+
+    .icon-share {
+        font-size: 30px;
+        color: $brand-primary;
+        transition: color .7s;
+
+        &:hover {
+            color: darken($brand-primary, 15%);
+        }
+    }
+
+    .drop-contents {
+        display: flex;
+
+        a {
+            margin-right: 15px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        i {
+            font-family: "FontAwesome";
+            font-size: 25px;
+            color: white;
+            display: inline-block;
+            width: 34px;
+            text-align: center;
+        }
+    }
 }
 
-.post-share, .post-discuss {
+.post-share, .post-discuss, .d4g-post_share {
     position: relative;
 
     >a {
